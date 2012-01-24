@@ -10,18 +10,13 @@ body {
   background: #fff;
 }
 
+
+
 h1,h2,h3 {
   font-family: 'PT Serif Caption', serif;;
   font-weight: normal;
   text-align: center;
   color: #353535;
-}
-
-h1 {
-  font-size: 1.8em;
-  line-height: 1.6em;
-  padding: 1.6em 0 0 0;
-  text-align: center;
 }
 
 h2 {
@@ -32,15 +27,69 @@ h2 {
   border-bottom:1px solid #353535;
 }
 
+.container {
+  margin-top:0.5em;
+}
+
 .logo {
   text-align:center;
 }
-.logo img {
-  padding: 1.3em 0 0 0; /* same as h2 */
-  margin: 0 auto; /* same as h2 */
+
+.mainlogo img {
+  padding: 0;
+}
+
+.secondarylogo img {
+  padding: 1.5em 0 0 0;
 }
 
 .subtitle {
   text-align:center;
   font-style: italic;
+}
+
+
+/* #Give container less top margin on smaller screens
+================================================== */
+
+h1 {
+  font-size: 1.8em;
+  line-height: 1.6em;
+  padding: 1em 0 0 0;
+  text-align: center;
+}
+
+.container {
+  margin-top:1em;
+}
+
+@media only screen and (max-width: 767px) {
+  h1 { padding:0.5em 0 0 0; }
+  .container { margin-top:0; }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  h1 { padding:0.5em 0 0 0; }
+  .container { margin-top:0; }
+}
+
+
+
+/* #Give first <h2> a more top padding, on smaller screens
+================================================== */
+
+.following-logo, .following-logo h2 {
+  padding:0;
+}
+
+@media only screen and (max-width: 767px) {
+  .following-logo, .following-logo h2 {
+    padding:1.3em 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .following-logo, .following-logo h2 {
+    padding:1.3em 0 0 0;
+  }
 }
