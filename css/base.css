@@ -61,6 +61,7 @@ h1 {
 
 .container {
   margin-top:1em;
+  margin-bottom:1em;
 }
 
 @media only screen and (max-width: 767px) {
