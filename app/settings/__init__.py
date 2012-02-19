@@ -1,8 +1,8 @@
 from __future__ import absolute_import
 import os
 
-if 'EPIO' in os.environ:
-    from .epio import *
+if 'ENV_PROD' in os.environ:
+    from .prod import *
 else:
     try:
         from .local import *
