@@ -18,20 +18,6 @@
 
 {% block content %}
   <h1><a href="{% url wakawaka_page slug=page.slug %}">{{ page.slug }}</a></h1>
-
-  {% if rev.is_not_current %}
-  <p class="revert-warning">
-    {% trans "You are viewing an older revision!" %}
-    <a href="{% url wakawaka_page slug=page.slug %}">
-      {% trans "See the latest version" %}
-    </a>
-  </p>
-  {% endif %}
-
-  <div class="page">
-  {{ rev.content|urlize|wikify|linebreaks }}
-  </div>
-
   {% spaceless %}
   <div class="info">
       <span>
@@ -50,5 +36,20 @@
       </span>
       {% endif %}
   </div>
+  
+  {% if rev.is_not_current %}
+  <p class="revert-warning">
+    {% trans "You are viewing an older revision!" %}
+    <a href="{% url wakawaka_page slug=page.slug %}">
+      {% trans "See the latest version" %}
+    </a>
+  </p>
+  {% endif %}
+
+  <div class="wiki-page">
+  {{ rev.content|urlize|wikify|linebreaks }}
+  </div>
+
+
   {% endspaceless %}
 {% endblock %}
