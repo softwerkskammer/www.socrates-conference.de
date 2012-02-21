@@ -3,4 +3,5 @@
 .DS_Store
 
 app/settings/keys.py
+app/settings/local_keys.py
 LOCAL.DB
