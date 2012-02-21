@@ -19,13 +19,10 @@
 {% block content %}
   <h1><a href="{% url wakawaka_page slug=page.slug %}">{{ page.slug }}</a></h1>
   {% spaceless %}
-  <div class="info">
-      <span>
-        <strong>{{ page.slug }}</strong>
-      </span>
+  <div class="wiki-page-info">
       <span>
         {% blocktrans with page.current.creator as creator and rev.modified|date:_("DATETIME_FORMAT") as modified %}
-            Recently modified by <em>{{ creator }}</em>: {{ modified }}
+            Recently modified by <em>{{ creator }}</em> on {{ modified }}
         {% endblocktrans %}
         (<a href="{% url wakawaka_revision_list slug=page.slug %}">{% trans "History" %}</a>)
       </span>

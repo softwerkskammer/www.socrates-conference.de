@@ -10,5 +10,9 @@ h1,h2,h3 {
 }
 
 .wiki-page * {
-  font: 19px/27px Georgia;
+  font: 19px Georgia;
+}
+
+.wiki-page-info {
+  font-size: 11px;
 }
