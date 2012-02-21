@@ -1,3 +1,6 @@
-.idea
-*.pyc
-local.db
+.IDEA
+*.PYC
+.DS_Store
+
+app/settings/keys.py
+LOCAL.DB
