@@ -2,7 +2,7 @@
 
 * Theme Wiki & Remove superfluous functionality
 * Add django-social-auth and needed templates (https://github.com/omab/django-social-auth)
-* Event Calendar
+* Event Calendar (maybe based on https://github.com/eldarion/kairios)
 ** CRUD events 
 ** show calendar
 ** calendar "widget" to be displayed on other pages (see "page builder" extra below)
