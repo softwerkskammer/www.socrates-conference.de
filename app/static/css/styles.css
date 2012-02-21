@@ -4,10 +4,16 @@ body {
   padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 }
 
+a {
+  color: #B65353;
+}
+
 h1,h2,h3 {
   font-family: 'PT Serif Caption', serif;;
   font-weight: normal;
+  color: #B65353;
 }
+
 
 .wiki-page * {
   font: 19px Georgia;
@@ -16,3 +22,11 @@ h1,h2,h3 {
 .wiki-page-info {
   font-size: 11px;
 }
+
+
+/*
+SoCraTes colorscheme:
+  red -> #B65353
+  blue -> #3161B9
+  grey -> #E8E8E8
+*/
