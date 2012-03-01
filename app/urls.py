@@ -8,9 +8,10 @@ urlpatterns = patterns('',
     # url(r'^$', 'app.views.home', name='home'),
     # url(r'^app/', include('app.foo.urls')),
 
-    url(r'^$', redirect_to, {'url': '/wiki/', 'permanent': False}),
+    url(r'^$', redirect_to, {'url': '/wiki/', 'permanent': False}, name='home'),
     url(r'', include('social_auth.urls')),
 
     url(r'^wiki/', include('wakawaka.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^accounts/', include('registration.urls')),
 )
