@@ -1,2 +1,5 @@
 - configure a correct domain for site with SITE_ID = 1
+  $ epio django shell
+  >>> Site(domain="sctrs-conf-stage.ep.io", name="scrts-conf-stage.ep.io").save()
+  
 - configure an email server in settings/prod.py
