@@ -23,14 +23,9 @@
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container-fluid">
-        <a class="brand" href="{% url home %}">SoCraTes Conference 2012</a>
         <div class="nav-collapse">
           <ul class="nav">
             <li class="active"><a href="{% url wakawaka_index %}">Wiki</a></li>
-            <!--
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            -->
           </ul>
           
           <!--
@@ -53,17 +48,27 @@
   
   
 
-  <div class="container">
-    {% if messages %}
-    <div class="alert">
-      {% for message in messages %}
-      {{ message }}
-      {% endfor %}
-    </div>
-    {% endif %}
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span2">
+        <a href="{% url home %}">
+          <img src="{{ STATIC_URL }}img/socrates2012_logo_40perc.png" 
+               alt="SoCraTes Conference 2012 - Software Craftsmanship and Testing" />
+        </a>
+      </div><!-- /span2 -->
+      <div class="span10">
+        {% if messages %}
+        <div class="alert">
+          {% for message in messages %}
+          {{ message }}
+          {% endfor %}
+        </div>
+        {% endif %}
 
-  	{% block content %}
-  	{% endblock %}
+        {% block content %}
+        {% endblock %}
+      </div> <!-- /span10 -->
+    </div> <!-- /row -->
   </div> <!-- /container -->
   
   <script src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
