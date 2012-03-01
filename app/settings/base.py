@@ -128,6 +128,7 @@ INSTALLED_APPS = (
     'south',
     'wakawaka',
     'social_auth',
+    'bootstrapform',
     
     'app',
 )

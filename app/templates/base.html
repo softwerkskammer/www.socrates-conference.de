@@ -25,14 +25,19 @@
       <div class="container-fluid">
         <a class="brand" href="#">SoCraTes Conference 2012</a>
         <div class="nav-collapse">
-          <!--
           <ul class="nav">
             <li class="active"><a href="#">Home</a></li>
+            <!--
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="{% url socialauth_begin 'twitter' %}">Login using Twitter</a></li>
+            -->
           </ul>
-          <p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>
+          
+          <!--
+          <p class="navbar-text pull-right">
+            <a href="{% url socialauth_begin 'twitter' %}">Login using Twitter</a> | 
+            Logged in as <a href="#">username</a>
+          </p>
           -->
         </div><!--/.nav-collapse -->
       </div>
@@ -41,11 +46,11 @@
 
   <div class="container">
     {% if messages %}
-    <ul class="messages">
-    {% for message in messages %}
-      <li>{{ message }}</li>
+    <div class="alert">
+      {% for message in messages %}
+      {{ message }}
       {% endfor %}
-    </ul>
+    </div>
     {% endif %}
 
   	{% block content %}

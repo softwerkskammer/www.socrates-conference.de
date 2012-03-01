@@ -2,6 +2,11 @@
 
 body {
   padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+  padding-bottom: 40px;
+}
+
+.sidebar-nav {
+  padding: 9px 0;
 }
 
 a {
@@ -17,12 +22,21 @@ h1,h2,h3 {
 
 .wiki-page * {
   font: 19px Georgia;
+  margin-top:15px;
 }
 
 .wiki-page-info {
   font-size: 11px;
 }
 
+div.alert ul {
+  list-style-type:none;
+}
+
+.form-horizontal textarea {
+  width:740px;
+  height:370px;
+}
 
 /*
 SoCraTes colorscheme:
