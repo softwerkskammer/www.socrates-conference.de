@@ -27,8 +27,13 @@
     {% csrf_token %}
 
     {{ form|bootstrap }}
+    
+    <p class="help-block">
+    <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a> is used for formatting.
+    CamelCase words are autolinked to wikipages.
+    </p>
     <div class="form-actions">
-    <button type="submit" class="btn-primary">{% trans "Save changes" %}</button>
+    <input type="submit" class="btn-primary btn-large" value="{% trans "Save changes" %}" />
     {% trans "or" %} 
     <a href="{% if page.is_initial %}javascript:window.history.go(-1);{% else %}{% url wakawaka_page slug=page.slug %}{% endif %}">
       {% trans "Cancel" %}

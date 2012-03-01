@@ -6,4 +6,5 @@ django-social-auth==0.6.6
 django-debug-toolbar
 django-bootstrap-form
 django-registration==0.7
+markdown==2.1.1
 -e git://github.com/bartTC/django-wakawaka.git#egg=wakawaka

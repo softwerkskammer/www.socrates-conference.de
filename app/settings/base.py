@@ -124,6 +124,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    'django.contrib.markup',
     'django.contrib.admin',
     'south',
     'wakawaka',
@@ -131,7 +132,7 @@ INSTALLED_APPS = (
     'bootstrapform',
     'registration',
     
-    'app',
+    'wikiglue',
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7

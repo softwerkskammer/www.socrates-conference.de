@@ -38,6 +38,14 @@ div.alert ul {
   height:370px;
 }
 
+em {
+  font-style:italic !important;
+}
+
+strong {
+  font-weight:bold !important;
+}
+
 /*
 SoCraTes colorscheme:
   red -> #B65353
