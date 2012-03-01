@@ -1,0 +1,2 @@
+- configure a correct domain for site with SITE_ID = 1
+- configure an email server in settings/prod.py
