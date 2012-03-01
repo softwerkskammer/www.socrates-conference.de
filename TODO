@@ -1,16 +1,19 @@
 # CORE
 
-* Theme Wiki & Remove superfluous functionality
+* Theme Wiki & Remove superfluous functionality @done
+* add profile pages for users, along with extra info for them to fill out (e.g. Twitter handle, 
+  technologies of interest etc)
 * Add django-social-auth and needed templates (https://github.com/omab/django-social-auth)
-* Event Calendar (maybe based on https://github.com/eldarion/kairios)
-** CRUD events 
-** show calendar
-** calendar "widget" to be displayed on other pages (see "page builder" extra below)
 * Mailinglists
+* Allow for restricting page access to certain people
+* document how to setup a local dev env
 
 
 
 # EXTRAS
 
 * Implement page builder, to organize certain pages from different sources (Wiki, Calender) onto one page
-* 
+* Event Calendar (maybe based on https://github.com/eldarion/kairios)
+** CRUD events 
+** show calendar
+** calendar "widget" to be displayed on other pages (see "page builder" extra below)
