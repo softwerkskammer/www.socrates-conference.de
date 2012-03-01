@@ -134,5 +134,7 @@ INSTALLED_APPS = (
     'app',
 )
 
+ACCOUNT_ACTIVATION_DAYS = 7
+
 from .social_auth_settings import *
 from .keys import *

@@ -1,11 +1,14 @@
 {% extends "registration/registration_base.html" %}
-{% load uni_form_tags %}
+{% load bootstrap %}
 
 {% block title %}Register for an account{% endblock %}
-{% block body %}
-<form method='POST' class="uniForm">
+
+{% block content %}
+<form method='POST'>
     {% csrf_token %}
-    {{ form|as_uni_form }}
-    <input type="submit" value="Send activation email" />
+    {{ form|bootstrap }}
+    <div class="form-actions">
+    <button type="submit" class="btn-primary">Send activation email</button>
+    </div>
 </form>
 {% endblock %}
