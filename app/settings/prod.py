@@ -13,3 +13,15 @@ DATABASES = {
 }
 
 MEDIA_ROOT = config['core']['data_directory']
+
+DEFAULT_FROM_EMAIL = 'Ask SoCraTes <ask@socrates-conference.de>'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'ask@socrates-conference.de'
+EMAIL_PORT = 587
+
+
+from .keys import *
+# defined in settings.keys
+# EMAIL_HOST_PASSWORD 
+# SECRET_KEY
