@@ -24,11 +24,8 @@ h1 {
   line-height: 1.6em;
 }
 
-.wiki-page h2 {
-  font-size: 2em;
-  line-height: 1.4em;
-  padding: 1.3em 0 0 0;
-  margin: 0 auto 0.8em;
+.wiki-page * {
+  font: 19px Georgia;
 }
 
 .wiki-page p {
@@ -36,9 +33,13 @@ h1 {
   margin-bottom:10px;
 }
 
-.wiki-page * {
-  font: 19px Georgia;
+.wiki-page h2 {
+  font-size: 2em;
+  line-height: 1.4em;
+  padding: 1.3em 0 0 0;
+  margin: 0 auto 0.8em;
 }
+
 
 .wiki-page-info {
   font-size: 11px;
