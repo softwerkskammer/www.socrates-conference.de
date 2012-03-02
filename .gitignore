@@ -1,7 +1,7 @@
 .IDEA
 *.PYC
 .DS_Store
-
+app/static-deploy
 app/settings/keys.py
 app/settings/local_keys.py
 LOCAL.DB
