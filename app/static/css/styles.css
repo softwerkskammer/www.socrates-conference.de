@@ -5,6 +5,101 @@ body {
   padding-bottom: 40px;
 }
 
+
+/* #Basic Styles
+================================================== */
+	body {
+		background: #fff;
+		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #444;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+ }
+ 
+/* #Typography
+================================================== */
+  h1, h2, h3, h4, h5, h6 {
+    color: #181818;
+    font-family:  'PT Serif Caption', serif;
+    font-weight: normal; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+  h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+  h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
+  h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
+  h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+  h5 { font-size: 17px; line-height: 24px; }
+  h6 { font-size: 14px; line-height: 21px; }
+  .subheader { color: #777; }
+
+  p { margin: 0 0 20px 0; }
+  p img { margin: 0; }
+  p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+  em { font-style: italic; }
+  strong { font-weight: bold; color: #333; }
+  small { font-size: 80%; }
+
+/*  Blockquotes  */
+  blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+  blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+  blockquote cite { display: block; font-size: 12px; color: #555; }
+  blockquote cite:before { content: "\2014 \0020"; }
+  blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+  hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links
+================================================== */
+  a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+  a:hover, a:focus { color: #000; }
+  p a, p a:visited { line-height: inherit; }
+
+
+/* #Lists
+================================================== */
+  ul, ol { margin-bottom: 20px; }
+  ul { list-style: none outside; }
+  ol { list-style: decimal; }
+  ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+  ul.square { list-style: square outside; }
+  ul.circle { list-style: circle outside; }
+  ul.disc { list-style: disc outside; }
+  ul ul, ul ol,
+  ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+  ul ul li, ul ol li,
+  ol ol li, ol ul li { margin-bottom: 6px; }
+  li { line-height: 18px; margin-bottom: 12px; }
+  ul.large li { line-height: 21px; }
+  li p { line-height: 21px; }
+
+/* #Images
+================================================== */
+
+  img.scale-with-grid {
+    max-width: 100%;
+    height: auto; }
+    
+/* #Misc
+================================================== */
+  .remove-bottom { margin-bottom: 0 !important; }
+  .half-bottom { margin-bottom: 10px !important; }
+  .add-bottom { margin-bottom: 20px !important; }
+
+
+
+
+
+/* #custom socrates styles
+================================================== */
+/*
+SoCraTes colorscheme:
+  red -> #B65353
+  blue -> #3161B9
+  grey -> #E8E8E8
+*/
+
+
 .sidebar-nav {
   padding: 9px 0;
 }
@@ -14,17 +109,10 @@ a {
 }
 
 h1,h2,h3 {
-  font-family: 'PT Serif Caption', serif;;
-  font-weight: normal;
   color: #B65353;
 }
 
-h1 {
-  font-size: 2.4em;
-  line-height: 1.6em;
-}
-
-.wiki-page * {
+.wiki-page {
   font: 19px Georgia;
 }
 
@@ -33,12 +121,7 @@ h1 {
   margin-bottom:10px;
 }
 
-.wiki-page h2 {
-  font-size: 2em;
-  line-height: 1.4em;
-  padding: 1.3em 0 0 0;
-  margin: 0 auto 0.8em;
-}
+
 
 
 .wiki-page-info {
@@ -53,7 +136,7 @@ div.alert ul {
   width:740px;
   height:370px;
 }
-<a
+
 em {
   font-style:italic !important;
 }
@@ -87,11 +170,3 @@ nav li {
     display:inline;
     padding:0 0.5em 0 0;
 }
-
-
-/*
-SoCraTes colorscheme:
-  red -> #B65353
-  blue -> #3161B9
-  grey -> #E8E8E8
-*/

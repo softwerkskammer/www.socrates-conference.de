@@ -33,6 +33,7 @@
     </p>
   </nav>
 
+  {% block container %}
   <div class="container-fluid">
     <div class="row-fluid">
       <div class="span2">
@@ -55,7 +56,8 @@
       </div> <!-- /span10 -->
     </div> <!-- /row -->
   </div> <!-- /container -->
-  
+  {% endblock %}
+    
   <script src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
   <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
 </body>
