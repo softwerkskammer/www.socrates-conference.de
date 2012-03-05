@@ -99,6 +99,9 @@ SoCraTes colorscheme:
   grey -> #E8E8E8
 */
 
+.site-logo{
+  text-align:center;
+}
 
 .sidebar-nav {
   padding: 9px 0;
@@ -112,8 +115,17 @@ h1,h2,h3 {
   color: #B65353;
 }
 
-.wiki-page {
-  font: 19px Georgia;
+.wiki-page ul {
+  list-style-type:disc;
+}
+
+.wiki-page ol {
+  list-style-type:default;
+}
+
+h1.wiki-head-slug a {
+  text-decoration:none;
+  color: #B65353;
 }
 
 .wiki-page p {

@@ -18,7 +18,7 @@
 {% endblock %}
 
 {% block content %}
-  <h1><a href="{% url wakawaka_page slug=page.slug %}">{{ page.slug }}</a></h1>
+  <h1 class="wiki-head-slug remove-bottom"><a href="{% url wakawaka_page slug=page.slug %}">{{ page.slug }}</a></h1>
   {% spaceless %}
   <div class="wiki-page-info">
       <span>
