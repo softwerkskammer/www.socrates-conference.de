@@ -22,7 +22,8 @@
   
   <nav id="nav">
     <ul>
-      <li class="active"><a href="{% url wakawaka_index %}">Wiki</a></li>
+      <li><a href="{% url home %}">Home</a></li>
+      <li><a href="{% url wakawaka_index %}">Wiki</a></li>
     </ul>
     <p class="pull-right">
     {% if user.is_authenticated %}

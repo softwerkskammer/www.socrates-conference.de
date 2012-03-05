@@ -8,12 +8,12 @@ body {
 
 /* #Basic Styles
 ================================================== */
-	body {
-		background: #fff;
-		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		color: #444;
-		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-		-webkit-text-size-adjust: 100%;
+  body {
+    background: #fff;
+    font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
  }
  
 /* #Typography
@@ -121,9 +121,6 @@ h1,h2,h3 {
   margin-bottom:10px;
 }
 
-
-
-
 .wiki-page-info {
   font-size: 11px;
 }
@@ -148,12 +145,12 @@ strong {
 nav {
     position: fixed;
     top: 0px;
-    padding: 0.2em 0 0.2em 0;
+    padding: 0.8em 0 0.8em 0;
     background-color: #0E0E0E;
     opacity: 0.8;
     width: 100%;
     z-index: 77;
-    color:#E8E8E8;
+    color:#fff;
 }
 
 nav ul {
@@ -161,7 +158,7 @@ nav ul {
     left: 0;
     display: block;
     float: left;
-    margin: 0 10px 0 0;
+    margin: 0 0.5em 0 1em;
     padding:0;
 }
 
@@ -169,4 +166,15 @@ nav li {
     list-style-type:none;
     display:inline;
     padding:0 0.5em 0 0;
+}
+
+nav p.pull-right {
+  margin:0 0.8em 0 0;
+}
+
+nav a, nav a:visited { 
+  color: #B65353; 
+}
+nav a:hover, nav a:focus { 
+  color: #E8E8E8; 
 }
