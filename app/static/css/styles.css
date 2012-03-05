@@ -53,7 +53,7 @@ div.alert ul {
   width:740px;
   height:370px;
 }
-
+<a
 em {
   font-style:italic !important;
 }
@@ -61,6 +61,33 @@ em {
 strong {
   font-weight:bold !important;
 }
+
+nav {
+    position: fixed;
+    top: 0px;
+    padding: 0.2em 0 0.2em 0;
+    background-color: #0E0E0E;
+    opacity: 0.8;
+    width: 100%;
+    z-index: 77;
+    color:#E8E8E8;
+}
+
+nav ul {
+    position: relative;
+    left: 0;
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+    padding:0;
+}
+
+nav li {
+    list-style-type:none;
+    display:inline;
+    padding:0 0.5em 0 0;
+}
+
 
 /*
 SoCraTes colorscheme:
