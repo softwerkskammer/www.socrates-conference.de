@@ -133,9 +133,11 @@ INSTALLED_APPS = (
     'registration',
     
     'wikiglue',
+    'gatekeeper',
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7
+GATEKEEPER_MODERATOR_GROUP = 'socrate_admins'
 
 from .social_auth_settings import *
 from .keys import *

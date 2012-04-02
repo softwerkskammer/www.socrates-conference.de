@@ -1,0 +1,4 @@
+implements views for registering users. Users are set to inactive after registration and a mail 
+is sent to administrators for each new user, prompting them to activate the user
+
+The application relies on the models and forms in django-registration v0.7
