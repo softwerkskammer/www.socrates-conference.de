@@ -1,4 +1,18 @@
+####
+#### TODO
+#### - replace references to "registration" module with new implementations
+#### - add link to profile page to "pending_registrations" template
+#### - finish implementations of approve & delete actions
+#### - add tests
+####
+####
+####
+
+
+
 from django.conf import settings
+from django.contrib.auth.decorators import login_required, user_passes_test
+from django.contrib.auth.models import User
 from django.core.mail import send_mail
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect
@@ -26,6 +40,29 @@ def register(request, profile_callback=None):
     
     context = RequestContext(request)
     return render_to_response('registration/registration_form.html', { 'form': form }, context_instance=context)
+
+
+@login_required
+@user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() == 0)
+def pending_registrations(request):
+    pending_users = User.objects.filter(is_active=False)
+    context = RequestContext(request)
+    return render_to_response('registration/pending_registrations.html', 
+            { 'pending_registrations': pending_users }, 
+            context_instance=context
+        )
+
+
+@login_required
+@user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() == 0)
+def approve_pending_registrations(request, user_id):
+    pass
+
+
+@login_required
+@user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() == 0)
+def delete_pending_registrations(request, user_id):
+    pass
 
 
 class GatekeeperRegistrationForm(RegistrationFormUniqueEmail):

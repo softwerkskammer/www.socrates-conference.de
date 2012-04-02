@@ -3,8 +3,23 @@ from django.views.generic.simple import direct_to_template
 from django.contrib.auth import views as auth_views
 
 from gatekeeper.views import register
+from gatekeeper.views import pending_registrations
+from gatekeeper.views import approve_pending_registrations
+from gatekeeper.views import delete_pending_registrations
 
 urlpatterns = patterns('',
+    url(r'^registrations/pending/$', 
+        pending_registrations, 
+        name='pending_registrations'),
+    
+    url(r'^registrations/pending/approve/(?P<user_id>\d+)$', 
+        approve_pending_registrations, 
+        name='approve_pending_registration'),
+
+    url(r'^registrations/pending/delete/(?P<user_id>\d+)$', 
+        delete_pending_registrations, 
+        name='delete_pending_registration'),
+
     url(r'^register/$', register, name='registration_register'),
 
     url(r'^register/complete/$',
