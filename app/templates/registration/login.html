@@ -4,29 +4,29 @@
 
 {% block content %}
 
-{% if form.errors %}
-    <div class="alert">Your username and password didn't match. Please try again.</div>
-{% endif %}
+    <div class="row">
+        <div class="span5">
+            <h2>SoCraTes login</h2>
+            <form method="post" action="{% url django.contrib.auth.views.login %}">
+                {% csrf_token %}
+                {{ form|bootstrap }}
 
-<form method="post" action="{% url django.contrib.auth.views.login %}">
-  {% csrf_token %}
-  {{ form|bootstrap }}
+                <p>
+                   <a href="{% url auth_password_reset %}">Forgot</a> your password?
+                   <a href="{% url registration_register %}">Need an account</a>?
+                </p>
 
-  <p>
-    <a href="{% url auth_password_reset %}">Forgot</a> your password?  <a href="{% url registration_register %}">Need an account</a>?
-  </p>
-
-  <div class="form-actions">
-    <input type="submit" class="btn-primary" value="Login"/>
-    <input type="hidden" name="next" value="{{ next }}" />
-  </div>
-  
-  <!--
-  <p>
-    <a href="{% url socialauth_begin 'twitter' %}">Login using Twitter</a>
-  </p>
-  -->
-  
-</form>
-
+                <div class="form-actions">
+                  <input type="submit" class="btn-primary" value="Login"/>
+                  <input type="hidden" name="next" value="{{ next }}" />
+                </div>
+            </form>
+        </div>
+        <div class="span5">
+            <h2>OAuth login</h2>
+            <div>
+                <a class="btn" href="{% url socialauth_begin 'twitter' %}">Twitter</a>
+            </div>
+        </div>
+    </div>
 {% endblock %}
