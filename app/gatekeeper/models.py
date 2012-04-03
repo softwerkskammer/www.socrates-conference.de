@@ -20,7 +20,6 @@ def create_user_profile(sender, instance, created, **kwargs):
 post_save.connect(create_user_profile, sender=User)
 
 def twitter_extra_values(sender, user, response, details, **kwargs):
-    print response
     profile = user.get_profile()
     profile.twitter_name = response.get("screen_name")
     profile.blog_url = response.get("url") or ""
