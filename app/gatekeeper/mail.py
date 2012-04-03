@@ -11,11 +11,9 @@ def send_moderation_notices(new_user):
     current_site = Site.objects.get_current()
 
     subject = render_to_string('registration/activation_email_subject.txt', 
-            { 'site': current_site, 'new_user': new_user }
-        )
+                                { 'site': current_site, 'new_user': new_user })
     message = render_to_string('registration/activation_email.txt', 
-            { 'site': current_site, 'new_user': new_user }
-        )
+                                { 'site': current_site, 'new_user': new_user })
 
     recipients = User.objects.filter(groups__name=settings.GATEKEEPER_MODERATOR_GROUP)
     if recipients:

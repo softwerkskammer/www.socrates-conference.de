@@ -1,11 +1,8 @@
 ####
 #### TODO
-#### - replace references to "registration" module with new implementations
 #### - add link to profile page to "pending_registrations" template
-#### - finish implementations of approve & delete actions
 #### - add tests
-####
-####
+#### - send mail to user after approval
 ####
 
 
@@ -17,14 +14,12 @@ from django.core.mail import send_mail
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect
 from django.contrib.sites.models import Site
-from django.shortcuts import render_to_response
+from django.contrib import messages
+from django.shortcuts import render_to_response, get_object_or_404
 from django.template.loader import render_to_string
 from django.template import RequestContext
 
-from registration.models import RegistrationProfile
-from registration.forms import RegistrationFormUniqueEmail
-
-from gatekeeper.mail import send_moderation_notices
+from gatekeeper.forms import GatekeeperRegistrationForm
 
 
 def register(request, profile_callback=None):
@@ -56,24 +51,19 @@ def pending_registrations(request):
 @login_required
 @user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() == 0)
 def approve_pending_registrations(request, user_id):
-    pass
+    user = get_object_or_404(User, pk=user_id)
+    user.is_active = True
+    user.save()
+    messages.info(request, u'User "%s" has been approved' % user.email)
+    return HttpResponseRedirect(reverse('pending_registrations'))
 
 
 @login_required
 @user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() == 0)
 def delete_pending_registrations(request, user_id):
-    pass
+    user = get_object_or_404(User, pk=user_id)
+    user.delete()
+    messages.info(request, u'User "%s" has been deleted' % user.email)
+    return HttpResponseRedirect(reverse('pending_registrations'))
 
 
-class GatekeeperRegistrationForm(RegistrationFormUniqueEmail):
-
-    def save(self, profile_callback=None):
-        """
-        """
-        new_user = RegistrationProfile.objects.create_inactive_user(username=self.cleaned_data['username'],
-                                                                    password=self.cleaned_data['password1'],
-                                                                    email=self.cleaned_data['email'],
-                                                                    profile_callback=profile_callback,
-                                                                    send_email=False)
-        send_moderation_notices(new_user)
-        return new_user
