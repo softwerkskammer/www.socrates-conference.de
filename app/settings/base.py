@@ -35,7 +35,7 @@ LOGGING = {
 
 TIME_ZONE = 'Europe/Berlin'
 
-LANGUAGE_CODE = 'de-de'
+LANGUAGE_CODE = 'en-us'
 
 SITE_ID = 1
 
