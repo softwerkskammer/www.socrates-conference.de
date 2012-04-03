@@ -83,6 +83,7 @@ class GatekeeperRegistrationForm(forms.Form):
         user_profile.twitter_name=self.cleaned_data['twitter_name'],
         user_profile.location=self.cleaned_data['location'],
         user_profile.profession=self.cleaned_data['profession']
-
+        user_profile.save()
+        
         send_moderation_notices(new_user)
         return new_user
