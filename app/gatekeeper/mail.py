@@ -16,6 +16,7 @@ def send_moderation_notices(new_user):
                                 { 'site': current_site, 'new_user': new_user })
 
     recipients = User.objects.filter(groups__name=settings.GATEKEEPER_MODERATOR_GROUP)
+    print "recipients:", recipients
     if recipients:
         # Email subject *must not* contain newlines
         subject = ''.join(subject.splitlines())
