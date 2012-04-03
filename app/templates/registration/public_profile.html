@@ -1,0 +1,32 @@
+{% extends "registration/registration_base.html" %}
+{% load bootstrap %}
+
+{% block title %}Profile for '{{ usr.first_name }} {{ usr.first_name }}'{% endblock %}
+
+{% block content %}
+<h2>{{ usr.first_name }} {{ usr.last_name }}</h2>
+<div class="row">
+  <div class="span1"><strong>Profession</strong></div>
+  <div class="span4">{{ profile.profession }}</div>
+</div>
+<div class="row">
+  <div class="span1"><strong>Focus</strong></div>
+  <div class="span4">{{ profile.focus }}</div>
+</div>
+<div class="row">
+  <div class="span1"><strong>Location</strong></div>
+  <div class="span4">{{ profile.location }}</div>
+</div>
+{% if profile.blog_url %}
+<div class="row">
+  <div class="span1"><strong>Blog</strong></div>
+  <div class="span4"><a href="{{ profile.blog_url }}">{{ profile.blog_url }}</a></div>
+</div>
+{% endif %}
+{% if profile.twitter_name %}
+<div class="row">
+  <div class="span1"><strong>Twitter</strong></div>
+  <div class="span4"><a href="http://twitter.com/{{ profile.twitter_name }}">@{{ profile.twitter_name }}</a></div>
+</div>
+{% endif %}
+{% endblock %}

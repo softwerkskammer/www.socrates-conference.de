@@ -8,8 +8,7 @@
   <thead>
     <tr>
       <th>Email</th>
-      <th>Firstname</th>
-      <th>Lastname</th>
+      <th>Name</th>
       <th>Approve</th>
       <th>Delete</th>
     </tr>
@@ -18,8 +17,9 @@
   {% for reg in pending_registrations %}
     <tr>
         <td><a href="mailto:{{ reg.email }}">{{ reg.email }}</a></td>
-        <td>{{ reg.first_name }}</td>
-        <td>{{ reg.last_name }}</td>
+        <td>
+          <a href="{% url public_profile reg.id %}">{{ reg.first_name }} {{ reg.last_name }}</a>
+        </td>
         <td>
           <form method="POST" action="{% url approve_pending_registration reg.id %}">
             {% csrf_token %}

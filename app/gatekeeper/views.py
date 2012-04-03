@@ -1,8 +1,9 @@
 ####
 #### TODO
-#### - add link to profile page to "pending_registrations" template
+#### - implement profile editing for users
 #### - add tests
-#### - send mail to user after approval
+#### - rename templates subdir from registration to gatekeeper
+#### - strip leadingl from twitter names 
 ####
 
 
@@ -33,6 +34,21 @@ def register(request, profile_callback=None):
     
     context = RequestContext(request)
     return render_to_response('registration/registration_form.html', { 'form': form }, context_instance=context)
+
+
+@login_required
+def public_profile(request, user_id):
+    usr = get_object_or_404(User, pk=user_id)
+    return render_to_response('registration/public_profile.html', 
+                            { 'usr': usr, 'profile': usr.get_profile() }, 
+                            context_instance=RequestContext(request))
+
+
+@login_required
+def current_user_profile(request):
+    return render_to_response('registration/current_user_profile.html', 
+                            { 'profile': request.user.get_profile() }, 
+                            context_instance=RequestContext(request))
 
 
 @login_required

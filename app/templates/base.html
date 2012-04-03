@@ -31,7 +31,8 @@
     </ul>
     <p class="pull-right">
     {% if user.is_authenticated %}
-      <a href="{% url auth_logout %}">Logout</a> | Logged in as <a href="#">{{ user.username }}</a>
+      <a href="{% url auth_logout %}">Logout</a> | 
+      Logged in as <a href="{% url current_user_profile %}">{{ user.username }}</a>
     {% else %}
       <a href="{% url auth_login %}">Login</a> | <a href="{% url registration_register %}">Register</a>
     {% endif %}

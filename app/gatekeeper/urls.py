@@ -6,8 +6,19 @@ from gatekeeper.views import register
 from gatekeeper.views import pending_registrations
 from gatekeeper.views import approve_pending_registrations
 from gatekeeper.views import delete_pending_registrations
+from gatekeeper.views import current_user_profile
+from gatekeeper.views import public_profile
 
 urlpatterns = patterns('',
+    url(r'^profile/$', current_user_profile, name='current_user_profile'),
+    url(r'^profile/(?P<user_id>\d+)$', public_profile, name='public_profile'),
+    url(r'^register/$', register, name='registration_register'),
+
+    url(r'^register/complete/$',
+       direct_to_template,
+       {'template': 'registration/registration_complete.html'},
+       name='registration_complete'),
+
     url(r'^registrations/pending/$', 
         pending_registrations, 
         name='pending_registrations'),
@@ -19,13 +30,6 @@ urlpatterns = patterns('',
     url(r'^registrations/pending/delete/(?P<user_id>\d+)$', 
         delete_pending_registrations, 
         name='delete_pending_registration'),
-
-    url(r'^register/$', register, name='registration_register'),
-
-    url(r'^register/complete/$',
-       direct_to_template,
-       {'template': 'registration/registration_complete.html'},
-       name='registration_complete'),
 
     url(r'^login/$', auth_views.login, {'template_name': 'registration/login.html'}, name='auth_login'),
     url(r'^logout/$', auth_views.logout, {'template_name': 'registration/logout.html'}, name='auth_logout'),
