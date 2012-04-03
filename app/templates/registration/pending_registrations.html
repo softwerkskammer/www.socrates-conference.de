@@ -9,7 +9,8 @@
     <tr>
       <th>Name</th>
       <th>Email</th>
-      <th>Action</th>
+      <th>Approve</th>
+      <th>Delete</th>
     </tr>
   </thead>
   <tbody>
@@ -22,7 +23,8 @@
             {% csrf_token %}
             <input type="submit" class="btn-success" value="Approve" />
           </form>
-
+        </td>
+        <td>
           <form method="POST" action="{% url delete_pending_registration reg.id %}">
             {% csrf_token %}
             <input type="submit" class="btn-primary btn-danger" value="Delete" />

@@ -1,16 +1,17 @@
-# CORE
+# CORE ... needs to be done to be used as production SoCraTes site
 
 * Theme Wiki & Remove superfluous functionality @done
 * add profile pages for users, along with extra info for them to fill out (e.g. Twitter handle, 
   technologies of interest etc)
+  * allow for subscribing to wiki changes via email
 * Add django-social-auth and needed templates (https://github.com/omab/django-social-auth)
-* Mailinglists
 * Allow for restricting page access to certain people
+
 * document how to setup a local dev env
 
 
 
-# EXTRAS
+# EXTRAS ... needed to be used as Softwerkskammer site
 
 * Implement page builder, to organize certain pages from different sources (Wiki, Calender) onto one page
 * Event Calendar (maybe based on https://github.com/eldarion/kairios)
