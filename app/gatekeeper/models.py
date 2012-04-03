@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 from social_auth.signals import socialauth_registered
 from gatekeeper.mail import send_moderation_notices
 
