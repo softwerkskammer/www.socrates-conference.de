@@ -1,5 +1,4 @@
 from django.conf.urls.defaults import patterns, include, url
-from django.views.generic.simple import redirect_to, direct_to_template
 from django.views.generic.base import TemplateView
 
 from django.contrib import admin
@@ -14,5 +13,5 @@ urlpatterns = patterns('',
     
     url(r'^accounts/', include('gatekeeper.urls')),
 
-    url(r'robots.txt', direct_to_template, {"template": "robots.txt"}),
+    url(r'robots.txt', TemplateView.as_view(template_name="robots.txt")),
 )
