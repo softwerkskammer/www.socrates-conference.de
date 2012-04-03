@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.utils.translation import ugettext_lazy as _
 
 from gatekeeper.mail import send_moderation_notices
+from gatekeeper.models import UserProfile
 
 
 attrs_dict = { 'class': 'required' }
@@ -28,7 +29,7 @@ class GatekeeperRegistrationForm(forms.Form):
                                 label=_(u'profession'))
     focus = forms.CharField(required=False, label=_(u'focus'))
     blog_url = forms.URLField(required=False, label=_(u'blog url'))
-    twitter_account = forms.CharField(required=False, label=_(u'twitter account'))
+    twitter_name = forms.CharField(required=False, label=_(u'twitter account'))
     
     def clean_username(self):
         """
@@ -69,15 +70,19 @@ class GatekeeperRegistrationForm(forms.Form):
         """
         """
         new_user = User.objects.create_user(self.cleaned_data['username'], 
-                self.cleaned_data['email'], 
-                self.cleaned_data['password1']
-            )
+                                            self.cleaned_data['email'], 
+                                            self.cleaned_data['password1'])
         new_user.first_name = self.cleaned_data['first_name']
         new_user.last_name = self.cleaned_data['last_name']
         new_user.is_active = False
         new_user.save()
         
-        ### FIXME registration_profile = self.create_profile(new_user)
+        UserProfile.objects.create(user=new_user,
+                                    focus=self.cleaned_data['focus'],
+                                    blog_url=self.cleaned_data['blog_url'],
+                                    twitter_name=self.cleaned_data['twitter_name'],
+                                    location=self.cleaned_data['location'],
+                                    profession=self.cleaned_data['profession'])
         
         send_moderation_notices(new_user)
         return new_user

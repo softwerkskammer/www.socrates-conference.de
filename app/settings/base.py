@@ -135,8 +135,8 @@ INSTALLED_APPS = (
     'gatekeeper',
 )
 
-ACCOUNT_ACTIVATION_DAYS = 7
 GATEKEEPER_MODERATOR_GROUP = 'socrate_admins'
+AUTH_PROFILE_MODULE = 'gatekeeper.UserProfile'
 
 from .social_auth_settings import *
 from .keys import *
