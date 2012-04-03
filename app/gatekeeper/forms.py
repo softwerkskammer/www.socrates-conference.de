@@ -72,6 +72,8 @@ class GatekeeperRegistrationForm(forms.Form):
                 self.cleaned_data['email'], 
                 self.cleaned_data['password1']
             )
+        new_user.first_name = self.cleaned_data['first_name']
+        new_user.last_name = self.cleaned_data['last_name']
         new_user.is_active = False
         new_user.save()
         
