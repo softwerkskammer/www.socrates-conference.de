@@ -17,6 +17,7 @@ from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
 
 from gatekeeper.forms import GatekeeperRegistrationForm
+from gatekeeper.mail import send_approval_notice
 
 
 def register(request, profile_callback=None):
@@ -51,7 +52,10 @@ def approve_pending_registrations(request, user_id):
     user = get_object_or_404(User, pk=user_id)
     user.is_active = True
     user.save()
+    
+    send_approval_notice(user)
     messages.info(request, u'User "%s" has been approved' % user.email)
+    
     return HttpResponseRedirect(reverse('pending_registrations'))
 
 

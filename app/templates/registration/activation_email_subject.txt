@@ -1,1 +1,1 @@
-Account registration for {{ site.name }}
+Account approval for {{ site.name }}

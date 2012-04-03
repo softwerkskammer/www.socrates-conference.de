@@ -1,0 +1,28 @@
+{{ new_user.first_name }} {{ new_user.last_name }} has requested to join {{ site.name }}
+
+
+Hi,
+
+{{ new_user.first_name }} {{ new_user.last_name }} ({{ new_user.email }}) has just requested to join {{ site.name }}.
+
+To process this request go to:
+{% url pending_registrations %}
+
+This applicant provided the following responses:
+
+Twitter Name: 
+{{ profile.twitter_name }} 
+
+Location in Germany: 
+{{ profile.location }} 
+
+Profession: 
+{{ profile.profession }} 
+
+Focus: 
+{{ profile.focus }} 
+
+Blog: 
+{{ profile.blog_url }} 
+
+Cheers, the-automagical-super-duper-mail-bot
