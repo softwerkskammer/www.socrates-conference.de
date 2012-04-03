@@ -23,10 +23,7 @@
             </form>
         </div>
         <div class="span5">
-            <h2>OAuth login</h2>
-            <div>
-                <a class="btn" href="{% url socialauth_begin 'twitter' %}">Twitter</a>
-            </div>
+            {% include "registration/oauth.html" %}
         </div>
     </div>
 {% endblock %}
