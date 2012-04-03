@@ -38,7 +38,7 @@ def register(request, profile_callback=None):
 
 
 @login_required
-@user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() == 0)
+@user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() > 0)
 def pending_registrations(request):
     pending_users = User.objects.filter(is_active=False)
     context = RequestContext(request)
@@ -49,7 +49,7 @@ def pending_registrations(request):
 
 
 @login_required
-@user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() == 0)
+@user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() > 0)
 def approve_pending_registrations(request, user_id):
     user = get_object_or_404(User, pk=user_id)
     user.is_active = True
@@ -59,7 +59,7 @@ def approve_pending_registrations(request, user_id):
 
 
 @login_required
-@user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() == 0)
+@user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() > 0)
 def delete_pending_registrations(request, user_id):
     user = get_object_or_404(User, pk=user_id)
     user.delete()
