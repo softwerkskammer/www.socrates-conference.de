@@ -78,11 +78,11 @@ class GatekeeperRegistrationForm(forms.Form):
         new_user.save()
 
         user_profile = new_user.get_profile()
-        user_profile.focus=self.cleaned_data['focus']
-        user_profile.blog_url=self.cleaned_data['blog_url'],
-        user_profile.twitter_name=self.cleaned_data['twitter_name'],
-        user_profile.location=self.cleaned_data['location'],
-        user_profile.profession=self.cleaned_data['profession']
+        user_profile.focus = self.cleaned_data['focus']
+        user_profile.blog_url = self.cleaned_data['blog_url']
+        user_profile.twitter_name = self.cleaned_data['twitter_name']
+        user_profile.location = self.cleaned_data['location']
+        user_profile.profession = self.cleaned_data['profession']
         user_profile.save()
         
         send_moderation_notices(new_user)
