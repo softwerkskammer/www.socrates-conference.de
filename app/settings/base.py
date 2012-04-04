@@ -135,6 +135,10 @@ INSTALLED_APPS = (
     'gatekeeper',
 )
 
+FIXTURE_DIRS = (
+    'fixtures', 
+)
+
 GATEKEEPER_MODERATOR_GROUP = 'socrate_admins'
 AUTH_PROFILE_MODULE = 'gatekeeper.UserProfile'
 

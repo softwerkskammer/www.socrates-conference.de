@@ -1,0 +1,424 @@
+[{
+    "pk": 1,
+    "model": "sites.site",
+    "fields": {
+        "domain": "scrts-conf-stage.ep.io",
+        "name": "scrts-conf-stage.ep.io"
+    }
+},
+{
+    "pk": 2,
+    "model": "sites.site",
+    "fields": {
+        "domain": "www.socrates-conference.de",
+        "name": "www.socrates-conference.de"
+    }
+},
+{
+    "pk": 4,
+    "model": "wakawaka.wikipage",
+    "fields": {
+        "object_id": null,
+        "content_type": null,
+        "slug": "CssTest",
+        "modified": "2012-03-04 20:08:27",
+        "created": "2012-03-04 20:08:27"
+    }
+},
+{
+    "pk": 2,
+    "model": "wakawaka.wikipage",
+    "fields": {
+        "object_id": null,
+        "content_type": null,
+        "slug": "HomePageZwei",
+        "modified": "2012-03-02 23:38:55",
+        "created": "2012-03-02 23:38:55"
+    }
+},
+{
+    "pk": 3,
+    "model": "wakawaka.wikipage",
+    "fields": {
+        "object_id": null,
+        "content_type": null,
+        "slug": "SessionIncubator",
+        "modified": "2012-03-04 20:04:03",
+        "created": "2012-03-04 20:04:03"
+    }
+},
+{
+    "pk": 1,
+    "model": "wakawaka.wikipage",
+    "fields": {
+        "object_id": null,
+        "content_type": null,
+        "slug": "WikiIndex",
+        "modified": "2012-03-02 00:57:50",
+        "created": "2012-03-02 00:57:50"
+    }
+},
+{
+    "pk": 28,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:109.193.168.231",
+        "created": "2012-04-04 00:53:00",
+        "creator": 5,
+        "modified": "2012-04-04 00:53:00",
+        "content": "## What?\r\n\r\nThis event is about the sustainable creation of useful software in a responsible way.\r\n\r\nIt consists of two days of highly collaborative interactions, including Lightning Talks (on Thursday evening), scheduled sessions (on Friday), and a self-organized Open Space (on Saturday). The event will be much like a retreat. \r\nWe will be there for 48 hours to collaborate and share ideas.\r\n\r\nFurthermore, the conference is followed by a [Code Retreat](http://coderetreat.org/) on Sunday August 5th.\r\n\r\nFollow [@socrates_2012](http://twitter.com/socrates_2012) on Twitter, to stay up-to-date.\r\n\r\n## When?\r\n\r\n**August 2-5 2012**\r\n\r\nMore precisely:  \r\nThe SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.\r\nThe conference is followed by a Code Retreat on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.\r\n\r\nHomePageZwei   \r\nSessionIncubator   \r\nCssTest",
+        "message": "",
+        "page": 1
+    }
+},
+{
+    "pk": 27,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:109.193.168.231",
+        "created": "2012-04-04 00:52:40",
+        "creator": 5,
+        "modified": "2012-04-04 00:52:40",
+        "content": "## What?\r\n\r\nThis event is about the sustainable creation of useful software in a responsible way.\r\n\r\nIt consists of two days of highly collaborative interactions, including Lightning Talks (on Thursday evening), scheduled sessions (on Friday), and a self-organized Open Space (on Saturday). The event will be much like a retreat. \r\nWe will be there for 48 hours to collaborate and share ideas.\r\n\r\nFurthermore, the conference is followed by a [Code Retreat](http://coderetreat.org/) on Sunday August 5th.\r\n\r\nFollow [@socrates_2012](http://twitter.com/socrates_2012) on Twitter, to stay up-to-date.\r\n\r\n## When?\r\n\r\n**August 2-5 2012**\r\n\r\nMore precisely:  \r\nThe \\SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.\r\nThe conference is followed by a Code Retreat on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.\r\n\r\nHomePageZwei   \r\nSessionIncubator   \r\nCssTest",
+        "message": "",
+        "page": 1
+    }
+},
+{
+    "pk": 26,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:109.193.168.231",
+        "created": "2012-04-04 00:52:30",
+        "creator": 5,
+        "modified": "2012-04-04 00:52:30",
+        "content": "## What?\r\n\r\nThis event is about the sustainable creation of useful software in a responsible way.\r\n\r\nIt consists of two days of highly collaborative interactions, including Lightning Talks (on Thursday evening), scheduled sessions (on Friday), and a self-organized Open Space (on Saturday). The event will be much like a retreat. \r\nWe will be there for 48 hours to collaborate and share ideas.\r\n\r\nFurthermore, the conference is followed by a [Code Retreat](http://coderetreat.org/) on Sunday August 5th.\r\n\r\nFollow [@socrates_2012](http://twitter.com/socrates_2012) on Twitter, to stay up-to-date.\r\n\r\n## When?\r\n\r\n**August 2-5 2012**\r\n\r\nMore precisely:  \r\nThe !SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.\r\nThe conference is followed by a Code Retreat on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.\r\n\r\nHomePageZwei   \r\nSessionIncubator   \r\nCssTest",
+        "message": "",
+        "page": 1
+    }
+},
+{
+    "pk": 25,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 21:43:28",
+        "creator": 7,
+        "modified": "2012-03-04 21:43:28",
+        "content": "This page is used to generate and collect ideas for sessions to be held at SoCraTes 2012. In addition, participants interested in hosting a session can find support of like-minded people to prepare and facilitate the session together.\r\n\r\n## How does it work?\r\n\r\n*Adding a session*: If you have a session idea please grab the Wiki source code of the template from below, copy it, and add your session to the list at the bottom.   \r\n*Expressing interest in a session*: If you are interested in a session on the list, please add your name to the list of Interested people of this session. Please also think about how you could contribute and put your contribution in parentheses after your name.\r\n\r\n\r\n\r\n---\r\n\r\n## Template\r\n\r\n### Session Title\r\n\r\nSession Description ...\r\n\r\n*Session host:* YOUR NAME HERE   \r\n*Need help?* YES/NO   \r\n*Interested*: ...\r\n\r\n---\r\n\r\n## Session Ideas\r\n\r\n...\r\n\r\n",
+        "message": "",
+        "page": 3
+    }
+},
+{
+    "pk": 24,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 21:26:41",
+        "creator": 7,
+        "modified": "2012-03-04 21:26:41",
+        "content": "This page is used to generate and collect ideas for sessions to be held at SoCraTes 2012. In addition, participants interested in hosting a session can find support of like-minded people to prepare and facilitate the session together.\r\n\r\n## How does it work?\r\n\r\n*Adding a session*: If you have a session idea please grab the Wiki source code of the template from below, copy it, and add your session to the list at the bottom.   \r\n*Expressing interest in a session*: If you are interested in a session on the list, please add your name to the list of `Interested` people of this session. Please also think about how you could contribute and put your contribution in parentheses after your name.\r\n\r\n\r\n\r\n---\r\n\r\n## Template\r\n\r\n### Session Title\r\n\r\nSession Description ...\r\n\r\n*Session host:* YOUR NAME HERE   \r\n*Need help?* YES/NO   \r\n*Interested*: ...\r\n\r\n---\r\n\r\n## Session Ideas\r\n\r\n...\r\n\r\n",
+        "message": "",
+        "page": 3
+    }
+},
+{
+    "pk": 23,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 21:26:34",
+        "creator": 7,
+        "modified": "2012-03-04 21:26:34",
+        "content": "This page is used to generate and collect ideas for sessions to be held at !SoCraTes 2012. In addition, participants interested in hosting a session can find support of like-minded people to prepare and facilitate the session together.\r\n\r\n## How does it work?\r\n\r\n*Adding a session*: If you have a session idea please grab the Wiki source code of the template from below, copy it, and add your session to the list at the bottom.   \r\n*Expressing interest in a session*: If you are interested in a session on the list, please add your name to the list of `Interested` people of this session. Please also think about how you could contribute and put your contribution in parentheses after your name.\r\n\r\n\r\n\r\n---\r\n\r\n## Template\r\n\r\n### Session Title\r\n\r\nSession Description ...\r\n\r\n*Session host:* YOUR NAME HERE   \r\n*Need help?* YES/NO   \r\n*Interested*: ...\r\n\r\n---\r\n\r\n## Session Ideas\r\n\r\n...\r\n\r\n",
+        "message": "",
+        "page": 3
+    }
+},
+{
+    "pk": 22,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 21:26:15",
+        "creator": 7,
+        "modified": "2012-03-04 21:26:15",
+        "content": "This page is used to generate and collect ideas for sessions to be held at SoCraTes 2012. In addition, participants interested in hosting a session can find support of like-minded people to prepare and facilitate the session together.\r\n\r\n## How does it work?\r\n\r\n*Adding a session*: If you have a session idea please grab the Wiki source code of the template from below, copy it, and add your session to the list at the bottom.   \r\n*Expressing interest in a session*: If you are interested in a session on the list, please add your name to the list of `Interested` people of this session. Please also think about how you could contribute and put your contribution in parentheses after your name.\r\n\r\n\r\n\r\n---\r\n\r\n## Template\r\n\r\n### Session Title\r\n\r\nSession Description ...\r\n\r\n*Session host:* YOUR NAME HERE   \r\n*Need help?* YES/NO   \r\n*Interested*: ...\r\n\r\n---\r\n\r\n## Session Ideas\r\n\r\n...\r\n\r\n",
+        "message": "",
+        "page": 3
+    }
+},
+{
+    "pk": 21,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 20:14:34",
+        "creator": 7,
+        "modified": "2012-03-04 20:14:34",
+        "content": "This page is used to generate and collect ideas for sessions to be held at SoCraTes 2012. In addition, participants interested in hosting a session can find support of like-minded people to prepare and facilitate the session together.\r\n\r\n## How does it work?\r\n\r\n*Adding a session*: If you have a session idea please grab the Wiki source code of the template from below, copy it, and add your session to the list at the bottom.   \r\n*Expressing interest in a session*: If you are interested in a session on the list, please add your name to the list of `Interested` people of this session. Please also think about how you could contribute and put your contribution in parentheses after your name.\r\n\r\n\r\n\r\n---\r\n\r\n## Template\r\n\r\n### Session Title\r\n\r\nSession Description ...\r\n\r\n*Session host:* YOUR NAME HERE   \r\n*Need help?* YES/NO   \r\n*Interested*: ...\r\n\r\n---\r\n\r\n",
+        "message": "",
+        "page": 3
+    }
+},
+{
+    "pk": 20,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 20:13:42",
+        "creator": 7,
+        "modified": "2012-03-04 20:13:42",
+        "content": "This page is used to generate and collect ideas for sessions to be held at SoCraTes 2012. In addition, participants interested in hosting a session can find support of like-minded people to prepare and facilitate the session together.\r\n\r\n## How does it work?\r\n\r\n*Adding a session*: If you have a session idea please grab the template from below, copy it, and add your session to the list at the bottom.   \r\n*Expressing interest in a session*: If you are interested in a session on the list, please add your name to the list of `Interested` people of this session. Please also think about how you could contribute and put your contribution in parentheses after your name.\r\n\r\n\r\n\r\n---\r\n\r\n## Template\r\n\r\n### Session Title\r\n\r\nSession Description ...\r\n\r\n*Session host:* YOUR NAME HERE   \r\n*Need help?* YES/NO   \r\n*Interested*: ...\r\n\r\n---\r\n\r\n",
+        "message": "",
+        "page": 3
+    }
+},
+{
+    "pk": 19,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 20:12:43",
+        "creator": 7,
+        "modified": "2012-03-04 20:12:43",
+        "content": "This page is used to generate and collect ideas for sessions to be held at SoCraTes 2012. In addition, participants interested in hosting a session can find support of like-minded people to prepare and facilitate the session together.\r\n\r\n## How does it work?\r\n\r\n*Adding a session*: If you have a session idea please grab the template from below, copy it, and add your session to the list at the bottom.   \r\n*Expressing interest in a session*: If you are interested in a session on the list, please add your name to the list of `Interested` people of this session. Please also think about how you could contribute and put your contribution in parentheses after your name.\r\n\r\n\r\n\r\n---\r\n\r\n## Template\r\n\r\n### Session Title\r\n\r\nSession Description ...\r\n\r\n*Need help?* YES/NO   \r\n*Interested*: ...\r\n\r\n---\r\n\r\n",
+        "message": "",
+        "page": 3
+    }
+},
+{
+    "pk": 18,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 20:09:15",
+        "creator": 7,
+        "modified": "2012-03-04 20:09:15",
+        "content": "This page is used to generate and collect ideas for sessions to be held at SoCraTes 2012. In addition, participants interested in hosting a session can find support of like-minded people to prepare and facilitate the session together.\r\n\r\n---\r\n\r\n## Template\r\n\r\n### Session Title\r\n\r\nSession Description ...\r\n\r\n*Need help?* YES/NO   \r\n*Interested*: ...\r\n\r\n---\r\n\r\n",
+        "message": "",
+        "page": 3
+    }
+},
+{
+    "pk": 17,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 20:08:27",
+        "creator": 7,
+        "modified": "2012-03-04 20:08:27",
+        "content": "# H1\r\n\r\n## H2\r\n\r\n### H3\r\n\r\n#### H4\r\n\r\n##### H5",
+        "message": "Initial revision",
+        "page": 4
+    }
+},
+{
+    "pk": 16,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 20:07:55",
+        "creator": 7,
+        "modified": "2012-03-04 20:07:55",
+        "content": "## What?\r\n\r\nThis event is about the sustainable creation of useful software in a responsible way.\r\n\r\nIt consists of two days of highly collaborative interactions, including Lightning Talks (on Thursday evening), scheduled sessions (on Friday), and a self-organized Open Space (on Saturday). The event will be much like a retreat. \r\nWe will be there for 48 hours to collaborate and share ideas.\r\n\r\nFurthermore, the conference is followed by a [Code Retreat](http://coderetreat.org/) on Sunday August 5th.\r\n\r\nFollow [@socrates_2012](http://twitter.com/socrates_2012) on Twitter, to stay up-to-date.\r\n\r\n## When?\r\n\r\n**August 2-5 2012**\r\n\r\nMore precisely:  \r\nThe SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.\r\nThe conference is followed by a Code Retreat on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.\r\n\r\nHomePageZwei   \r\nSessionIncubator   \r\nCssTest",
+        "message": "",
+        "page": 1
+    }
+},
+{
+    "pk": 15,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 20:06:23",
+        "creator": 7,
+        "modified": "2012-03-04 20:06:23",
+        "content": "This page is used to generate and collect ideas for sessions to be held at SoCraTes 2012. In addition, participants interested in hosting a session can find support of like-minded people to prepare and facilitate the session together.\r\n\r\n---\r\n\r\n### Template\r\n\r\n#### Session Title\r\n\r\nSession Description ...\r\n\r\n*Need help?* YES/NO   \r\n*Interested*: ...\r\n\r\n---\r\n\r\n",
+        "message": "",
+        "page": 3
+    }
+},
+{
+    "pk": 14,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 20:06:13",
+        "creator": 7,
+        "modified": "2012-03-04 20:06:13",
+        "content": "This page is used to generate and collect ideas for sessions to be held at SoCraTes 2012. In addition, participants interested in hosting a session can find support of like-minded people to prepare and facilitate the session together.\r\n\r\n---\r\n\r\n### Template\r\n\r\n#### Session Title\r\n\r\nSession Description ...\r\n\r\n*Need help?* YES/NO\r\n*Interested*: ...\r\n\r\n---\r\n\r\n",
+        "message": "",
+        "page": 3
+    }
+},
+{
+    "pk": 13,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 20:04:36",
+        "creator": 7,
+        "modified": "2012-03-04 20:04:36",
+        "content": "\r\nThis page is used to generate and collect ideas for sessions to be held at SoCraTes 2012. In addition, participants interested in hosting a session can find support of like-minded people to prepare and facilitate the session together.\r\n\r\n---\r\n\r\n### Template\r\n\r\n---\r\n\r\n",
+        "message": "",
+        "page": 3
+    }
+},
+{
+    "pk": 12,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 20:04:03",
+        "creator": 7,
+        "modified": "2012-03-04 20:04:03",
+        "content": "# Session Incubator\r\n\r\nThis page is used to generate and collect ideas for sessions to be held at SoCraTes 2012. In addition, participants interested in hosting a session can find support of like-minded people to prepare and facilitate the session together.\r\n\r\n---\r\n\r\n### Template\r\n\r\n---\r\n\r\n",
+        "message": "Initial revision",
+        "page": 3
+    }
+},
+{
+    "pk": 11,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:78.53.209.84",
+        "created": "2012-03-04 20:00:31",
+        "creator": 7,
+        "modified": "2012-03-04 20:00:31",
+        "content": "## What?\r\n\r\nThis event is about the sustainable creation of useful software in a responsible way.\r\n\r\nIt consists of two days of highly collaborative interactions, including Lightning Talks (on Thursday evening), scheduled sessions (on Friday), and a self-organized Open Space (on Saturday). The event will be much like a retreat. \r\nWe will be there for 48 hours to collaborate and share ideas.\r\n\r\nFurthermore, the conference is followed by a [Code Retreat](http://coderetreat.org/) on Sunday August 5th.\r\n\r\nFollow [@socrates_2012](http://twitter.com/socrates_2012) on Twitter, to stay up-to-date.\r\n\r\n## When?\r\n\r\n**August 2-5 2012**\r\n\r\nMore precisely:  \r\nThe SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.\r\nThe conference is followed by a Code Retreat on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.\r\n\r\nHomePageZwei   \r\nSessionIncubator",
+        "message": "",
+        "page": 1
+    }
+},
+{
+    "pk": 10,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:109.193.168.231",
+        "created": "2012-03-02 23:45:33",
+        "creator": 6,
+        "modified": "2012-03-02 23:45:33",
+        "content": "<div class=\"container\">\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"twelve columns alpha\">\r\n\t\t\t\t\t<h1 class=\"remove-bottom\" style=\"margin-top: 40px\">\r\n\t\t\t\t\t\tSoCraTes 2012\r\n\t\t\t\t\t</h1>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\t2nd International Software Craftsmanship and Testing Conference in Germany\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<hr>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tAugust 2-4 2012, R\u00fcckersbach, Code Retreat on August 5\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"four columns omega\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"five columns alpha\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhat?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThis event is about the sustainable creation of useful software in a responsible way.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThere will be two days of \r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t<ul class=\"square\">\r\n\t\t\t\t\t\t\t<li>highly collaborative interactions</li>\r\n\t\t\t\t\t\t\t<li>lightning talks</li>\r\n\t\t\t\t\t\t\t<li>self-organized Open Space</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t <p>The event will be much like a retreat. We will be there for 48 hours to collaborate and share ideas.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhen?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<strong>August 2-4 2012</strong>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<h5>\r\n\t\t\t\t\t\tMore precisely:\r\n\t\t\t\t\t</h5>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThe SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.</p><p>\r\n\t\t\t\t\t\tThe conference is followed by a <a href=\"http://coderetreat.org/\" target=\"_blank\">Code Retreat</a> on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns omega\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhere?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tOut in the country, at the lovely <a href=\"http://www.natuerlich-tagen.de/\" title=\"Herzlich Willkommen im SeminarZentrum R\u00fcckersbach\" target=\"_blank\">Seminarzentrum R\u00fcckersbach</a> (German only website), one hour from Frankfurt (Main) airport.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThere you will get your room and the event will happen there. We will rent the whole facility, so we can concentrate on what we like to do most.\r\n\t\t\t\t\t</p>\r\n<h5>\t\t\t\t\t\tVenue Address:</h5>\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<a href=\"http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;view=map&amp;msa=0&amp;msid=206926470279237889880.00049eb6308bf704e3a2f&amp;ll=50.058902,8.831635&amp;spn=0.297117,0.727158&amp;z=11\" target=\"_blank\">Kolpingstra\u00dfe 1, 63867 Johannesberg</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"five columns alpha\">\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tWho should come?\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tEveryone who is concerned with coding, testing, code quality, software craftsmanship...\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<ul class=\"square\">\r\n\t\t\t\t\t\t<li>For you, coding is more than writing text in an editor.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>For you, testing is more than ensuring quality.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>For you, testing is more than executing given scenarios.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns\">\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tHow?\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tRun as a non-profit, low-cost, community-organized event. Brought to you as a joint-effort of all <a href=\"http://softwerkskammer.de\" target=\"_blank\">Softwerkskammer</a> groups, the community of all German Software Craftsmanship groups.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tFacilitation will be in English, sessions in other languages are welcome.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns omega\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tSponsorship\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tWe would appreciate support by sponsoring the event.\r\n\t\t\t\t\t\tIf you'd like to support the SoCraTes conference 2012, see our <a href=\"sponsorship-flyer.pdf\" target=\"_blank\">Sponsorship Flyer</a> for our sponsorship package.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tContact\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tFollow <a href=\"http://twitter.com/socrates_2012\" target=\"_blank\">@socrates_2012</a> on Twitter, to stay up-to-date.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<strong>Email: </strong><a href=\"mailto:info@socrates-conference.de\">info@socrates-conference.de</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>",
+        "message": "",
+        "page": 2
+    }
+},
+{
+    "pk": 9,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:109.193.168.231",
+        "created": "2012-03-02 23:45:05",
+        "creator": 6,
+        "modified": "2012-03-02 23:45:05",
+        "content": "<div class=\"container\">\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"twelve columns alpha\">\r\n\t\t\t\t\t<h1 class=\"remove-bottom\" style=\"margin-top: 40px\">\r\n\t\t\t\t\t\tSoCraTes 2012\r\n\t\t\t\t\t</h1>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\t2nd International Software Craftsmanship and Testing Conference in Germany\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<hr>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tAugust 2-4 2012, R\u00fcckersbach, Code Retreat on August 5\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"four columns omega\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"five columns alpha\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhat?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThis event is about the sustainable creation of useful software in a responsible way.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThere will be two days of \r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t<ul class=\"square\">\r\n\t\t\t\t\t\t\t<li>highly collaborative interactions</li>\r\n\t\t\t\t\t\t\t<li>lightning talks</li>\r\n\t\t\t\t\t\t\t<li>self-organized Open Space</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t <p>The event will be much like a retreat. We will be there for 48 hours to collaborate and share ideas.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhen?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<strong>August 2-4 2012</strong>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<h5>\r\n\t\t\t\t\t\tMore precisely:\r\n\t\t\t\t\t</h5>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThe SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.</p><p>\r\n\t\t\t\t\t\tThe conference is followed by a <a href=\"http://coderetreat.org/\" target=\"_blank\">Code Retreat</a> on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns omega\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhere?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tOut in the country, at the lovely <a href=\"http://www.natuerlich-tagen.de/\" title=\"Herzlich Willkommen im SeminarZentrum R\u00fcckersbach\" target=\"_blank\">Seminarzentrum R\u00fcckersbach</a> (German only website), one hour from Frankfurt (Main) airport.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThere you will get your room and the event will happen there. We will rent the whole facility, so we can concentrate on what we like to do most.\r\n\t\t\t\t\t</p>\r\n<h5>\t\t\t\t\t\tVenue Address:</h5>\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<a href=\"http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;view=map&amp;msa=0&amp;msid=206926470279237889880.00049eb6308bf704e3a2f&amp;ll=50.058902,8.831635&amp;spn=0.297117,0.727158&amp;z=11\" target=\"_blank\">Kolpingstra\u00dfe 1, 63867 Johannesberg</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"five columns alpha\">\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tWho should come?\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tEveryone who is concerned with coding, testing, code quality, software craftsmanship...\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<ul class=\"square\">\r\n\t\t\t\t\t\t<li>For you, coding is more than writing text in an editor.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>For you, testing is more than ensuring quality.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>For you, testing is more than executing given scenarios.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns\">\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tHow?\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tRun as a non-profit, low-cost, community-organized event. Brought to you as a joint-effort of all <a href=\"http://softwerkskammer.de\" target=\"_blank\">Softwerkskammer</a> groups, the community of all German Software Craftsmanship groups.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tFacilitation will be in English, sessions in other languages are welcome.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns omega\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tSponsorship\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tWe would appreciate support by sponsoring the event.\r\n\t\t\t\t\t\tIf you'd like to support the SoCraTes conference 2012, see our <a href=\"sponsorship-flyer.pdf\" target=\"_blank\">Sponsorship Flyer</a> for our sponsorship package.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tContact\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tFollow <a href=\"http://twitter.com/socrates_2012\" target=\"_blank\">@socrates_2012</a> on Twitter, to stay up-to-date.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<strong>Email: </strong><a href=\"mailto:info@socrates-conference.de\">info@socrates-conference.de</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div><!-- container -->\r\n\t\t\t\t\t<!-- JS\r\n\t\t\t================================================== -->\r\n\t\t\t\t\t<script src=\"http://code.jquery.com/jquery-1.7.1.min.js\" type=\"text/javascript\">\r\n\t\t</script><script src=\"javascripts/tabs.js\" type=\"text/javascript\">\r\n\t\t</script><!-- End Document\r\n\t\t================================================== -->\r\n",
+        "message": "",
+        "page": 2
+    }
+},
+{
+    "pk": 8,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:109.193.168.231",
+        "created": "2012-03-02 23:41:10",
+        "creator": 6,
+        "modified": "2012-03-02 23:41:10",
+        "content": "<div class=\"container\">\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"twelve columns alpha\">\r\n\t\t\t\t\t<h1 class=\"remove-bottom\" style=\"margin-top: 40px\">\r\n\t\t\t\t\t\tSoCraTes 2012\r\n\t\t\t\t\t</h1>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\t2nd International Software Craftsmanship and Testing Conference in Germany\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<hr>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tAugust 2-4 2012, R\u00fcckersbach, Code Retreat on August 5\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"four columns omega\">\r\n\t\t\t\t\t<img style=\"margin-top: 20px\" src=\"images/socrates2012_logo_40perc.png\" alt=\"SoCraTes Conference 2012 - Software Craftsmanship and Testing\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"five columns alpha\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhat?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThis event is about the sustainable creation of useful software in a responsible way.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThere will be two days of \r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t<ul class=\"square\">\r\n\t\t\t\t\t\t\t<li>highly collaborative interactions</li>\r\n\t\t\t\t\t\t\t<li>lightning talks</li>\r\n\t\t\t\t\t\t\t<li>self-organized Open Space</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t <p>The event will be much like a retreat. We will be there for 48 hours to collaborate and share ideas.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhen?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<strong>August 2-4 2012</strong>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<h5>\r\n\t\t\t\t\t\tMore precisely:\r\n\t\t\t\t\t</h5>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThe SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.</p><p>\r\n\t\t\t\t\t\tThe conference is followed by a <a href=\"http://coderetreat.org/\" target=\"_blank\">Code Retreat</a> on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns omega\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhere?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tOut in the country, at the lovely <a href=\"http://www.natuerlich-tagen.de/\" title=\"Herzlich Willkommen im SeminarZentrum R\u00fcckersbach\" target=\"_blank\">Seminarzentrum R\u00fcckersbach</a> (German only website), one hour from Frankfurt (Main) airport.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThere you will get your room and the event will happen there. We will rent the whole facility, so we can concentrate on what we like to do most.\r\n\t\t\t\t\t</p>\r\n<h5>\t\t\t\t\t\tVenue Address:</h5>\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<a href=\"http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;view=map&amp;msa=0&amp;msid=206926470279237889880.00049eb6308bf704e3a2f&amp;ll=50.058902,8.831635&amp;spn=0.297117,0.727158&amp;z=11\" target=\"_blank\">Kolpingstra\u00dfe 1, 63867 Johannesberg</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"five columns alpha\">\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tWho should come?\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tEveryone who is concerned with coding, testing, code quality, software craftsmanship...\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<ul class=\"square\">\r\n\t\t\t\t\t\t<li>For you, coding is more than writing text in an editor.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>For you, testing is more than ensuring quality.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>For you, testing is more than executing given scenarios.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns\">\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tHow?\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tRun as a non-profit, low-cost, community-organized event. Brought to you as a joint-effort of all <a href=\"http://softwerkskammer.de\" target=\"_blank\">Softwerkskammer</a> groups, the community of all German Software Craftsmanship groups.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tFacilitation will be in English, sessions in other languages are welcome.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns omega\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tSponsorship\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tWe would appreciate support by sponsoring the event.\r\n\t\t\t\t\t\tIf you'd like to support the SoCraTes conference 2012, see our <a href=\"sponsorship-flyer.pdf\" target=\"_blank\">Sponsorship Flyer</a> for our sponsorship package.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tContact\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tFollow <a href=\"http://twitter.com/socrates_2012\" target=\"_blank\">@socrates_2012</a> on Twitter, to stay up-to-date.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<strong>Email: </strong><a href=\"mailto:info@socrates-conference.de\">info@socrates-conference.de</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div><!-- container -->\r\n\t\t\t\t\t<!-- JS\r\n\t\t\t================================================== -->\r\n\t\t\t\t\t<script src=\"http://code.jquery.com/jquery-1.7.1.min.js\" type=\"text/javascript\">\r\n\t\t</script><script src=\"javascripts/tabs.js\" type=\"text/javascript\">\r\n\t\t</script><!-- End Document\r\n\t\t================================================== -->\r\n",
+        "message": "",
+        "page": 2
+    }
+},
+{
+    "pk": 7,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:109.193.168.231",
+        "created": "2012-03-02 23:40:31",
+        "creator": 6,
+        "modified": "2012-03-02 23:40:31",
+        "content": "\t\t<div class=\"container\">\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"twelve columns alpha\">\r\n\t\t\t\t\t<h1 class=\"remove-bottom\" style=\"margin-top: 40px\">\r\n\t\t\t\t\t\tSoCraTes 2012\r\n\t\t\t\t\t</h1>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\t2nd International Software Craftsmanship and Testing Conference in Germany\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<hr>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tAugust 2-4 2012, R\u00fcckersbach, Code Retreat on August 5\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"four columns omega\">\r\n\t\t\t\t\t<img style=\"margin-top: 20px\" src=\"images/socrates2012_logo_40perc.png\" alt=\"SoCraTes Conference 2012 - Software Craftsmanship and Testing\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"five columns alpha\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhat?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThis event is about the sustainable creation of useful software in a responsible way.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThere will be two days of \r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t<ul class=\"square\">\r\n\t\t\t\t\t\t\t<li>highly collaborative interactions</li>\r\n\t\t\t\t\t\t\t<li>lightning talks</li>\r\n\t\t\t\t\t\t\t<li>self-organized Open Space</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t <p>The event will be much like a retreat. We will be there for 48 hours to collaborate and share ideas.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhen?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<strong>August 2-4 2012</strong>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<h5>\r\n\t\t\t\t\t\tMore precisely:\r\n\t\t\t\t\t</h5>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThe SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.</p><p>\r\n\t\t\t\t\t\tThe conference is followed by a <a href=\"http://coderetreat.org/\" target=\"_blank\">Code Retreat</a> on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns omega\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhere?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tOut in the country, at the lovely <a href=\"http://www.natuerlich-tagen.de/\" title=\"Herzlich Willkommen im SeminarZentrum R\u00fcckersbach\" target=\"_blank\">Seminarzentrum R\u00fcckersbach</a> (German only website), one hour from Frankfurt (Main) airport.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThere you will get your room and the event will happen there. We will rent the whole facility, so we can concentrate on what we like to do most.\r\n\t\t\t\t\t</p>\r\n<h5>\t\t\t\t\t\tVenue Address:</h5>\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<a href=\"http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;view=map&amp;msa=0&amp;msid=206926470279237889880.00049eb6308bf704e3a2f&amp;ll=50.058902,8.831635&amp;spn=0.297117,0.727158&amp;z=11\" target=\"_blank\">Kolpingstra\u00dfe 1, 63867 Johannesberg</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"five columns alpha\">\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tWho should come?\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tEveryone who is concerned with coding, testing, code quality, software craftsmanship...\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<ul class=\"square\">\r\n\t\t\t\t\t\t<li>For you, coding is more than writing text in an editor.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>For you, testing is more than ensuring quality.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>For you, testing is more than executing given scenarios.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns\">\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tHow?\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tRun as a non-profit, low-cost, community-organized event. Brought to you as a joint-effort of all <a href=\"http://softwerkskammer.de\" target=\"_blank\">Softwerkskammer</a> groups, the community of all German Software Craftsmanship groups.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tFacilitation will be in English, sessions in other languages are welcome.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns omega\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tSponsorship\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tWe would appreciate support by sponsoring the event.\r\n\t\t\t\t\t\tIf you'd like to support the SoCraTes conference 2012, see our <a href=\"sponsorship-flyer.pdf\" target=\"_blank\">Sponsorship Flyer</a> for our sponsorship package.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tContact\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tFollow <a href=\"http://twitter.com/socrates_2012\" target=\"_blank\">@socrates_2012</a> on Twitter, to stay up-to-date.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<strong>Email: </strong><a href=\"mailto:info@socrates-conference.de\">info@socrates-conference.de</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div><!-- container -->\r\n\t\t\t\t\t<!-- JS\r\n\t\t\t================================================== -->\r\n\t\t\t\t\t<script src=\"http://code.jquery.com/jquery-1.7.1.min.js\" type=\"text/javascript\">\r\n\t\t</script><script src=\"javascripts/tabs.js\" type=\"text/javascript\">\r\n\t\t</script><!-- End Document\r\n\t\t================================================== -->\r\n",
+        "message": "",
+        "page": 2
+    }
+},
+{
+    "pk": 6,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:109.193.168.231",
+        "created": "2012-03-02 23:38:55",
+        "creator": 6,
+        "modified": "2012-03-02 23:38:55",
+        "content": "\t\t<!-- Primary Page Layout\r\n\t================================================== -->\r\n\t\t<!-- Delete everything in this .container and get started on your own site! -->\r\n\t\t<div class=\"container\">\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"twelve columns alpha\">\r\n\t\t\t\t\t<h1 class=\"remove-bottom\" style=\"margin-top: 40px\">\r\n\t\t\t\t\t\tSoCraTes 2012\r\n\t\t\t\t\t</h1>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\t2nd International Software Craftsmanship and Testing Conference in Germany\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<hr>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tAugust 2-4 2012, R\u00fcckersbach, Code Retreat on August 5\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"four columns omega\">\r\n\t\t\t\t\t<img style=\"margin-top: 20px\" src=\"images/socrates2012_logo_40perc.png\" alt=\"SoCraTes Conference 2012 - Software Craftsmanship and Testing\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"five columns alpha\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhat?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThis event is about the sustainable creation of useful software in a responsible way.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThere will be two days of \r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t<ul class=\"square\">\r\n\t\t\t\t\t\t\t<li>highly collaborative interactions</li>\r\n\t\t\t\t\t\t\t<li>lightning talks</li>\r\n\t\t\t\t\t\t\t<li>self-organized Open Space</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t <p>The event will be much like a retreat. We will be there for 48 hours to collaborate and share ideas.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhen?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<strong>August 2-4 2012</strong>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<h5>\r\n\t\t\t\t\t\tMore precisely:\r\n\t\t\t\t\t</h5>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThe SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.</p><p>\r\n\t\t\t\t\t\tThe conference is followed by a <a href=\"http://coderetreat.org/\" target=\"_blank\">Code Retreat</a> on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns omega\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tWhere?\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tOut in the country, at the lovely <a href=\"http://www.natuerlich-tagen.de/\" title=\"Herzlich Willkommen im SeminarZentrum R\u00fcckersbach\" target=\"_blank\">Seminarzentrum R\u00fcckersbach</a> (German only website), one hour from Frankfurt (Main) airport.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThere you will get your room and the event will happen there. We will rent the whole facility, so we can concentrate on what we like to do most.\r\n\t\t\t\t\t</p>\r\n<h5>\t\t\t\t\t\tVenue Address:</h5>\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<a href=\"http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;view=map&amp;msa=0&amp;msid=206926470279237889880.00049eb6308bf704e3a2f&amp;ll=50.058902,8.831635&amp;spn=0.297117,0.727158&amp;z=11\" target=\"_blank\">Kolpingstra\u00dfe 1, 63867 Johannesberg</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"sixteen columns\">\r\n\t\t\t\t<div class=\"five columns alpha\">\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tWho should come?\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tEveryone who is concerned with coding, testing, code quality, software craftsmanship...\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<ul class=\"square\">\r\n\t\t\t\t\t\t<li>For you, coding is more than writing text in an editor.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>For you, testing is more than ensuring quality.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li>For you, testing is more than executing given scenarios.\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns\">\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tHow?\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tRun as a non-profit, low-cost, community-organized event. Brought to you as a joint-effort of all <a href=\"http://softwerkskammer.de\" target=\"_blank\">Softwerkskammer</a> groups, the community of all German Software Craftsmanship groups.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tFacilitation will be in English, sessions in other languages are welcome.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"five columns omega\">\r\n\t\t\t\t\t<h3>\r\n\t\t\t\t\t\tSponsorship\r\n\t\t\t\t\t</h3>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tWe would appreciate support by sponsoring the event.\r\n\t\t\t\t\t\tIf you'd like to support the SoCraTes conference 2012, see our <a href=\"sponsorship-flyer.pdf\" target=\"_blank\">Sponsorship Flyer</a> for our sponsorship package.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<h4>\r\n\t\t\t\t\t\tContact\r\n\t\t\t\t\t</h4>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\tFollow <a href=\"http://twitter.com/socrates_2012\" target=\"_blank\">@socrates_2012</a> on Twitter, to stay up-to-date.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<strong>Email: </strong><a href=\"mailto:info@socrates-conference.de\">info@socrates-conference.de</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div><!-- container -->\r\n\t\t\t\t\t<!-- JS\r\n\t\t\t================================================== -->\r\n\t\t\t\t\t<script src=\"http://code.jquery.com/jquery-1.7.1.min.js\" type=\"text/javascript\">\r\n\t\t</script><script src=\"javascripts/tabs.js\" type=\"text/javascript\">\r\n\t\t</script><!-- End Document\r\n\t\t================================================== -->\r\n",
+        "message": "Initial revision",
+        "page": 2
+    }
+},
+{
+    "pk": 5,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:109.193.168.231",
+        "created": "2012-03-02 23:38:46",
+        "creator": 6,
+        "modified": "2012-03-02 23:38:46",
+        "content": "## What?\r\n\r\nThis event is about the sustainable creation of useful software in a responsible way.\r\n\r\nIt consists of two days of highly collaborative interactions, including Lightning Talks (on Thursday evening), scheduled sessions (on Friday), and a self-organized Open Space (on Saturday). The event will be much like a retreat. \r\nWe will be there for 48 hours to collaborate and share ideas.\r\n\r\nFurthermore, the conference is followed by a [Code Retreat](http://coderetreat.org/) on Sunday August 5th.\r\n\r\nFollow [@socrates_2012](http://twitter.com/socrates_2012) on Twitter, to stay up-to-date.\r\n\r\n## When?\r\n\r\n**August 2-5 2012**\r\n\r\nMore precisely:  \r\nThe SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.\r\nThe conference is followed by a Code Retreat on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.\r\n\r\nHomePageZwei",
+        "message": "",
+        "page": 1
+    }
+},
+{
+    "pk": 4,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:109.193.168.231",
+        "created": "2012-03-02 23:38:35",
+        "creator": 6,
+        "modified": "2012-03-02 23:38:35",
+        "content": "## What?\r\n\r\nThis event is about the sustainable creation of useful software in a responsible way.\r\n\r\nIt consists of two days of highly collaborative interactions, including Lightning Talks (on Thursday evening), scheduled sessions (on Friday), and a self-organized Open Space (on Saturday). The event will be much like a retreat. \r\nWe will be there for 48 hours to collaborate and share ideas.\r\n\r\nFurthermore, the conference is followed by a [Code Retreat](http://coderetreat.org/) on Sunday August 5th.\r\n\r\nFollow [@socrates_2012](http://twitter.com/socrates_2012) on Twitter, to stay up-to-date.\r\n\r\n## When?\r\n\r\n**August 2-5 2012**\r\n\r\nMore precisely:  \r\nThe SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.\r\nThe conference is followed by a Code Retreat on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.\r\n\r\nHomePage2",
+        "message": "",
+        "page": 1
+    }
+},
+{
+    "pk": 3,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:109.193.168.231",
+        "created": "2012-03-02 22:09:15",
+        "creator": 6,
+        "modified": "2012-03-02 22:09:15",
+        "content": "## What?\r\n\r\nThis event is about the sustainable creation of useful software in a responsible way.\r\n\r\nIt consists of two days of highly collaborative interactions, including Lightning Talks (on Thursday evening), scheduled sessions (on Friday), and a self-organized Open Space (on Saturday). The event will be much like a retreat. \r\nWe will be there for 48 hours to collaborate and share ideas.\r\n\r\nFurthermore, the conference is followed by a [Code Retreat](http://coderetreat.org/) on Sunday August 5th.\r\n\r\nFollow [@socrates_2012](http://twitter.com/socrates_2012) on Twitter, to stay up-to-date.\r\n\r\n## When?\r\n\r\n**August 2-5 2012**\r\n\r\nMore precisely:  \r\nThe SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.\r\nThe conference is followed by a Code Retreat on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.",
+        "message": "",
+        "page": 1
+    }
+},
+{
+    "pk": 2,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:80.83.97.162",
+        "created": "2012-03-02 20:18:23",
+        "creator": 4,
+        "modified": "2012-03-02 20:18:23",
+        "content": "## What?\r\n\r\nThis event is about the sustainable creation of useful software in a responsible way.\r\n\r\nIt consists of two days of highly collaborative interactions, including Lightning Talks (on Thursday evening), scheduled sessions (on Friday), and a self-organized Open Space (on Saturday). The event will be much like a retreat. \r\nWe will be there for 48 hours to collaborate and share ideas.\r\n\r\nFurthermore, the conference is followed by a [CodeRetreat](http://coderetreat.org/) on Sunday August 5th.\r\n\r\nFollow [@socrates_2012](http://twitter.com/socrates_2012) on Twitter, to stay up-to-date.\r\n\r\n## When?\r\n\r\n**August 2-5 2012**\r\n\r\nMore precisely:  \r\nThe SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm) through the evening on Saturday August 4th 2012.\r\nThe conference is followed by a Code Retreat on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event which is not included in the conference.",
+        "message": "copied initial info for demo purposes",
+        "page": 1
+    }
+},
+{
+    "pk": 1,
+    "model": "wakawaka.revision",
+    "fields": {
+        "creator_ip": "::ffff:85.179.98.129",
+        "created": "2012-03-02 00:57:50",
+        "creator": 2,
+        "modified": "2012-03-02 00:57:50",
+        "content": "Wiki Index",
+        "message": "Initial revision",
+        "page": 1
+    }
+}]
