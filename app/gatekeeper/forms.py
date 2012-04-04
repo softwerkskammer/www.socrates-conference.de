@@ -23,6 +23,13 @@ class UserProfileForm(forms.Form):
                                     label=_(u'twitter account'),
                                     help_text=_(u'Your twitter account name without the leading @'))
 
+    def clean_twitter_name(self):
+        """
+        Strip leading @-signs from the the field
+        """
+        if 'twitter_name' in self.cleaned_data:
+            return self.cleaned_data['twitter_name'].strip('@')
+
 
 class GatekeeperRegistrationForm(UserProfileForm):
     """
