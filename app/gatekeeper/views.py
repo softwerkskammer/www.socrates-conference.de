@@ -1,13 +1,3 @@
-####
-#### TODO
-#### - implement profile editing for users
-#### - add tests
-#### - rename templates subdir from registration to gatekeeper
-#### - strip leadingl from twitter names 
-####
-
-
-
 from django.conf import settings
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib.auth.models import User
@@ -19,15 +9,16 @@ from django.template import RequestContext
 
 from gatekeeper.forms import GatekeeperRegistrationForm
 from gatekeeper.mail import send_approval_notice
+from gatekeeper.create_user import create_user
 
 
-def register(request, profile_callback=None):
+def register(request):
     """
     """
     if request.method == 'POST':
         form = GatekeeperRegistrationForm(data=request.POST)
         if form.is_valid():
-            new_user = form.save(profile_callback=profile_callback)
+            new_user = create_user(form.cleaned_data)
             return HttpResponseRedirect(reverse('registration_complete'))
     else:
         form = GatekeeperRegistrationForm()
@@ -70,7 +61,7 @@ def approve_pending_registrations(request, user_id):
     user.save()
     
     send_approval_notice(user)
-    messages.info(request, u'User "%s" has been approved' % user.email)
+    messages.info(request, u'User "%s" has been approved' % user.get_full_name())
     
     return HttpResponseRedirect(reverse('pending_registrations'))
 
