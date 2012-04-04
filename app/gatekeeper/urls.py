@@ -7,10 +7,12 @@ from gatekeeper.views import pending_registrations
 from gatekeeper.views import approve_pending_registrations
 from gatekeeper.views import delete_pending_registrations
 from gatekeeper.views import current_user_profile
+from gatekeeper.views import edit_current_user_profile
 from gatekeeper.views import public_profile
 
 urlpatterns = patterns('',
     url(r'^profile/$', current_user_profile, name='current_user_profile'),
+    url(r'^profile/edit$', edit_current_user_profile, name='edit_current_user_profile'),
     url(r'^profile/(?P<user_id>\d+)$', public_profile, name='public_profile'),
     url(r'^register/$', register, name='registration_register'),
 
