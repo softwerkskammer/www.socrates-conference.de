@@ -11,6 +11,11 @@ def epio(commandstring):
         commandstring,
         env['epioapp']))
 
+def init_db():
+    """setup database, execute migrations and create superuser"""
+    local('./manage.py syncdb --noinput --migrate')
+    local('./manage.py createsuperuser')
+
 def deploy():
     """ An example deploy workflow """
     local("./manage.py collectstatic")
