@@ -191,3 +191,6 @@ nav a:hover, nav a:focus {
   color: #E8E8E8; 
 }
 
+p {
+  font-size: 14px;
+}

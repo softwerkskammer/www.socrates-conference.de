@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="span2"><strong>Profession</strong></div>
+  <div class="span4">{{ profile.profession }}</div>
+</div>
+<div class="row">
+  <div class="span2"><strong>Focus</strong></div>
+  <div class="span4">{{ profile.focus }}</div>
+</div>
+<div class="row">
+  <div class="span2"><strong>Location</strong></div>
+  <div class="span4">{{ profile.location }}</div>
+</div>
+
+<div class="row">
+  <div class="span2"><strong>Blog</strong></div>
+  <div class="span4">
+    {% if profile.blog_url %}
+    <a href="{{ profile.blog_url }}">{{ profile.blog_url }}</a>
+    {% endif %}
+  </div>
+</div>
+<div class="row">
+  <div class="span2"><strong>Twitter</strong></div>
+  <div class="span4">
+    {% if profile.twitter_name %}
+    <a href="http://twitter.com/{{ profile.twitter_name }}">@{{ profile.twitter_name }}</a>
+    {% endif %}
+  </div>
+</div>
+<div class="row">
+  <div class="span2"><strong>Date Joined</strong></div>
+  <div class="span4">
+    {{ user.date_joined|date:"DATE_FORMAT" }}
+  </div>
+</div>

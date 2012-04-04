@@ -4,25 +4,38 @@
 {% block title %}Join{% endblock %}
 
 {% block content %}
-    <div class="row">
-        <div class="span5"><h2>Join the SoCraTes Wiki</h2>
-        <p>
-          Join the SoCraTes wiki in order to edit wiki pages and participate in the community.
-        </p>
-        <form method='POST' class="form-horizontal">
-            {% csrf_token %}
-            {{ form|bootstrap }}
-            <div class="form-actions">
-            <input type="submit" class="btn-primary" value="Join" />
-            <p class="help-block">
-              Joining this group requires approval from a group manager. <br>
-              This is usually a matter of minutes, up to a few hours.
-            </p>
-            </div>
-        </form>
-        </div>
-        <div class="span5">
-            {% include "registration/oauth.html" %}
-        </div>
+  <div class="row">
+    <div class="span5">
+      <h2>Join the SoCraTes Wiki</h2>
+      <p>
+        Join the SoCraTes wiki in order to edit wiki pages and participate in the community.
+      </p>
     </div>
+    <div class="span5">
+        {% include "registration/oauth.html" %}
+    </div>
+  </div>
+  <form method='POST' class="form-horizontal">
+      {% csrf_token %}
+
+        {{ form.first_name|bootstrap }}
+        {{ form.last_name|bootstrap }}
+        {{ form.username|bootstrap }}
+        {{ form.email|bootstrap }}
+        {{ form.password1|bootstrap }}
+        {{ form.password2|bootstrap }}
+        {{ form.location|bootstrap }}
+        {{ form.profession|bootstrap }}
+        {{ form.focus|bootstrap }}
+        {{ form.blog_url|bootstrap }}
+        {{ form.twitter_name|bootstrap }}
+
+      <div class="form-actions">
+        <input type="submit" class="btn-primary" value="Join" />
+        <p class="help-block">
+          Joining this group requires approval from a group manager. <br>
+          This is usually a matter of minutes, up to a few hours.
+        </p>
+      </div>
+  </form>
 {% endblock %}
