@@ -1,1 +1,1 @@
-{{ new_user.first_name }} {{ new_user.first_name }} has requested to join {{ site.name }}
+{{ new_user.get_full_name }} has requested to join {{ site.name }}

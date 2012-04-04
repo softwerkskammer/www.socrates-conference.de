@@ -1,7 +1,7 @@
 Welcome to {{ site.name }},
 
 you (or someone pretending to be you) have asked to register an account at 
-{{ site.name }}.  If this wasn't you, please ignore this email
+{{ site.name }}. If this wasn't you, please ignore this email
 and your address will be removed from our records.
 
 Your account has been approved by a manager, and you can login now.

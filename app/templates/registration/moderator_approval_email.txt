@@ -1,9 +1,9 @@
-{{ new_user.first_name }} {{ new_user.last_name }} has requested to join {{ site.name }}
+{{ new_user.get_full_name }} has requested to join {{ site.name }}
 
 
 Hi,
 
-{{ new_user.first_name }} {{ new_user.last_name }} ({{ new_user.email }}) has just requested to join {{ site.name }}.
+{{ new_user.get_full_name }} ({{ new_user.email }}) has just requested to join {{ site.name }}.
 
 To process this request go to:
 {% url pending_registrations %}
