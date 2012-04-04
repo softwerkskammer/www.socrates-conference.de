@@ -1,3 +1,2 @@
-implements views for registering users. Users are set to inactive after registration and a mail 
-is sent to administrators for each new user, prompting them to activate the user
+implements views for registering users. Users are set to inactive after registration and a mail for each new user is sent to members of the group of moderators (designated by the setting GATEKEEPER_MODERATOR_GROUP), prompting them to activate the user. If a user is approved a mail is sent to him, welcoming him to the site. 
 

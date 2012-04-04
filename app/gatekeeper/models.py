@@ -6,6 +6,7 @@ from social_auth.backends.twitter import TwitterBackend
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 
+
 def new_users_handler(sender, user, response, details, **kwargs):
     user.is_active = False
     send_moderation_notices(user)
@@ -13,11 +14,13 @@ def new_users_handler(sender, user, response, details, **kwargs):
 
 socialauth_registered.connect(new_users_handler, sender=None)
 
+
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
         UserProfile.objects.create(user=instance)
 
 post_save.connect(create_user_profile, sender=User)
+
 
 def twitter_extra_values(sender, user, response, details, **kwargs):
     profile = user.get_profile()
