@@ -58,6 +58,7 @@ def edit_current_user_profile(request):
             profile.focus = form.cleaned_data['focus']
             profile.profession = form.cleaned_data['profession']
             profile.location = form.cleaned_data['location']
+            profile.notify_recent_changes = form.cleaned_data['notify_recent_changes']
             
             usr.save()
             profile.save()
