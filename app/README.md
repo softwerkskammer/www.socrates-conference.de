@@ -5,3 +5,5 @@
     ./manage.py syncdb  (and say no when prompted to create a superuser)
     ./manage.py migrate gatekeeper
     ./manage.py createsuperuser
+    
+    ### TODO generate keys files

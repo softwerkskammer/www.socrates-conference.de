@@ -7,9 +7,10 @@ Replace this with more appropriate tests for your application.
 
 from django.test import TestCase
 from django.test.client import Client
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 
 from gatekeeper import forms
+from gatekeeper.user_helpers import user_in_group
 
 
 class GatekeeperTestCase(TestCase):
@@ -22,7 +23,34 @@ class GatekeeperTestCase(TestCase):
         self.inactive_user.save()
 
 
+class UserHelperTestCase(GatekeeperTestCase):
+    
+    def test_user_in_group(self):
+        """
+        """
+        groupname = "some groupname"
+        grp = Group(name=groupname)
+        grp.save()
+        self.active_user.groups.add(grp)
+        self.active_user.save()
+        
+        self.assertTrue(user_in_group(self.active_user, groupname), 
+                        "User %s should be member of group %s" % (self.active_user, grp))
+
+        self.assertFalse(user_in_group(self.inactive_user, groupname), 
+                        "User %s should not be member of group %s" % (self.inactive_user, grp))
+
+
 class GatekeeperRegistrationFormTest(GatekeeperTestCase):
+    test_data = { 
+                'username': 'foo',
+                'email': 'foo@example.com',
+                'first_name': 'Bob',
+                'last_name': 'Foo',
+                'location': 'Germany',
+                'profession': 'Software Dev',
+                'password1': 'foo',
+                'password2': 'foo' }
 
     def test_registration_form_unique_username(self):
         """
@@ -30,10 +58,8 @@ class GatekeeperRegistrationFormTest(GatekeeperTestCase):
         of email addresses.
 
         """
-        form = forms.GatekeeperRegistrationForm(data={ 'username': 'alice',
-                                                        'email': 'alice@example.com',
-                                                        'password1': 'foo',
-                                                        'password2': 'foo' })
+        self.test_data['username'] = 'alice'
+        form = forms.GatekeeperRegistrationForm(data=self.test_data)
         self.failIf(form.is_valid())
 
     def test_registration_form_unique_email(self):
@@ -42,15 +68,11 @@ class GatekeeperRegistrationFormTest(GatekeeperTestCase):
         of email addresses.
 
         """
-        form = forms.GatekeeperRegistrationForm(data={ 'username': 'foo',
-                                                        'email': 'alice@example.com',
-                                                        'password1': 'foo',
-                                                        'password2': 'foo' })
+        self.test_data['email'] = 'alice@example.com'
+        form = forms.GatekeeperRegistrationForm(data=self.test_data)
         self.failIf(form.is_valid())
         self.assertEqual(form.errors['email'], [u"This email address is already in use. Please supply a different email address."])
 
-        form = forms.GatekeeperRegistrationForm(data={ 'username': 'foo',
-                                                        'email': 'foo@example.com',
-                                                        'password1': 'foo',
-                                                        'password2': 'foo' })
-        self.failUnless(form.is_valid())
+        self.test_data['email'] = 'foo@example.com'
+        form = forms.GatekeeperRegistrationForm(data=self.test_data)
+        self.failUnless(form.is_valid(), form.errors)

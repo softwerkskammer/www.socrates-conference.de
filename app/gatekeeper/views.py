@@ -9,7 +9,7 @@ from django.template import RequestContext
 
 from gatekeeper.forms import GatekeeperRegistrationForm, UserProfileForm
 from gatekeeper.mail import send_approval_notice
-from gatekeeper.create_user import create_user
+from gatekeeper.user_helpers import create_user, user_in_group
 
 
 def register(request):
@@ -76,7 +76,7 @@ def edit_current_user_profile(request):
 
 
 @login_required
-@user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() > 0)
+@user_passes_test(lambda u: user_in_group(u, settings.GATEKEEPER_MODERATOR_GROUP))
 def pending_registrations(request):
     pending_users = User.objects.filter(is_active=False)
     context = RequestContext(request)
@@ -87,7 +87,7 @@ def pending_registrations(request):
 
 
 @login_required
-@user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() > 0)
+@user_passes_test(lambda u: user_in_group(u, settings.GATEKEEPER_MODERATOR_GROUP))
 def approve_pending_registrations(request, user_id):
     user = get_object_or_404(User, pk=user_id)
     user.is_active = True
@@ -100,7 +100,7 @@ def approve_pending_registrations(request, user_id):
 
 
 @login_required
-@user_passes_test(lambda u: u.groups.filter(name=settings.GATEKEEPER_MODERATOR_GROUP).count() > 0)
+@user_passes_test(lambda u: user_in_group(u, settings.GATEKEEPER_MODERATOR_GROUP))
 def delete_pending_registrations(request, user_id):
     user = get_object_or_404(User, pk=user_id)
     user.delete()

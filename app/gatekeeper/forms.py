@@ -22,7 +22,8 @@ class UserProfileForm(forms.Form):
     twitter_name = forms.CharField(required=False, 
                                     label=_(u'twitter account'),
                                     help_text=_(u'Your twitter account name without the leading @'))
-    notify_recent_changes = forms.BooleanField(label=_('notify recent wiki changes'),
+    notify_recent_changes = forms.BooleanField(required=False,
+                                                label=_('notify recent wiki changes'),
                                                 help_text=_(u'Get notified of all changes in the Wiki'))
 
     def clean_twitter_name(self):

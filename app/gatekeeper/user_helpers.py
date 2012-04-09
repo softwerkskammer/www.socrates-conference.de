@@ -1,7 +1,10 @@
 from django.contrib.auth.models import User
+import logging
 
 from gatekeeper.mail import send_moderation_notices
 
+
+logger = logging.getLogger(__name__)
 
 def create_user(userdata):
     """
@@ -24,3 +27,10 @@ def create_user(userdata):
     
     send_moderation_notices(new_user)
     return new_user
+
+
+def user_in_group(user, groupname):
+    if not user:
+        logger.warn("Can't test if empty user is in group %s" % groupname)
+        return False
+    return filter(lambda grp: grp.name == groupname, user.groups.all())
