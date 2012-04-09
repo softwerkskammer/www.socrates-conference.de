@@ -49,7 +49,6 @@ class UserProfile(models.Model):
     focus = models.CharField(max_length=255, blank=True)
     twitter_name = models.CharField(max_length=40, blank=True)
     blog_url = models.URLField(blank=True, verify_exists=False)
-    
     notify_recent_changes = models.BooleanField(default=False)
     
     def __unicode__(self):

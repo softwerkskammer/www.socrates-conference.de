@@ -12,6 +12,14 @@
 </div>
 
 <div class="row">
+  <div class="span2"><strong>Wiki Mail Notifications?</strong></div>
+  <div class="span4">
+    {% if profile.notify_recent_changes %}Yes
+    {% else %}No
+    {% endif %}
+  </div>
+</div>
+<div class="row">
   <div class="span2"><strong>Blog</strong></div>
   <div class="span4">
     {% if profile.blog_url %}
