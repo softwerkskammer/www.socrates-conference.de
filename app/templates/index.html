@@ -4,9 +4,12 @@
 
 {% block container %}
 <div class="container">
-  <div class="row">
+  <div class="row-fluid">
+    <div class="span3 site-logo">
+      <img style="margin-top: 20px" src="{{ STATIC_URL }}img/socrates2012_logo_50perc.png" alt="SoCraTes Conference 2012 - Software Craftsmanship and Testing">
+    </div>
     <div class="span9">
-      <h1 class="remove-bottom" style="margin-top: 40px">SoCraTes 2012</h1>
+      <h1 style="margin-top: 40px">SoCraTes 2012</h1>
       <h4>
         2nd International Software Craftsmanship and Testing Conference in Germany
       </h4>
@@ -15,151 +18,73 @@
         August 2-4 2012, Rückersbach, Code Retreat on August 5
       </h4>
     </div>
-    <div class="span3 site-logo">
-      <img style="margin-top: 20px" src="{{ STATIC_URL }}img/socrates2012_logo_50perc.png" alt="SoCraTes Conference 2012 - Software Craftsmanship and Testing">
-    </div>
   </div>
-  <div class="row">
-    <div class="span4">
-      <h3>What?</h3>
+  
+  <div class="row-fluid" style="margin-top: 20px">
+    <div class="span9">
+      <h3>What is it about?</h3>
       <p>
         This event is about the sustainable creation of useful software in a responsible way.
       </p>
+      <h4>
+        People
+      </h4>
       <p>
-        There will be two days of
+        Everyone who is concerned with coding, testing, code quality, software craftsmanship&hellip;
       </p>
       <ul class="square">
-        <li>highly collaborative interactions</li>
-        <li>lightning talks</li>
-        <li>self-organized Open Space</li>
+        <li>You are passionate about software development and testing.
+        </li>
+        <li>You have already heard of Software Craftsmanship or even already are part of the raising community.
+        </li>
+        <li>You want to share your knowlege, experience and expertise.
+        </li>
       </ul>
+      <h4>
+        Action
+      </h4>
       <p>
-        The event will be much like a retreat. We will be there for 48 hours to collaborate and share ideas.
-      </p>
-    </div>
-  
-    <div class="span4">
-      <h3>When?</h3>
-      <p>
-        <strong>August 2-4 2012</strong>
-      </p>
-      <h5>
-        More precisely:
-      </h5>
-      <p>
-        The SoCraTes conference takes place from the evening of Thursday August 2nd 2012 (about 5pm)
-        through the evening on Saturday August 4th 2012.
-      </p>
-      <p>
-        The conference is followed by a <a href="http://coderetreat.org/" target="_blank">Code
-        Retreat</a> on Sunday August 5th 2012 (until about 6pm). This is a separate, optional event
-        which is not included in the conference.
-      </p>
-    </div>
-  
-    <div class="span4">
-      <h3>Where?</h3>
-      <p>
-        Out in the country, at the lovely <a href="http://www.natuerlich-tagen.de/" title="Herzlich
-        Willkommen im SeminarZentrum Rückersbach" target="_blank">Seminarzentrum Rückersbach</a>
-        (German only website), one hour from Frankfurt (Main) airport.
-      </p>
-      <p>
-        There you will get your room and the event will happen there. We will rent the whole facility,
-        so we can concentrate on what we like to do most.
-      </p>
-      <h5>
-        Venue Address:
-      </h5>
-      <p>
-        <a
-        href="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;view=map&amp;msa=0&amp;msid=206926470279237889880.00049eb6308bf704e3a2f&amp;ll=50.058902,8.831635&amp;spn=0.297117,0.727158&amp;z=11"
-        target="_blank">Kolpingstraße 1, 63867 Johannesberg</a>
-      </p>
-    </div>
-  </div>
-  
-  <div class ="row">
-    <div class="span4">
-      <h3>Who should come?</h3>
-      <p>
-        Everyone who is concerned with coding, testing, code quality, software craftsmanship...
+        The event will be run as a non-profit, low-cost event. It is a joint-effort of all <a href="http://softwerkskammer.de" target="_blank">Softwerkskammer</a> groups, the community of all German Software Craftsmanship groups. It will be much like a retreat. We will be there for 48 hours to collaborate and share ideas. There will be:
       </p>
       <ul class="square">
-        <li>For you, coding is more than writing text in an editor.</li>
-        <li>For you, testing is more than ensuring quality.</li>
-        <li>For you, testing is more than executing given scenarios.</li>
+        <li>Highly collaborative interactions
+        </li>
+        <li>Lightning talks
+        </li>
+        <li>Self-organized Open Space
+        </li>
       </ul>
-    </div>
-    
-    <div class="span4">
-      <h3>How?</h3>
       <p>
-        The conference will be run as a non-profit, low-cost, community-organized event. Brought to
-        you as a joint-effort of all <a href="http://softwerkskammer.de"
-        target="_blank">Softwerkskammer</a> groups, the community of all German Software
-        Craftsmanship groups.
+        <strong><a href="details.html">For more details follow this link.</a></strong>
       </p>
+      <h4>
+        Contact
+      </h4>
       <p>
-        Facilitation will be in English, sessions in other languages are welcome.
-      </p>
-    </div>
-    
-    <div class="span4">
-      <h3>Sponsorship</h3>
-      <p>
-        We would appreciate support by sponsoring the event. If you'd like to support the SoCraTes
-        conference 2012, see our <a href="sponsorship-flyer.pdf" target="_blank">Sponsorship
-        Flyer</a> for our sponsorship package.
-      </p>
-      <h3>Contact</h3>
-      <p>
-        Follow <a href="http://twitter.com/socrates_2012" target="_blank">@socrates_2012</a> on
-        Twitter, to stay up-to-date.
+        Follow <a href="http://twitter.com/socrates_2012" target="_blank">@socrates_2012</a> on Twitter to stay up-to-date.
       </p>
       <p>
         <strong>Email:</strong> <a href="mailto:info@socrates-conference.de">info@socrates-conference.de</a>
       </p>
+      <h5>
+        This event is brought to you by:
+      </h5><a href="http://softwerkskammer.de" target="_blank"><img src="{{ STATIC_URL }}img/softwerkskammer_logo.jpg" alt="Softwerkskammer"></a>
+    </div>
+    
+    <div class="span3">
+      <h3>
+        Sponsors
+      </h3>
       <p>
-        <strong>Organized by:</strong> <br>
-        <a href="http://softwerkskammer.de" target="_blank"><img src="{{ STATIC_URL }}img/softwerkskammer_logo.jpg" alt="Softwerkskammer"></a>
+        We are glad to be supported by (ordered alphabetically):
+      </p><a href="http://www.adesso.de" target="_blank"><img src="{{ STATIC_URL }}logos/adesso160.png" alt="adesso"></a> <a href="http://www.andrena.de" target="_blank"><img src="{{ STATIC_URL }}logos/andrena160.png" alt="andrena objects"></a> <a href="http://www.codecentric.de" target="_blank"><img src="{{ STATIC_URL }}logos/codecentric160.png" alt="codecentric"></a> <a href="http://www.holisticon.de" target="_blank"><img src="{{ STATIC_URL }}logos/holisticon160.png" alt="Holisticon"></a> <a href="http://www.interface-ag.de" target="_blank"><img src="{{ STATIC_URL }}logos/interface160.png" alt="InterFace"></a> <a href="http://www.it-agile.de" target="_blank"><img src="{{ STATIC_URL }}logos/it-agile160.png" alt="it-agile"></a> <a href="http://klosebrothers.de/" target="_blank"><img src="{{ STATIC_URL }}logos/klosebrothers160.png" alt="klose brothers"></a> <a href="http://www.msg-gillardon.de" target="_blank"><img src="{{ STATIC_URL }}logos/msgGillardon160.png" alt="msgGillardon"></a> <a href="http://qafoo.com/" target="_blank"><img src="{{ STATIC_URL }}logos/qafoo160.png" alt="msgGillardon"></a><a href="http://www.tngtech.de" target="_blank"><img src="{{ STATIC_URL }}logos/tng160.png" alt="tng"></a>
+      <hr>
+      <p>
+        If you'd also like to support the SoCraTes conference 2012, see our <a href="{{ STATIC_URL }}sponsorship-flyer.pdf" target="_blank">Sponsorship Flyer</a> for our sponsorship package.
       </p>
     </div>
-  </div>
-  
-  <div class="row">
-    <div class="span12">
-      <p>
-        <strong>We are glad to be supported by the following Sponsors (ordered alphabetically):</strong>
-      </p>
-      <hr/>
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="span3">
-      <a href="http://www.andrena.de" target="_blank"><img src="{{ STATIC_URL }}logos/andrena160.png" alt="andrena objects"></a>
-    </div>
-    <div class="span3">
-      <a href="http://www.codecentric.de" target="_blank"><img src="{{ STATIC_URL }}logos/codecentric160.png" alt="codecentric"></a>
-    </div>
-    <div class="span3">
-      <a href="http://www.holisticon.de" target="_blank"><img src="{{ STATIC_URL }}logos/holisticon160.png" alt="Holisticon"></a>
-    </div>
-    <div class="span3">
-      <a href="http://www.it-agile.de" target="_blank"><img src="{{ STATIC_URL }}logos/it-agile160.png" alt="it-agile"></a>
-    </div>
-    <div class="span3">
-      <a href="http://www.msg-gillardon.de" target="_blank"><img src="{{ STATIC_URL }}logos/msgGillardon160.png" alt="msgGillardon"></a>
-    </div>
-    <div class="span3">
-      <a href="http://klosebrothers.de/" target="_blank"><img src="{{ STATIC_URL }}logos/klosebrothers160.png" alt="klose brothers"></a>
-    </div>
-    <hr/>
   </div>
   
 </div>
-
-
 
 {% endblock %}
