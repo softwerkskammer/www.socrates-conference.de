@@ -10,7 +10,6 @@ The change message is:
 There is no message for this change!
 {% endif %}
 
-
 Cheers, 
 the-automagical-super-duper-mail-bot from {{ site.name }}
 

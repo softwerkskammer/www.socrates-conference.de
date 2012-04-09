@@ -2,7 +2,6 @@
 
 {% load markup %}
 {% load wakawaka_tags %}
-{% load i18n %}
 
 {% block extrahead %}
   {{ block.super }}
@@ -22,24 +21,22 @@
   {% spaceless %}
   <div class="wiki-page-info">
       <span>
-        {% blocktrans with page.current.creator as creator and rev.modified|date:_("DATETIME_FORMAT") as modified %}
-            Recently modified by <em>{{ creator }}</em> on {{ modified }}
-        {% endblocktrans %}
-        (<a href="{% url wakawaka_revision_list slug=page.slug %}">{% trans "History" %}</a>)
+        Last modified by <em>{{ page.current. }}</em> on {{ rev.modified|date:"DATETIME_FORMAT" }}
+        (<a href="{% url wakawaka_revision_list slug=page.slug %}">History</a>)
       </span>
       
       {% if perms.wakawaka.change_wikipage %}
       <span>
-        <a href="{% url wakawaka_edit slug=page.slug %}">{% trans "Edit" %}</a>
+        <a href="{% url wakawaka_edit slug=page.slug %}">Edit</a>
       </span>
       {% endif %}
   </div>
   
   {% if rev.is_not_current %}
   <p class="revert-warning">
-    {% trans "You are viewing an older revision!" %}
+    You are viewing an older revision!
     <a href="{% url wakawaka_page slug=page.slug %}">
-      {% trans "See the latest version" %}
+      See the latest version
     </a>
   </p>
   {% endif %}

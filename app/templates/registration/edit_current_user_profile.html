@@ -1,6 +1,5 @@
 {% extends "registration/registration_base.html" %}
 {% load bootstrap %}
-{% load i18n %}
 
 {% block title %}Edit Your Profile{% endblock %}
 
@@ -12,9 +11,7 @@
 
     <div class="form-actions">
       <input type="submit" class="btn-primary" value="Save" />
-      <a href="{% url current_user_profile %}">
-        {% trans "Cancel" %}
-      </a>
+      <a href="{% url current_user_profile %}">Cancel</a>
     </div>
 </form>
 

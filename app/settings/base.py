@@ -34,8 +34,12 @@ LOGGING = {
 }
 
 TIME_ZONE = 'Europe/Berlin'
-
 LANGUAGE_CODE = 'en-us'
+
+DATE_FORMAT = 'd-M-Y'
+SHORT_DATE_FORMAT = 'd M'
+DATETIME_FORMAT = 'd-M-Y P'
+TIME_FORMAT = 'P'
 
 SITE_ID = 1
 

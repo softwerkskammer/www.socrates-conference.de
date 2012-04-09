@@ -1,26 +1,25 @@
 {% extends "wakawaka/base.html" %}
 {% load bootstrap %}
-{% load i18n %}
 
 {% block title %}
-    {% if page.is_initial %}
-        {% blocktrans with page.slug as slug %}Add {{ slug  }}{% endblocktrans %}
-    {% else %}
-        {% blocktrans with page.slug as slug %}Edit {{ slug  }}{% endblocktrans %}
-    {% endif %}
+  {% if page.is_initial %}
+    Add {{ page.slug  }}
+  {% else %}
+    Edit {{ page.slug  }}
+  {% endif %}
 {% endblock %}
 
 {% block content %}
   <h1>
-      {% if page.is_initial %}
-          {% blocktrans with page.slug as slug %}Add {{ slug  }}{% endblocktrans %}
-      {% else %}
-          {% blocktrans with page.slug as slug %}Edit {{ slug  }}{% endblocktrans %}
-      {% endif %}
+    {% if page.is_initial %}
+      Add {{ page.slug  }}
+    {% else %}
+      Edit {{ page.slug  }}
+    {% endif %}
   </h1>
 
   {% if rev.is_not_current %}
-  <p class="revert-warning">{% trans "You are editing an revision which is not the latest!" %}</p>
+  <p class="revert-warning">You are editing an revision which is not the latest!</p>
   {% endif %}
 
   <form class="form-horizontal" method="POST">
@@ -33,10 +32,10 @@
     CamelCase words are autolinked to wikipages.
     </p>
     <div class="form-actions">
-    <input type="submit" class="btn-primary btn-large" value="{% trans "Save changes" %}" />
-    {% trans "or" %} 
+    <input type="submit" class="btn-primary btn-large" value="Save changes" />
+    or
     <a href="{% if page.is_initial %}javascript:window.history.go(-1);{% else %}{% url wakawaka_page slug=page.slug %}{% endif %}">
-      {% trans "Cancel" %}
+      Cancel
     </a>
     </div>
     

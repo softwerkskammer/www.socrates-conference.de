@@ -1,6 +1,5 @@
 from django import forms
 from django.contrib.auth.models import User
-from django.utils.translation import ugettext_lazy as _
 
 from gatekeeper.mail import send_moderation_notices
 from gatekeeper.models import UserProfile
@@ -11,20 +10,20 @@ attrs_dict = { 'class': 'required' }
 class UserProfileForm(forms.Form):
     """
     """
-    first_name = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), label=_(u'firstname'))
-    last_name = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), label=_(u'lastname'))
+    first_name = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), label='First name')
+    last_name = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), label='Last name')
     location = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), 
-                                label=_(u'location in germany'))
+                                label='Your Location in Germany')
     profession = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), 
-                                label=_(u'profession'))
-    focus = forms.CharField(required=False, label=_(u'focus'))
-    blog_url = forms.URLField(required=False, label=_(u'blog url'))
+                                label='Profession')
+    focus = forms.CharField(required=False, label='Focus')
+    blog_url = forms.URLField(required=False, label='Blog URL')
     twitter_name = forms.CharField(required=False, 
-                                    label=_(u'twitter account'),
-                                    help_text=_(u'Your twitter account name without the leading @'))
+                                    label='Twitter account',
+                                    help_text='Your twitter account name without the leading @')
     notify_recent_changes = forms.BooleanField(required=False,
-                                                label=_('notify recent wiki changes'),
-                                                help_text=_(u'Get notified of all changes in the Wiki'))
+                                                label='Wiki mail notifications',
+                                                help_text='Get notified of wiki changes by email')
 
     def clean_twitter_name(self):
         """
@@ -40,13 +39,13 @@ class GatekeeperRegistrationForm(UserProfileForm):
     username = forms.RegexField(regex=r'^\w+$',
                                 max_length=30,
                                 widget=forms.TextInput(attrs=attrs_dict),
-                                label=_(u'username'))
+                                label='Username')
     email = forms.EmailField(widget=forms.TextInput(attrs=dict(attrs_dict, maxlength=75)),
-                             label=_(u'email address'))
+                             label='Email address')
     password1 = forms.CharField(widget=forms.PasswordInput(attrs=attrs_dict, render_value=False),
-                                label=_(u'password'))
+                                label='Password')
     password2 = forms.CharField(widget=forms.PasswordInput(attrs=attrs_dict, render_value=False),
-                                label=_(u'password (again)'))
+                                label='Password (again)')
     
     def clean(self):
         """
@@ -58,7 +57,7 @@ class GatekeeperRegistrationForm(UserProfileForm):
         """
         if 'password1' in self.cleaned_data and 'password2' in self.cleaned_data:
             if self.cleaned_data['password1'] != self.cleaned_data['password2']:
-                raise forms.ValidationError(_(u'You must type the same password each time'))
+                raise forms.ValidationError('You must type the same password each time')
         return self.cleaned_data
 
     def clean_username(self):
@@ -71,7 +70,7 @@ class GatekeeperRegistrationForm(UserProfileForm):
             user = User.objects.get(username__iexact=self.cleaned_data['username'])
         except User.DoesNotExist:
             return self.cleaned_data['username']
-        raise forms.ValidationError(_(u'This username is already taken. Please choose another.'))
+        raise forms.ValidationError('This username is already taken. Please choose another.')
 
     def clean_email(self):
         """
@@ -80,5 +79,5 @@ class GatekeeperRegistrationForm(UserProfileForm):
 
         """
         if User.objects.filter(email__iexact=self.cleaned_data['email']):
-            raise forms.ValidationError(_(u'This email address is already in use. Please supply a different email address.'))
+            raise forms.ValidationError('This email address is already in use. Please supply a different email address.')
         return self.cleaned_data['email']
