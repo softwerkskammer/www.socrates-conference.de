@@ -1,6 +1,3 @@
-{{ new_user.get_full_name }} has requested to join {{ site.name }}
-
-
 Hi,
 
 {{ new_user.get_full_name }} ({{ new_user.email }}) has just requested to join {{ site.name }}.

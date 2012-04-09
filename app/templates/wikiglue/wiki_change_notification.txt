@@ -1,0 +1,16 @@
+Hi,
+
+{{ revision.creator.get_full_name }} has edited page 
+'{{ revision.page.slug }}' in the {{ site.name }} wiki.
+
+{% if revision.message %}
+The change message is:
+"{{ revision.message }}"
+{% else %}
+There is no message for this change!
+{% endif %}
+
+
+Cheers, 
+the-automagical-super-duper-mail-bot from {{ site.name }}
+

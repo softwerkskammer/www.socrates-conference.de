@@ -1,7 +1,11 @@
+import logging
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.contrib.auth.models import User, Permission
-import logging
+
+from wakawaka.models import Revision
+
+from wikiglue.mail import send_wiki_notification
 
 
 logger = logging.getLogger(__name__)
@@ -25,3 +29,18 @@ def add_wiki_permissions(sender, instance, created, **kwargs):
             # this may happen during an inital "createsuperuser" during "syncdb"
             pass
 
+
+@receiver(post_save, sender=Revision)
+def send_wiki_changes_notifications(sender, instance, created, **kwargs):
+    """
+    Sends a mail if a wiki page is edited (which actually means, 'when a revision
+    is created'), to all users which have the field 'notify_recent_changes' set to True in their
+    user profile. 
+    """
+    logging.info("Receiving post_save for revision %s" % instance)
+
+    # Revision objects are only relevant to us, when created (as every rev represents a page edit)
+    if created:
+        # looks sth like this [(u'mail@example.com',), (u'foo@example.com',)]
+        emails = User.objects.filter(userprofile__notify_recent_changes=True).values_list('email')
+        send_wiki_notification([tupl[0] for tupl in emails], instance)
