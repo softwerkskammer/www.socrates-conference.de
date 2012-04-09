@@ -24,20 +24,20 @@ def register(request):
         form = GatekeeperRegistrationForm()
     
     context = RequestContext(request)
-    return render_to_response('registration/registration_form.html', { 'form': form }, context_instance=context)
+    return render_to_response('gatekeeper/registration_form.html', { 'form': form }, context_instance=context)
 
 
 @login_required
 def public_profile(request, user_id):
     usr = get_object_or_404(User, pk=user_id)
-    return render_to_response('registration/public_profile.html', 
+    return render_to_response('gatekeeper/public_profile.html', 
                             { 'usr': usr, 'profile': usr.get_profile() }, 
                             context_instance=RequestContext(request))
 
 
 @login_required
 def current_user_profile(request):
-    return render_to_response('registration/current_user_profile.html', 
+    return render_to_response('gatekeeper/current_user_profile.html', 
                             { 'profile': request.user.get_profile() }, 
                             context_instance=RequestContext(request))
 
@@ -70,7 +70,7 @@ def edit_current_user_profile(request):
         data = dict(request.user.get_profile().__dict__.items() + request.user.__dict__.items())
         form = UserProfileForm(initial=data)
 
-    return render_to_response('registration/edit_current_user_profile.html', 
+    return render_to_response('gatekeeper/edit_current_user_profile.html', 
                             { 'form': form, 'profile': request.user.get_profile() }, 
                             context_instance=RequestContext(request))
 
@@ -80,7 +80,7 @@ def edit_current_user_profile(request):
 def pending_registrations(request):
     pending_users = User.objects.filter(is_active=False)
     context = RequestContext(request)
-    return render_to_response('registration/pending_registrations.html', 
+    return render_to_response('gatekeeper/pending_registrations.html', 
             { 'pending_registrations': pending_users }, 
             context_instance=context
         )

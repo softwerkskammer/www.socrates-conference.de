@@ -1,4 +1,4 @@
-{% extends "registration/registration_base.html" %}
+{% extends "gatekeeper/registration_base.html" %}
 {% load bootstrap %}
 
 {% block title %}Your Profile{% endblock %}
@@ -9,6 +9,6 @@
   <a href="{% url edit_current_user_profile %}">Edit your profile</a> or 
   <a href="{% url auth_password_change %}">change your password</a>
 </p>
-{% include "registration/include_user_profile.html" %}
+{% include "gatekeeper/include_user_profile.html" %}
 
 {% endblock %}

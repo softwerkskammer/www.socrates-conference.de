@@ -1,9 +1,9 @@
-{% extends "registration/registration_base.html" %}
+{% extends "gatekeeper/registration_base.html" %}
 {% load bootstrap %}
 
 {% block title %}Profile for '{{ usr.first_name }} {{ usr.first_name }}'{% endblock %}
 
 {% block content %}
 <h2>{{ usr.first_name }} {{ usr.last_name }}</h2>
-{% include "registration/include_user_profile.html" %}
+{% include "gatekeeper/include_user_profile.html" %}
 {% endblock %}
