@@ -3,7 +3,7 @@ Hi,
 {{ new_user.get_full_name }} ({{ new_user.email }}) has just requested to join {{ site.name }}.
 
 To process this request go to:
-{% url pending_registrations %}
+http://{{ site.name}}{% url pending_registrations %}
 
 This applicant provided the following responses:
 
