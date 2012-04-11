@@ -17,7 +17,10 @@ class UserProfileForm(forms.Form):
     profession = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), 
                                 label='Profession')
     focus = forms.CharField(required=False, label='Focus')
-    blog_url = forms.URLField(required=False, label='Blog URL')
+    blog_url = forms.URLField(required=False, 
+                                label='Blog URL',
+                                initial='http://',
+                                help_text='The URL of your blog, complete with leading protocol')
     twitter_name = forms.CharField(required=False, 
                                     label='Twitter account',
                                     help_text='Your twitter account name without the leading @')
