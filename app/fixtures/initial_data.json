@@ -2,8 +2,8 @@
     "pk": 1,
     "model": "sites.site",
     "fields": {
-        "domain": "scrts-conf-stage.ep.io",
-        "name": "scrts-conf-stage.ep.io"
+        "domain": "scrts-conf-prod.ep.io",
+        "name": "scrts-conf-prod.ep.io"
     }
 },
 {
@@ -12,6 +12,14 @@
     "fields": {
         "domain": "www.socrates-conference.de",
         "name": "www.socrates-conference.de"
+    }
+},
+{
+    "pk": 3,
+    "model": "sites.site",
+    "fields": {
+        "domain": "scrts-conf-stage.ep.io",
+        "name": "scrts-conf-stage.ep.io"
     }
 },
 {
