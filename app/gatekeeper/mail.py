@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.core.mail import send_mail
+from django.core.mail import EmailMessage
 from django.contrib.auth.models import User
 from django.contrib.sites.models import Site
 from django.template.loader import render_to_string
@@ -19,8 +19,13 @@ def send_moderation_notices(new_user):
     if recipients:
         # Email subject *must not* contain newlines
         subject = ''.join(subject.splitlines())
-        send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [u.email for u in recipients])
-    
+        email = EmailMessage(subject, 
+                            message, 
+                            settings.DEFAULT_FROM_EMAIL,
+                            bcc=[u.email for u in recipients],
+                            headers={ 'X-Softwerkskammer': 'Rocks'})
+        email.send()
+
 
 def send_approval_notice(user):
     """

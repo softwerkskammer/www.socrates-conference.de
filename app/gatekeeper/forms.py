@@ -13,7 +13,7 @@ class UserProfileForm(forms.Form):
     first_name = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), label='First name')
     last_name = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), label='Last name')
     location = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), 
-                                label='Your Location in Germany')
+                                label='Location (city, country)')
     profession = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), 
                                 label='Profession')
     focus = forms.CharField(required=False, label='Focus')
@@ -39,10 +39,6 @@ class UserProfileForm(forms.Form):
 class GatekeeperRegistrationForm(UserProfileForm):
     """
     """
-    username = forms.RegexField(regex=r'^\w+$',
-                                max_length=30,
-                                widget=forms.TextInput(attrs=attrs_dict),
-                                label='Username')
     email = forms.EmailField(widget=forms.TextInput(attrs=dict(attrs_dict, maxlength=75)),
                              label='Email address')
     password1 = forms.CharField(widget=forms.PasswordInput(attrs=attrs_dict, render_value=False),
@@ -62,18 +58,6 @@ class GatekeeperRegistrationForm(UserProfileForm):
             if self.cleaned_data['password1'] != self.cleaned_data['password2']:
                 raise forms.ValidationError('You must type the same password each time')
         return self.cleaned_data
-
-    def clean_username(self):
-        """
-        Validate that the username is alphanumeric and is not already
-        in use.
-
-        """
-        try:
-            user = User.objects.get(username__iexact=self.cleaned_data['username'])
-        except User.DoesNotExist:
-            return self.cleaned_data['username']
-        raise forms.ValidationError('This username is already taken. Please choose another.')
 
     def clean_email(self):
         """

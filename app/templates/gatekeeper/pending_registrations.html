@@ -7,7 +7,6 @@
 <table class="table table-striped table-condensed">
   <thead>
     <tr>
-      <th>Username</th>
       <th>Email</th>
       <th>Name</th>
       <th>Approve</th>
@@ -17,7 +16,6 @@
   <tbody>
   {% for reg in pending_registrations %}
     <tr>
-        <td>{{ reg.username }}</td>
         <td><a href="mailto:{{ reg.email }}">{{ reg.email }}</a></td>
         <td>
           <a href="{% url public_profile reg.id %}">{{ reg.get_full_name }}</a>

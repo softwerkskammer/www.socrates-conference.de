@@ -4,28 +4,41 @@
 
 {% block content %}
 
-    <div class="row">
-        <div class="span5">
-            <h2>SoCraTes login</h2>
-            <form method="post" action="{% url django.contrib.auth.views.login %}">
-                {% csrf_token %}
-                {{ form|bootstrap }}
+<div class="row">
+  <div class="span5">
+    <h2>SoCraTes login</h2>
+    <form method="post" action="{% url django.contrib.auth.views.login %}">
+      {% csrf_token %}
 
-                <p>
-                   <a href="{% url auth_password_reset %}">Forgot</a> your password?
-                   <a href="{% url registration_register %}">Need an account</a>?
-                </p>
+      <div class="control-group">
+        <label class="control-label">Email</label>
+        <div class="controls">
+            <input id="id_username" type="text" name="username" maxlength="30" />
+        </div>
+      </div>
 
-                <div class="form-actions">
-                  <input type="submit" class="btn-primary" value="Login"/>
-                  <input type="hidden" name="next" value="{{ next }}" />
-                </div>
-            </form>
+      <div class="control-group">
+        <label class="control-label">Password</label>
+        <div class="controls">
+            <input type="password" name="password" id="id_password" />
         </div>
-        <!--
-        <div class="span5">
-            {% include "gatekeeper/oauth.html" %}
-        </div>
-        -->
-    </div>
+      </div>
+
+      <p>
+         <a href="{% url auth_password_reset %}">Forgot</a> your password?
+         <a href="{% url registration_register %}">Need an account</a>?
+      </p>
+
+      <div class="form-actions">
+        <input type="submit" class="btn-primary" value="Login"/>
+        <input type="hidden" name="next" value="{{ next }}" />
+      </div>
+    </form>
+  </div>
+  <!--
+  <div class="span5">
+      {% include "gatekeeper/oauth.html" %}
+  </div>
+  -->
+</div>
 {% endblock %}

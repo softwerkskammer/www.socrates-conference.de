@@ -146,5 +146,16 @@ FIXTURE_DIRS = (
 GATEKEEPER_MODERATOR_GROUP = 'socrate_admins'
 AUTH_PROFILE_MODULE = 'gatekeeper.UserProfile'
 
-from .social_auth_settings import *
+AUTHENTICATION_BACKENDS = (
+    'gatekeeper.auth_backend.EmailModelBackend',
+    'social_auth.backends.twitter.TwitterBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+### social-auth setting
+LOGIN_URL          = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGIN_ERROR_URL    = '/accounts/register/complete/'
+
+
 from .keys import *

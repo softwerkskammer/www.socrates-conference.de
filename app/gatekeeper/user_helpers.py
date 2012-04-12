@@ -9,6 +9,9 @@ logger = logging.getLogger(__name__)
 def create_user(userdata):
     """
     """
+    # set a random username, b/c email is used for auth
+    userdata['username'] = ''.join([choice(letters) for i in xrange(30)])
+    
     new_user = User.objects.create_user(userdata['username'], 
                                         userdata['email'], 
                                         userdata['password1'])
