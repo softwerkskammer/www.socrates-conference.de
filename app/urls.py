@@ -7,6 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name='index.html'), name='home'),
     url(r'^details.html$', TemplateView.as_view(template_name='details.html'), name='details'),
+    url(r'^impressum.html$', TemplateView.as_view(template_name='impressum.html'), name='impressum'),
     
     url(r'', include('social_auth.urls')),
 
