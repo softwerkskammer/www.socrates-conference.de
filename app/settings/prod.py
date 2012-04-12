@@ -25,3 +25,7 @@ from .keys import *
 # defined in settings.keys
 # EMAIL_HOST_PASSWORD 
 # SECRET_KEY
+
+DEBUG = False
+TEMPLATE_DEBUG = DEBUG
+SOCIAL_AUTH_RAISE_EXCEPTIONS = DEBUG
