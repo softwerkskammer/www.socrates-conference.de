@@ -5,23 +5,28 @@ from gatekeeper.mail import send_moderation_notices
 from gatekeeper.models import UserProfile
 
 
-attrs_dict = { 'class': 'required' }
+attrs_dict = { 'class': 'required span4' }
+req_attrs_dict = { 'class': 'required span4' }
 
 class UserProfileForm(forms.Form):
     """
     """
-    first_name = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), label='First name')
-    last_name = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), label='Last name')
-    location = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), 
+    first_name = forms.CharField(widget=forms.TextInput(attrs=req_attrs_dict), label='First name')
+    last_name = forms.CharField(widget=forms.TextInput(attrs=req_attrs_dict), label='Last name')
+    location = forms.CharField(widget=forms.TextInput(attrs=req_attrs_dict), 
                                 label='Location (city, country)')
-    profession = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), 
+    profession = forms.CharField(widget=forms.TextInput(attrs=req_attrs_dict), 
                                 label='Profession')
-    focus = forms.CharField(required=False, label='Focus')
-    blog_url = forms.URLField(required=False, 
+    focus = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), 
+                            required=False, 
+                            label='Focus', )
+    blog_url = forms.URLField(widget=forms.TextInput(attrs=attrs_dict), 
+                                required=False, 
                                 label='Blog URL',
                                 initial='http://',
                                 help_text='The URL of your blog, complete with leading protocol')
-    twitter_name = forms.CharField(required=False, 
+    twitter_name = forms.CharField(widget=forms.TextInput(attrs=attrs_dict), 
+                                    required=False, 
                                     label='Twitter account',
                                     help_text='Your twitter account name without the leading @')
     notify_recent_changes = forms.BooleanField(required=False,
@@ -39,11 +44,11 @@ class UserProfileForm(forms.Form):
 class GatekeeperRegistrationForm(UserProfileForm):
     """
     """
-    email = forms.EmailField(widget=forms.TextInput(attrs=dict(attrs_dict, maxlength=75)),
+    email = forms.EmailField(widget=forms.TextInput(attrs=dict(req_attrs_dict, maxlength=75)),
                              label='Email address')
-    password1 = forms.CharField(widget=forms.PasswordInput(attrs=attrs_dict, render_value=False),
+    password1 = forms.CharField(widget=forms.PasswordInput(attrs=req_attrs_dict, render_value=False),
                                 label='Password')
-    password2 = forms.CharField(widget=forms.PasswordInput(attrs=attrs_dict, render_value=False),
+    password2 = forms.CharField(widget=forms.PasswordInput(attrs=req_attrs_dict, render_value=False),
                                 label='Password (again)')
     
     def clean(self):

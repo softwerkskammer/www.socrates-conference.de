@@ -17,27 +17,31 @@
     </div>
     -->
   </div>
-  <form method='POST' class="form-horizontal">
-      {% csrf_token %}
+  <div class="row">
+    <div class="span9">
+      <form method='POST' class="form-horizontal">
+          {% csrf_token %}
 
-        {{ form.first_name|bootstrap }}
-        {{ form.last_name|bootstrap }}
-        {{ form.email|bootstrap }}
-        {{ form.password1|bootstrap }}
-        {{ form.password2|bootstrap }}
-        {{ form.location|bootstrap }}
-        {{ form.profession|bootstrap }}
-        {{ form.focus|bootstrap }}
-        {{ form.blog_url|bootstrap }}
-        {{ form.twitter_name|bootstrap }}
-        {{ form.notify_recent_changes|bootstrap }}
+            {{ form.first_name|bootstrap }}
+            {{ form.last_name|bootstrap }}
+            {{ form.email|bootstrap }}
+            {{ form.password1|bootstrap }}
+            {{ form.password2|bootstrap }}
+            {{ form.location|bootstrap }}
+            {{ form.profession|bootstrap }}
+            {{ form.focus|bootstrap }}
+            {{ form.blog_url|bootstrap }}
+            {{ form.twitter_name|bootstrap }}
+            {{ form.notify_recent_changes|bootstrap }}
 
-      <div class="form-actions">
-        <input type="submit" class="btn-primary" value="Join" />
-        <p class="help-block">
-          Joining this group requires approval from a group manager. <br>
-          This is usually a matter of minutes, up to a few hours.
-        </p>
-      </div>
-  </form>
+          <div class="form-actions">
+            <input type="submit" class="btn-primary" value="Join" />
+            <p class="help-block">
+              Joining this group requires approval from a group manager. <br>
+              This is usually a matter of minutes, up to a few hours.
+            </p>
+          </div>
+      </form>
+    </div>
+  </div>
 {% endblock %}
