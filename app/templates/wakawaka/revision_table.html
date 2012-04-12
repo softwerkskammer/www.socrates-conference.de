@@ -34,7 +34,7 @@
         </td>
         <td class="modifed">{{ rev.modified|timesince }} ago</td>
         <td class="message">{{ rev.message }}</td>
-        <td class="creator">{{ rev.creator.get_full_name }}</td>
+        <td class="creator"><a href="{% url public_profile rev.creator.id %}">{{ rev.creator.get_full_name }}</a></td>
         <td class="options">
           <a href="{% url wakawaka_page slug=page.slug, rev_id=rev.pk %}">View</a>
           <a href="{% url wakawaka_edit slug=page.slug, rev_id=rev.pk %}">Revert</a>

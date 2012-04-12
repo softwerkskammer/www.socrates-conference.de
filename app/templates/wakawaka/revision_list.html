@@ -14,22 +14,15 @@
       <th>Changed</th>
       <th>Message</th>
       <th>Modified by</th>
-      <th>&nbsp;</th>
     </tr>
   </thead>
   <tbody>
   {% for rev in revision_list %}
     <tr>
-      <td>{{ rev.page.slug }}</td>
+      <td><a href="{% url wakawaka_page slug=rev.page.slug, rev_id=rev.pk %}">{{ rev.page.slug }}</a></td>
       <td class="modifed">{{ rev.modified|timesince }} ago</td>
       <td class="message">{{ rev.message }}</td>
-      <td class="creator">{{ rev.creator.get_full_name }}</td>
-      <td class="options">
-        <a href="{% url wakawaka_page slug=rev.page.slug, rev_id=rev.pk %}">View</a>
-        {% if user.is_authenticated %}
-        <a href="{% url wakawaka_edit slug=rev.page.slug, rev_id=rev.pk %}">Revert</a>
-        {% endif %}
-      </td>
+      <td class="creator"><a href="{% url public_profile rev.creator.id %}">{{ rev.creator.get_full_name }}</a></td>
     </tr>
   {% endfor %}
   </tbody>
