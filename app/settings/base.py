@@ -10,7 +10,7 @@ TEMPLATE_DEBUG = DEBUG
 SOCIAL_AUTH_RAISE_EXCEPTIONS = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('SoCraTes Webmaster', 'webmaster@socrates-conference.de'),
 )
 
 MANAGERS = ADMINS
