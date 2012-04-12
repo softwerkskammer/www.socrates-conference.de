@@ -23,6 +23,7 @@ def create_user(userdata):
     user_profile.twitter_name = userdata['twitter_name']
     user_profile.location = userdata['location']
     user_profile.profession = userdata['profession']
+    user_profile.notify_recent_changes = userdata['notify_recent_changes']
     user_profile.save()
     
     send_moderation_notices(new_user)
