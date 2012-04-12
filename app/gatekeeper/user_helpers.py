@@ -1,5 +1,7 @@
-from django.contrib.auth.models import User
 import logging
+from random import choice
+from string import letters
+from django.contrib.auth.models import User
 
 from gatekeeper.mail import send_moderation_notices
 
