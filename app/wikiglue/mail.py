@@ -17,6 +17,6 @@ def send_wiki_notification(recipients, revision):
         email = EmailMessage(subject, 
                             message, 
                             settings.DEFAULT_FROM_EMAIL,
-                            bcc=[u.email for u in recipients],
+                            bcc=recipients,
                             headers={ 'X-Softwerkskammer': 'Rocks'})
         email.send()
