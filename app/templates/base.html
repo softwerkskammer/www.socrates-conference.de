@@ -46,8 +46,8 @@
     </p>
   </nav>
 
-  {% block container %}
   <div class="container-fluid">
+    {% block container %}
     <div class="row-fluid">
       <div class="span2 site-logo">
         <a href="{% url home %}">
@@ -68,13 +68,17 @@
         {% endblock %}
       </div> <!-- /span10 -->
     </div> <!-- /row -->
+    {% endblock %}
     
     <footer>
-      <hr>
-      <p><a href="{% url impressum %}">Impressum</a></p>
+      <hr />
+      <p>
+        {% block footer %}
+        <a href="{% url impressum %}">Impressum</a>
+        {% endblock %}
+      </p>
     </footer>
   </div> <!-- /container -->
-  {% endblock %}
     
   <script src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
   <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>

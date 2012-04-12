@@ -1,1 +1,6 @@
 {% extends "base.html" %}
+
+{% block footer %}
+  {{ block.super }}
+  | <a href="{% url wakawaka_revision_list %}">Wiki Recent Changes</a>
+{% endblock %}
