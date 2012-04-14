@@ -30,6 +30,7 @@ class UserProfileForm(forms.Form):
                                     label='Twitter account',
                                     help_text='Your twitter account name without the leading @')
     notify_recent_changes = forms.BooleanField(required=False,
+                                                initial=True,
                                                 label='Wiki mail notifications',
                                                 help_text='Get notified of wiki changes by email')
 
