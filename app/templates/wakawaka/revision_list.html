@@ -19,7 +19,7 @@
   <tbody>
   {% for rev in revision_list %}
     <tr>
-      <td><a href="{% url wakawaka_page slug=rev.page.slug, rev_id=rev.pk %}">{{ rev.page.slug }}</a></td>
+      <td><a href="{% url wakawaka_page slug=rev.page.slug, rev_id=rev.pk %}">{{ rev.page.slug }}</a></td>
       <td class="modifed">{{ rev.modified|timesince }} ago</td>
       <td class="message">{{ rev.message }}</td>
       <td class="creator"><a href="{% url public_profile rev.creator.id %}">{{ rev.creator.get_full_name }}</a></td>
