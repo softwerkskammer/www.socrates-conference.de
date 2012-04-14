@@ -8,9 +8,11 @@
   <div class="span5">
     <h2>SoCraTes login</h2>
     
+    {% if form.non_field_errors %}
     <div class="alert alert-error">
       <p>{{ form.non_field_errors }}</p>
     </div>
+    {% endif %}
     
     <form method="post" action="{% url django.contrib.auth.views.login %}">
       {% csrf_token %}
