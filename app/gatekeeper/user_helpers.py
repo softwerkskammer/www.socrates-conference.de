@@ -11,8 +11,7 @@ logger = logging.getLogger(__name__)
 def create_user(userdata):
     """
     """
-    # set a random username, b/c email is used for auth
-    userdata['username'] = ''.join([choice(letters) for i in xrange(30)])
+    userdata['username'] = get_username(userdata['first_name'], userdata['last_name'], 0)
     
     new_user = User.objects.create_user(userdata['username'], 
                                         userdata['email'], 
@@ -40,3 +39,18 @@ def user_in_group(user, groupname):
         logger.warn("Can't test if empty user is in group %s" % groupname)
         return False
     return filter(lambda grp: grp.name == groupname, user.groups.all())
+
+
+def get_username(firstname, lastname, index):
+    """
+    """
+    username = u''.join([firstname.capitalize(), lastname.capitalize()])
+    if index > 0:
+        username += str(index)
+    try:
+        user = User.objects.get(username=username)
+        return get_username(firstname, lastname, index+1)
+    except User.DoesNotExist:
+        return username
+
+    
