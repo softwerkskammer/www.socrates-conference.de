@@ -18,7 +18,7 @@
     <tr>
         <td><a href="mailto:{{ reg.email }}">{{ reg.email }}</a></td>
         <td>
-          <a href="{% url public_profile reg.id %}">{{ reg.get_full_name }}</a>
+          <a href="{% url public_profile reg.username %}">{{ reg.get_full_name }}</a>
         </td>
         <td>
           <form method="POST" action="{% url approve_pending_registration reg.id %}">

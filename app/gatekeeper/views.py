@@ -28,8 +28,8 @@ def register(request):
 
 
 @login_required
-def public_profile(request, user_id):
-    usr = get_object_or_404(User, pk=user_id)
+def public_profile(request, username):
+    usr = get_object_or_404(User, username=username)
     return render_to_response('gatekeeper/public_profile.html', 
                             { 'usr': usr, 'profile': usr.get_profile() }, 
                             context_instance=RequestContext(request))

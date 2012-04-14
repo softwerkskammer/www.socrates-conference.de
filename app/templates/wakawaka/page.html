@@ -21,7 +21,7 @@
   {% spaceless %}
   <div class="wiki-page-info">
       <span>
-        Last modified by <a href="{% url public_profile rev.creator.id %}"><em>{{ rev.creator.get_full_name }}</em></a>
+        Last modified by <a href="{% url public_profile rev.creator.username %}"><em>{{ rev.creator.get_full_name }}</em></a>
         on {{ rev.modified|date:"DATETIME_FORMAT" }}
         (<a href="{% url wakawaka_revision_list slug=page.slug %}">History</a>)
       </span>
