@@ -1,7 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Serif+Caption);
 
 body {
-  padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
   padding-bottom: 40px;
 }
 

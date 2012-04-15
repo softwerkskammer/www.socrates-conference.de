@@ -21,6 +21,8 @@
 
 <body>
   
+  {% block navigation %}
+  <div style="margin-top:60px;"><!-- dirty trick to push content below nav --></div>
   <nav id="nav">
     <ul>
       <li><a href="{% url home %}">Home</a></li>
@@ -42,7 +44,8 @@
     {% endif %}
     </p>
   </nav>
-
+  {% endblock %}
+  
   <div class="container-fluid">
     {% block container %}
     <div class="row-fluid">
