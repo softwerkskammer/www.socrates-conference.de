@@ -1,0 +1,5 @@
+-r requirements.txt
+fabric
+epio
+django-debug-toolbar
+-e git://github.com/neubloc/django-colortools#egg=django-colortools

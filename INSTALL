@@ -1,3 +1,17 @@
+
+## Installation
+
+## For development
+    # create a virtualenv & activate it
+    
+    $> pip install -r requirements_dev.txt
+    $> fab init_db
+    
+    ### TODO generate keys files
+
+
+### Production Install
+
 - configure a correct domain for site with SITE_ID = 1
   $ epio django shell
   >>> Site(domain="scrts-conf-stage.ep.io", name="scrts-conf-stage.ep.io").save()
