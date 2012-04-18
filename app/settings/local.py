@@ -1,6 +1,5 @@
 from __future__ import absolute_import
 from .base import *
-from .local_keys import *
 
 DEBUG=True
 TEMPLATE_DEBUG=DEBUG

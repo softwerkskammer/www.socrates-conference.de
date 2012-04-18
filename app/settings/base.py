@@ -157,5 +157,3 @@ LOGIN_URL          = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGIN_ERROR_URL    = '/accounts/register/complete/'
 
-
-from .keys import *

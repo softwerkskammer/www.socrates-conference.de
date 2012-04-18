@@ -21,11 +21,13 @@ EMAIL_HOST_USER = 'ask@socrates-conference.de'
 EMAIL_PORT = 587
 
 
-from .keys import *
-# defined in settings.keys
-# EMAIL_HOST_PASSWORD 
-# SECRET_KEY
-
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 SOCIAL_AUTH_RAISE_EXCEPTIONS = DEBUG
+
+##### defined in settings.keys
+### EMAIL_HOST_PASSWORD 
+### SECRET_KEY
+### TWITTER_CONSUMER_KEY
+### TWITTER_CONSUMER_SECRET
+

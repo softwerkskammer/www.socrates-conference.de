@@ -1,19 +1,16 @@
 
 ## Installation
 
-## For development
+### For development
     # create a virtualenv & activate it
     
     $> pip install -r requirements_dev.txt
     $> fab init_db
-    
-    ### TODO generate keys files
+    $> ./manage.py runserver
 
 
 ### Production Install
 
-- configure a correct domain for site with SITE_ID = 1
-  $ epio django shell
-  >>> Site(domain="scrts-conf-stage.ep.io", name="scrts-conf-stage.ep.io").save()
-  
-- configure an email server in settings/prod.py
+- Make sure the correct SITE_ID is set in settings.prod
+- create a `settings/keys.py` file that contains values for the secret settings listed in 
+  `settings/prod.py`
