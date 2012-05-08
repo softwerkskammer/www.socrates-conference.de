@@ -17,4 +17,7 @@ urlpatterns = patterns('',
     url(r'^accounts/', include('gatekeeper.urls')),
 
     url(r'robots.txt', TemplateView.as_view(template_name="robots.txt")),
+    
+    # use gunicorn to serve static files ... might be changed in later releases
+    url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
 )

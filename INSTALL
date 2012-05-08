@@ -2,6 +2,9 @@
 ## Installation
 
 ### For development
+
+Note: Due to naming restrictions in python modules, the name of the directory that contains the git repo should not contain the dot-character
+
     # create a virtualenv & activate it
     
     $> pip install -r requirements_dev.txt
@@ -23,3 +26,7 @@
     $> heroku config:add TWITTER_CONSUMER_SECRET=xxxx
     $> heroku config:add SECRET_KEY=xxxx
     $> heroku config:add EMAIL_HOST_PASSWORD=xxxx
+    
+    # say no, when asked to create a superuser
+    $> heroku run python manage.py syncdb --migrate
+    $> heroku run python manage.py createsuperuser
