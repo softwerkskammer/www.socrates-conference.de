@@ -14,3 +14,12 @@
 - Make sure the correct SITE_ID is set in settings.prod
 - create a `settings/keys.py` file that contains values for the secret settings listed in 
   `settings/prod.py`
+- set the environment variable "ENV_PROD" to some true value, e.g. 1
+  
+#### Heroku style
+
+    $> heroku config:add ENV_PROD=1
+    $> heroku config:add TWITTER_CONSUMER_KEY=xxxx
+    $> heroku config:add TWITTER_CONSUMER_SECRET=xxxx
+    $> heroku config:add SECRET_KEY=xxxx
+    $> heroku config:add EMAIL_HOST_PASSWORD=xxxx

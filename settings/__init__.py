@@ -3,7 +3,6 @@ import os
 
 if 'ENV_PROD' in os.environ:
     from .prod import *
-    from .keys import *
 else:
     try:
         # try to import local settings ...

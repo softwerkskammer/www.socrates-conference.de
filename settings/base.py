@@ -134,6 +134,7 @@ INSTALLED_APPS = (
     'wakawaka',
     'social_auth',
     'bootstrapform',
+    'gunicorn',
     
     'wikiglue',
     'gatekeeper',

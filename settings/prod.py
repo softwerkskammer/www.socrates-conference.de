@@ -1,18 +1,10 @@
 from __future__ import absolute_import
+import os
 from .base import *
 
-from bundle_config import config
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config['postgres']['database'],
-        'USER': config['postgres']['username'],
-        'PASSWORD': config['postgres']['password'],
-        'HOST': config['postgres']['host'],
-    }
-}
+from postgresify import postgresify
 
-MEDIA_ROOT = config['core']['data_directory']
+DATABASES = postgresify()
 
 DEFAULT_FROM_EMAIL = 'Ask SoCraTes <ask@socrates-conference.de>'
 EMAIL_USE_TLS = True
@@ -25,9 +17,7 @@ DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 SOCIAL_AUTH_RAISE_EXCEPTIONS = DEBUG
 
-##### defined in settings.keys
-### EMAIL_HOST_PASSWORD 
-### SECRET_KEY
-### TWITTER_CONSUMER_KEY
-### TWITTER_CONSUMER_SECRET
-
+TWITTER_CONSUMER_KEY = os.environ['TWITTER_CONSUMER_KEY']
+TWITTER_CONSUMER_SECRET = os.environ['TWITTER_CONSUMER_SECRET']
+SECRET_KEY = os.environ['SECRET_KEY']
+EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
