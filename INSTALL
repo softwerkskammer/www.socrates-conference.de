@@ -30,3 +30,5 @@ Note: Due to naming restrictions in python modules, the name of the directory th
     # say no, when asked to create a superuser
     $> heroku run python manage.py syncdb --migrate
     $> heroku run python manage.py createsuperuser
+
+    $> heroku ps:scale web=1  
