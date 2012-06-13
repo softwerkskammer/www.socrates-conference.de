@@ -17,26 +17,8 @@
     <form method="post" action="{% url django.contrib.auth.views.login %}">
       {% csrf_token %}
 
-      <label class="control-label">
-        Email or Username
-      </label>
-      <div class="controls">
-          {{ form.username }}
-          {% for error in form.username.errors %}
-              <span class="help-inline">{{ error }}</span>
-          {% endfor %}
-      </div>
-
-      <label class="control-label">
-        {{ form.password.label }}
-      </label>
-      <div class="controls">
-          {{ form.password }}
-          {% for error in form.password.errors %}
-              <span class="help-inline">{{ error }}</span>
-          {% endfor %}
-      </div>
-
+      {{ form.username|bootstrap }}
+      {{ form.password|bootstrap }}
       <p>
          <a href="{% url auth_password_reset %}">Forgot</a> your password?
          <a href="{% url registration_register %}">Need an account</a>?

@@ -9,6 +9,7 @@ from gatekeeper.views import delete_pending_registrations
 from gatekeeper.views import current_user_profile
 from gatekeeper.views import edit_current_user_profile
 from gatekeeper.views import public_profile
+from gatekeeper.forms import LoginForm
 
 urlpatterns = patterns('',
     url(r'^profile/$', current_user_profile, name='current_user_profile'),
@@ -35,7 +36,7 @@ urlpatterns = patterns('',
 
     url(r'^login/$', 
         auth_views.login, 
-        {'template_name': 'gatekeeper/login.html'}, 
+        {'template_name': 'gatekeeper/login.html', 'authentication_form': LoginForm}, 
         name='auth_login'),
 
     url(r'^logout/$', 

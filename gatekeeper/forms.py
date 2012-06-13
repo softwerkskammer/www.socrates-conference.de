@@ -1,5 +1,6 @@
 from django import forms
 from django.contrib.auth.models import User
+from django.contrib.auth.forms import AuthenticationForm
 
 from gatekeeper.mail import send_moderation_notices
 from gatekeeper.models import UserProfile
@@ -74,3 +75,8 @@ class GatekeeperRegistrationForm(UserProfileForm):
         if User.objects.filter(email__iexact=self.cleaned_data['email']):
             raise forms.ValidationError('This email address is already in use. Please supply a different email address.')
         return self.cleaned_data['email']
+
+
+class LoginForm(AuthenticationForm):
+    # login is done via username OR email, so username field needs to accept longer values 
+    username = forms.CharField(label="Email or Username", max_length=75)
