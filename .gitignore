@@ -5,3 +5,5 @@ static-deploy
 settings/keys.py
 settings/local_keys.py
 LOCAL.DB
+
+test.html
