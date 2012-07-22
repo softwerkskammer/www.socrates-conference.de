@@ -12,7 +12,7 @@ urlpatterns = patterns('',
     
     url(r'', include('social_auth.urls')),
 
-    url(r'^wiki/', include('wakawaka.urls')),
+    url(r'^wiki/', include('wakawaka.urls.authenticated')),
     url(r'^admin/', include(admin.site.urls)),
     
     url(r'^accounts/', include('gatekeeper.urls')),
