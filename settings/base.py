@@ -158,3 +158,5 @@ LOGIN_URL          = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGIN_ERROR_URL    = '/accounts/register/complete/'
 
+### WakaWaka Wiki
+WAKAWAKA_SLUG_REGEX = r'((([A-Z]+[a-z0-9]+){2,})(/([A-Z]+[a-z0-9]+){2,})*)'
