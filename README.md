@@ -22,7 +22,11 @@ Note: Due to naming restrictions in python modules, the name of the directory th
     # create a virtualenv & activate it
     
     $> pip install -r requirements_dev.txt
-    $> fab init_db
+    
+    # say no, when asked to create a superuser
+    $> ./manage.py syncdb --migrate
+    $> ./manage.py createsuperuser
+    
     $> ./manage.py runserver
 
 
