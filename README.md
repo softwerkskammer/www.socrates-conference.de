@@ -18,6 +18,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ### For development
 
 Note: Due to naming restrictions in python modules, the name of the directory that contains the git repo should not contain the dot-character
+For Linux: run "apt-get install libpq-dev python-dev" beforehand to install the requirements
 
     # create a virtualenv & activate it
     
