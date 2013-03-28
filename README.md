@@ -30,6 +30,9 @@ For Linux: run "apt-get install libpq-dev python-dev" beforehand to install the 
     
     $> ./manage.py runserver
 
+Due to unfortunate naming of this repo and the way Django works you should rename the directory your clone resides in to something without dots.  
+TL;DR rename the directory of your local clone to socrates-conference
+
 
 ### Production Install
 
