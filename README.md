@@ -15,12 +15,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Installation
 
-### For development
+### Requirements
 
-Note: Due to naming restrictions in python modules, the name of the directory that contains the git repo should not contain the dot-character
-For Linux: run "apt-get install libpq-dev python-dev" beforehand to install the requirements
+* Python, >=v2.6 ... not v3.x 
+* Under Linux: run "apt-get install libpq-dev python-dev" beforehand to install the requirements
+* [pip](http://www.pip-installer.org/) ... easiest to install via [get-pip.py](http://www.pip-installer.org/en/latest/installing.html#install-or-upgrade-pip)
+* [virtualenv](http://www.virtualenv.org/) ... easiest to install [globally via pip](http://www.virtualenv.org/en/latest/#installation)
+* Optional: Consider using [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/) to make handling virtualenvs easier. 
 
-    # create a virtualenv & activate it
+### Prepare for development
+
+**NOTE:** Due to unfortunate naming of this repo and the way Django/Python works you should rename the directory your clone resides in to something without dots.  
+TL;DR rename the directory of your local clone to socrates-conference
+
+    # create a virtualenv & activate it ... sth like `virtualenv socratesconf && . socratesconf/bin/activate`
     
     $> pip install -r requirements_dev.txt
     
@@ -29,10 +37,8 @@ For Linux: run "apt-get install libpq-dev python-dev" beforehand to install the 
     $> ./manage.py createsuperuser
     
     $> ./manage.py runserver
-
-Due to unfortunate naming of this repo and the way Django works you should rename the directory your clone resides in to something without dots.  
-TL;DR rename the directory of your local clone to socrates-conference
-
+    
+Now the development server is running and reachable at localhost:8000 
 
 ### Production Install
 
