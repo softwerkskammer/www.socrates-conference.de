@@ -293,33 +293,6 @@
     }
 },
 {
-    "pk": 34,
-    "model": "auth.permission",
-    "fields": {
-        "codename": "add_usersocialauth",
-        "name": "Can add user social auth",
-        "content_type": 12
-    }
-},
-{
-    "pk": 35,
-    "model": "auth.permission",
-    "fields": {
-        "codename": "change_usersocialauth",
-        "name": "Can change user social auth",
-        "content_type": 12
-    }
-},
-{
-    "pk": 36,
-    "model": "auth.permission",
-    "fields": {
-        "codename": "delete_usersocialauth",
-        "name": "Can delete user social auth",
-        "content_type": 12
-    }
-},
-{
     "pk": 25,
     "model": "auth.permission",
     "fields": {

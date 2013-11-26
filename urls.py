@@ -10,8 +10,6 @@ urlpatterns = patterns('',
     url(r'^details.html$', TemplateView.as_view(template_name='details.html'), name='details'),
     url(r'^impressum.html$', TemplateView.as_view(template_name='impressum.html'), name='impressum'),
     
-    url(r'', include('social_auth.urls')),
-
     url(r'^wiki/', include('wakawaka.urls.authenticated')),
     url(r'^admin/', include(admin.site.urls)),
     

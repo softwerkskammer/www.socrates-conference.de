@@ -7,7 +7,6 @@ PROJECT_DIR = Path(__file__).absolute().ancestor(2)
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-SOCIAL_AUTH_RAISE_EXCEPTIONS = DEBUG
 
 ADMINS = (
     ('SoCraTes Webmaster', 'webmaster@socrates-conference.de'),
@@ -100,10 +99,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.media",
     "django.core.context_processors.static",
     "django.contrib.messages.context_processors.messages",
-
-    'social_auth.context_processors.social_auth_by_name_backends',
-    'social_auth.context_processors.social_auth_backends',
-    'social_auth.context_processors.social_auth_by_type_backends',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -132,7 +127,6 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'south',
     'wakawaka',
-    'social_auth',
     'bootstrapform',
     'gunicorn',
     
@@ -149,14 +143,8 @@ AUTH_PROFILE_MODULE = 'gatekeeper.UserProfile'
 
 AUTHENTICATION_BACKENDS = (
     'gatekeeper.auth_backend.EmailModelBackend',
-    'social_auth.backends.twitter.TwitterBackend',
     'django.contrib.auth.backends.ModelBackend',
 )
-
-### social-auth setting
-LOGIN_URL          = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/'
-LOGIN_ERROR_URL    = '/accounts/register/complete/'
 
 ### WakaWaka Wiki
 WAKAWAKA_SLUG_REGEX = r'((([A-Z]+[a-z0-9]+){2,})(/([A-Z]+[a-z0-9]+){2,})*)'
