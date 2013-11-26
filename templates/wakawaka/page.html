@@ -17,18 +17,18 @@
 {% endblock %}
 
 {% block content %}
-  <h1 class="wiki-head-slug remove-bottom"><a href="{% url wakawaka_page slug=page.slug %}">{{ page.slug }}</a></h1>
+  <h1 class="wiki-head-slug remove-bottom"><a href="{% url 'wakawaka_page' slug=page.slug %}">{{ page.slug }}</a></h1>
   {% spaceless %}
   <div class="wiki-page-info">
       <span>
-        Last modified by <a href="{% url public_profile rev.creator.username %}"><em>{{ rev.creator.get_full_name }}</em></a>
+        Last modified by <a href="{% url 'public_profile' rev.creator.username %}"><em>{{ rev.creator.get_full_name }}</em></a>
         on {{ rev.modified|date:"DATETIME_FORMAT" }}
-        (<a href="{% url wakawaka_revision_list slug=page.slug %}">History</a>)
+        (<a href="{% url 'wakawaka_revision_list' slug=page.slug %}">History</a>)
       </span>
       
       {% if perms.wakawaka.change_wikipage %}
       <span>
-        <a href="{% url wakawaka_edit slug=page.slug %}">Edit</a>
+        <a href="{% url 'wakawaka_edit' slug=page.slug %}">Edit</a>
       </span>
       {% endif %}
   </div>
@@ -36,7 +36,7 @@
   {% if rev.is_not_current %}
   <div class="alert">
     You are viewing an older revision!
-    <a href="{% url wakawaka_page slug=page.slug %}">See the latest version</a>
+    <a href="{% url 'wakawaka_page' slug=page.slug %}">See the latest version</a>
   </div>
   {% endif %}
 

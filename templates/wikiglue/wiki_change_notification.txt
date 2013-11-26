@@ -4,7 +4,7 @@ Hi,
 '{{ revision.page.slug }}' in the {{ site.name }} wiki.
 
 This change's URL is:
-http://{{ site.name }}{% url wakawaka_page revision.page.slug revision.id %}
+http://{{ site.name }}{% url 'wakawaka_page' revision.page.slug revision.id %}
 
 {% if revision.message %}
 The change message is:

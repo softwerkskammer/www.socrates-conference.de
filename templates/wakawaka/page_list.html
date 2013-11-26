@@ -8,7 +8,7 @@
   <h1>All wiki pages</h1>
   <ul>
   {% for page in page_list %}
-  <li><a href="{% url wakawaka_page slug=page.slug %}">{{ page.slug }}</a>
+  <li><a href="{% url 'wakawaka_page' slug=page.slug %}">{{ page.slug }}</a>
   {% endfor %}
 </ul>
 {% endblock %}

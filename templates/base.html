@@ -25,14 +25,14 @@
   <div style="margin-top:60px;"><!-- dirty trick to push content below nav --></div>
   <nav id="nav">
     <ul>
-      <li><a href="{% url home %}">Home</a></li>
-      <li><a href="{% url wakawaka_index %}">Wiki</a></li>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'wakawaka_index' %}">Wiki</a></li>
     </ul>
     <p class="pull-right">
     {% if user.is_authenticated %}
-      <a href="{% url auth_logout %}">Logout</a> | 
+      <a href="{% url 'auth_logout' %}">Logout</a> | 
       Logged in as 
-      <a href="{% url current_user_profile %}">
+      <a href="{% url 'current_user_profile' %}">
         {% if user.get_full_name %}
           {{ user.get_full_name }}
         {% else %}
@@ -40,7 +40,7 @@
         {% endif %}
       </a>
     {% else %}
-      <a href="{% url auth_login %}">Login</a> | <a href="{% url registration_register %}">Register</a>
+      <a href="{% url 'auth_login' %}">Login</a> | <a href="{% url 'registration_register' %}">Register</a>
     {% endif %}
     </p>
   </nav>
@@ -50,9 +50,9 @@
     {% block container %}
     <div class="row-fluid">
       <div class="span2 site-logo">
-        <a href="{% url home %}">
-          <img src="{{ STATIC_URL }}img/socrates2013_logo_40perc.png" 
-               alt="SoCraTes Conference 2013 - Software Craftsmanship and Testing" />
+        <a href="{% url 'home' %}">
+          <img src="{{ STATIC_URL }}img/socrates2014_logo_40perc.png" 
+               alt="SoCraTes Conference 2014 - Software Craftsmanship and Testing" />
         </a>
       </div><!-- /span2 -->
       <div class="span10">
@@ -74,7 +74,7 @@
       <hr />
       <p>
         {% block footer %}
-        <a href="{% url impressum %}">Impressum</a>
+        <a href="{% url 'impressum' %}">Impressum</a>
         {% endblock %}
       </p>
     </footer>

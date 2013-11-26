@@ -2,6 +2,6 @@
 
 {% block footer %}
   {{ block.super }}
-  | <a href="{% url wakawaka_revision_list %}">Wiki Recent Changes</a> 
-  | <a href="{% url wakawaka_page_list %}">Wiki Index</a>
+  | <a href="{% url 'wakawaka_revision_list' %}">Wiki Recent Changes</a> 
+  | <a href="{% url 'wakawaka_page_list' %}">Wiki Index</a>
 {% endblock %}

@@ -11,7 +11,7 @@
     <p>
       The SoCraTes Wiki contains private information and is therefore for participants only. If you
       are a participant of the conference but haven't got an account yet, please 
-      <a href="{% url registration_register %}">register here</a>.
+      <a href="{% url 'registration_register' %}">register here</a>.
       
     </p>
     {% if form.non_field_errors %}
@@ -20,14 +20,14 @@
     </div>
     {% endif %}
     
-    <form method="post" action="{% url django.contrib.auth.views.login %}">
+    <form method="post" action="{% url 'django.contrib.auth.views.login' %}">
       {% csrf_token %}
 
       {{ form.username|bootstrap }}
       {{ form.password|bootstrap }}
       <p>
-         <a href="{% url auth_password_reset %}">Forgot</a> your password?
-         <a href="{% url registration_register %}">Need an account</a>?
+         <a href="{% url 'auth_password_reset' %}">Forgot</a> your password?
+         <a href="{% url 'registration_register' %}">Need an account</a>?
       </p>
 
       <div class="form-actions">
@@ -36,10 +36,5 @@
       </div>
     </form>
   </div>
-  <!--
-  <div class="span5">
-      {% include "gatekeeper/oauth.html" %}
-  </div>
-  -->
 </div>
 {% endblock %}

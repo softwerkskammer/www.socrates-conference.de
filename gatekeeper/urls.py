@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import patterns, url
-from django.views.generic.simple import direct_to_template
+from django.views.generic import TemplateView
 from django.contrib.auth import views as auth_views
 
 from gatekeeper.views import register
@@ -18,8 +18,7 @@ urlpatterns = patterns('',
     url(r'^register/$', register, name='registration_register'),
 
     url(r'^register/complete/$',
-       direct_to_template,
-       {'template': 'gatekeeper/registration_complete.html'},
+       TemplateView.as_view(template_name='gatekeeper/registration_complete.html'),
        name='registration_complete'),
 
     url(r'^registrations/pending/$', 

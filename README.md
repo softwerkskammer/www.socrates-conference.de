@@ -30,7 +30,7 @@ TL;DR rename the directory of your local clone to socrates-conference
 
     # create a virtualenv & activate it ... sth like `virtualenv socratesconf && . socratesconf/bin/activate`
     
-    $> pip install -r requirements_dev.txt
+    $> pip install -r requirements.txt
     
     # say no, when asked to create a superuser
     $> ./manage.py syncdb --migrate

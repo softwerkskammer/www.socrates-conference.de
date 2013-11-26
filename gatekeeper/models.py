@@ -48,7 +48,7 @@ class UserProfile(models.Model):
     profession = models.CharField(max_length=255, blank=True)
     focus = models.CharField(max_length=255, blank=True)
     twitter_name = models.CharField(max_length=40, blank=True)
-    blog_url = models.URLField(blank=True, verify_exists=False)
+    blog_url = models.URLField(blank=True)
     notify_recent_changes = models.BooleanField(default=False)
     
     def __unicode__(self):

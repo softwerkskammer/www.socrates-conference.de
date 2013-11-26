@@ -34,7 +34,7 @@
     <div class="form-actions">
     <input type="submit" class="btn-primary btn-large" value="Save changes" />
     or
-    <a href="{% if page.is_initial %}javascript:window.history.go(-1);{% else %}{% url wakawaka_page slug=page.slug %}{% endif %}">
+    <a href="{% if page.is_initial %}javascript:window.history.go(-1);{% else %}{% url 'wakawaka_page' slug=page.slug %}{% endif %}">
       Cancel
     </a>
     </div>

@@ -15,21 +15,6 @@ DATABASES = {
     }
 }
 
-
-MIDDLEWARE_CLASSES = list(MIDDLEWARE_CLASSES)
-MIDDLEWARE_CLASSES.append('debug_toolbar.middleware.DebugToolbarMiddleware')
-
-INSTALLED_APPS = list(INSTALLED_APPS)
-INSTALLED_APPS.append('debug_toolbar')
-INSTALLED_APPS.append('colortools')
-
-TEST_RUNNER = "colortools.test.ColorDjangoTestSuiteRunner"
-
-INTERNAL_IPS = ('127.0.0.1',)
-DEBUG_TOOLBAR_CONFIG = {
-    'INTERCEPT_REDIRECTS': False
-}
-
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 LOGGING = {
