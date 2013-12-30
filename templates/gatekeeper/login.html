@@ -9,10 +9,8 @@
     <h2>SoCraTes login</h2>
     
     <p>
-      The SoCraTes Wiki contains private information and is therefore for participants only. If you
-      are a participant of the conference but haven't got an account yet, please 
-      <a href="{% url 'registration_register' %}">register here</a>.
-      
+        The SoCraTes Wiki contains private information and is therefore for
+        participants only. 
     </p>
     {% if form.non_field_errors %}
     <div class="alert alert-error">
@@ -27,7 +25,6 @@
       {{ form.password|bootstrap }}
       <p>
          <a href="{% url 'auth_password_reset' %}">Forgot</a> your password?
-         <a href="{% url 'registration_register' %}">Need an account</a>?
       </p>
 
       <div class="form-actions">
