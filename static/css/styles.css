@@ -190,6 +190,14 @@ nav a:hover, nav a:focus {
   color: #E8E8E8; 
 }
 
+#header {
+    margin-top: 60px;
+}
+
+#content-container {
+    margin-top: 40px;
+}
+
 p {
   font-size: 14px;
 }

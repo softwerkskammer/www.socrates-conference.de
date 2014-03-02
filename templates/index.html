@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block container %}
-<div class="row-fluid">
+<div class="row-fluid" id="header">
     {% include "include_wide_header.html" %}
 </div>
 
-<div class="row-fluid" style="margin-top: 20px">
+<div class="row-fluid" id="content-container">
     <div class="span9">
         <h3>What is it about?</h3>
 
@@ -19,24 +19,25 @@
             if &hellip;
         </p>
         <ul class="square">
-            <li>you are passionate about software development and testing.  </li>
-            <li>you have already heard of Software Craftsmanship or even already are part of the raising community.  </li>
-            <li>you want to share your knowlege, experience and expertise.  </li>
+            <li>you are passionate about software development and testing.</li>
+            <li>you have already heard of Software Craftsmanship or even already are part of the raising community.</li>
+            <li>you want to share your knowlege, experience and expertise.</li>
         </ul>
 
-        <h4> Action </h4> 
+        <h4> Action </h4>
+
         <p> The event will be run as a non-profit, low-cost
-            event. It is a joint-effort of all 
-            <a href="http://softwerkskammer.de" target="_blank">Softwerkskammer</a> 
-            groups, the community of all German Software Craftsmanship groups. 
-            It will be much like a retreat. We will be there for 48 hours to 
-            collaborate and share ideas. There will be: 
+            event. It is a joint-effort of all
+            <a href="http://softwerkskammer.de" target="_blank">Softwerkskammer</a>
+            groups, the community of all German Software Craftsmanship groups.
+            It will be much like a retreat. We will be there for 48 hours to
+            collaborate and share ideas. There will be:
         </p>
         <ul class="square">
-            <li>Highly collaborative interactions </li>
+            <li>Highly collaborative interactions</li>
             <li>A self-organized Open Space, with &hellip;
                 <ul class="square">
-                    <li>hands-on coding sessions </li>
+                    <li>hands-on coding sessions</li>
                     <li>sessions focused on discussion</li>
                     <li>interactive talks</li>
                     <li>lots more</li>
@@ -48,7 +49,9 @@
         </p>
 
         <h4>Contact </h4>
-        <p>Follow <a href="http://twitter.com/socrates_2014" target="_blank">@socrates_2014</a> on Twitter to stay up-to-date. </p>
+
+        <p>Follow <a href="http://twitter.com/socrates_2014" target="_blank">@socrates_2014</a> on Twitter to stay
+            up-to-date. </p>
 
         <p>
             <strong>Email:</strong> <a href="mailto:info@socrates-conference.de">info@socrates-conference.de</a>
@@ -60,4 +63,5 @@
 
     <div class="span3">
     </div>
-</div>{% endblock %}
+</div>
+{% endblock %}

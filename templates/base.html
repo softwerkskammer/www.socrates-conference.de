@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>{% block title %}SoCraTes 2014{% endblock %}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <title>{% block title %}SoCraTes 2014{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
-  <link href="{{ STATIC_URL }}css/styles.css" rel="stylesheet">
-  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
+    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/styles.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <![endif]-->
 
-  <link rel="shortcut icon" href="{{ STATIC_URL }}favicon.ico">
-  {% block extrahead %}{% endblock %}
+    <link rel="shortcut icon" href="{{ STATIC_URL }}favicon.ico">
+    {% block extrahead %}{% endblock %}
 </head>
 
 <body>
-  
-  {% block navigation %}
-  <div style="margin-top:60px;"><!-- dirty trick to push content below nav --></div>
-  <nav id="nav">
+
+{% block navigation %}
+<nav id="nav">
     <ul>
-      <li><a href="{% url 'home' %}">Home</a></li>
-      <li><a href="{% url 'sponsoring' %}">Sponsoring</a></li>
-      <li><a href="{% url 'wakawaka_index' %}">Wiki</a></li>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'sponsoring' %}">Sponsoring</a></li>
+        <li><a href="{% url 'wakawaka_index' %}">Wiki</a></li>
     </ul>
     <p class="pull-right">
-    {% if user.is_authenticated %}
-      <a href="{% url 'auth_logout' %}">Logout</a> | 
-      Logged in as 
-      <a href="{% url 'current_user_profile' %}">
-        {% if user.get_full_name %}
-          {{ user.get_full_name }}
-        {% else %}
-          {{ user.username }}
-        {% endif %}
-      </a>
-    {% else %}
-      <a href="{% url 'auth_login' %}">Login</a>
-    {% endif %}
-    </p>
-  </nav>
-  {% endblock %}
-  
-  <div class="container-fluid">
-    {% block container %}
-    <div class="row-fluid">
-      <div class="span2 site-logo">
-        <a href="{% url 'home' %}">
-          <img src="{{ STATIC_URL }}img/socrates2014_logo_40perc.png" 
-               alt="SoCraTes Conference 2014 - Software Craftsmanship and Testing" />
+        {% if user.is_authenticated %}
+        <a href="{% url 'auth_logout' %}">Logout</a> |
+        Logged in as
+        <a href="{% url 'current_user_profile' %}">
+            {% if user.get_full_name %}
+            {{ user.get_full_name }}
+            {% else %}
+            {{ user.username }}
+            {% endif %}
         </a>
-      </div><!-- /span2 -->
-      <div class="span10">
-        {% if messages %}
-        <div class="alert">
-          {% for message in messages %}
-          {{ message }}
-          {% endfor %}
-        </div>
+        {% else %}
+        <a href="{% url 'auth_login' %}">Login</a>
         {% endif %}
+    </p>
+</nav>
+{% endblock %}
 
-        {% block content %}
-        {% endblock %}
-      </div> <!-- /span10 -->
-    </div> <!-- /row -->
+<div class="container-fluid">
+    {% block container %}
+    <div class="row-fluid" id="header">
+        <div class="span2 site-logo">
+            <a href="{% url 'home' %}">
+                <img src="{{ STATIC_URL }}img/socrates2014_logo_40perc.png"
+                     alt="SoCraTes Conference 2014 - Software Craftsmanship and Testing"/>
+            </a>
+        </div>
+        <!-- /span2 -->
+        <div class="span10">
+            {% if messages %}
+            <div class="alert">
+                {% for message in messages %}
+                {{ message }}
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% block content %}
+            {% endblock %}
+        </div>
+        <!-- /span10 -->
+    </div>
+    <!-- /row -->
     {% endblock %}
-    
+
     <footer>
-      <hr />
-      <p>
-        {% block footer %}
-        <a href="{% url 'impressum' %}">Impressum</a>
-        {% endblock %}
-      </p>
+        <hr/>
+        <p>
+            {% block footer %}
+            <a href="{% url 'impressum' %}">Impressum</a>
+            {% endblock %}
+        </p>
     </footer>
-  </div> <!-- /container -->
-    
-  <script src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
-  <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+</div>
+<!-- /container -->
+
+<script src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
 </body>
 </html>
