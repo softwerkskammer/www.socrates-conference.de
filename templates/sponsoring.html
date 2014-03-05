@@ -2,10 +2,107 @@
 
 {% block title %}Sponsoring{% endblock %}
 
-{% block content %}
-<div class="row-fluid">
+{% block container %}
+<div class="row-fluid" id="header">
+    {% include "include_wide_header.html" %}
+</div>
+
+<div class="row-fluid" id="content-container">
     <div class="span9">
-        <h2>Sponsoring</h2>
+        <div>
+            <h3>Information for Sponsors</h3>
+
+            <p><em>Contact: sponsoring@socrates-conference.de</em></p>
+
+            <h4>Why we want you</h4>
+
+            <p>Thank you for your interest in making SoCraTes 2014 happen!</p>
+
+            <p>We invite you to sponsor the conference and help make this event brilliant.<br>
+                Our financial backers make a huge difference to the event and help make sure it's affordable for our
+                attendees.</p>
+
+        </div>
+        <div class="col-xs-4">
+            <h4>What you will get</h4>
+
+            <p>For sponsorings of 750 &euro; or more we offer the following:</p>
+            <ul style="list-style: square outside;">
+                <li>Your logo on our website</li>
+                <li>Our logo for your marketing activities</li>
+                <li>Mention at the beginning and end of the conference</li>
+            </ul>
+            <p>and depending on the amount you choose to invest</p>
+            <ul style="list-style: square outside;">
+                <li>Guaranteed participant <b>slots</b></li>
+                <li>Your printed <b>logo </b>on a pinboard in the main room of the conference</li>
+                <li>A short <b>video </b>sequence at the beginning of the conference</li>
+                <li>Your company name in <b>mailings</b></li>
+            </ul>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>The Packages</h4>
+                </div>
+                <table class="table table-condensed">
+                    <tr>
+                        <th></th>
+                        <th>Basic <br> (750 &euro;)</th>
+                        <th>Comfort <br> (1500 &euro;)</th>
+                        <th>Premium <br> (2500 &euro;)</th>
+                    </tr>
+                    <tr>
+                        <th>Slots</th>
+                        <td>One</td>
+                        <td>Three</td>
+                        <td>Five</td>
+                    </tr>
+                    <tr>
+                        <th>Logo Size</th>
+                        <td>A3</td>
+                        <td>A2</td>
+                        <td>A1 or Roll-Up</td>
+                    </tr>
+                    <tr>
+                        <th>Video</th>
+                        <td>None</td>
+                        <td>20 sec</td>
+                        <td>40 sec</td>
+                    </tr>
+                    <tr>
+                        <th>Mailings</th>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <a href="mailto:sponsoring@socrates-conference.de?subject=Sponsoring%20SoCraTes%202014%20Basic%20Package">I
+                                am interested!</a></td>
+                        <td>
+                            <a href="mailto:sponsoring@socrates-conference.de?subject=Sponsoring%20SoCraTes%202014%20Comfort%20Package">I
+                                am interested!</a></td>
+                        <td>
+                            <a href="mailto:sponsoring@socrates-conference.de?subject=Sponsoring%20SoCraTes%202014%20Premium%20Package">I
+                                am interested!</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="span3">
+        <div class="well">
+            <h4>About the event</h4>
+
+            <p>The fourth annual Software Craftsmanship and Testing Conference will take place from 7th to 10th
+                August 2014 in Soltau near Hamburg, Germany.</p>
+
+            <p>This year, up to 200 people can participate - we scale up after two years of being fully booked.</p>
+
+            <p>The event will be community-driven and low-price. A two-day OpenSpace will be followed by a Code
+                Retreat and other workshops. SoCraTes is an international non-profit conference for craftsmen by
+                craftsmen.</p>
+        </div>
     </div>
 </div>
 {% endblock %}
