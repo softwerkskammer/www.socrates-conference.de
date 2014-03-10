@@ -1,34 +1,74 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=PT+Serif+Caption" rel="stylesheet" type="text/css">
+<style>
+    h1, h2, h3, h4, h5, h6 {
+        color: #181818;
+        font-family: 'PT Serif Caption', serif;
+        font-weight: normal;
+    }
 
-{% block title %}Sponsoring{% endblock %}
+    ul {
+        padding-left: inherit;
+    }
 
-{% block container %}
-<div class="row-fluid" id="header">
-    {% include "include_wide_header.html" %}
-</div>
+    @media print {
+        a[href]:after {
+            content: none !important;
+        }
+    }
 
-<div class="row-fluid" id="content-container">
-    <div class="span7">
-        <div>
-            <h3>Information for Sponsors</h3>
+</style>
+</html>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4"><img style="margin-top: 20px"
+                                   src="http://www.socrates-conference.de/static/img/socrates2014_logo_40perc.png"
+                                   alt="SoCraTes Conference 2014 - Software Craftsmanship and Testing"
+                                   class="center-block">
 
-            <p>
-                <em>Contact: 
-                    <a href="mailto:sponsoring@socrates-conference.de">sponsoring@socrates-conference.de</a>
-                </em>
-            </p>
+            <div align="center">
+                <h2>SoCraTes 2014<br>
+                    <h4>
+                        <small>4th International Conference on Software Craftsmanship and Testing</small>
+                    </h4>
+                    <h4>
+                        <small>August 7-10, 2014 Soltau, Germany</small>
+                    </h4>
+                </h2>
+                <h3>Information for Sponsors</h3>
 
-            <h4>Why we want you</h4>
+                <p>&nbsp;</p>
+
+                <p>Contact: <a href="mailto:sponsoring@socrates-conference.de">sponsoring@socrates-conference.de</a></p>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <h3>Why we want you</h3>
 
             <p>Thank you for your interest in making SoCraTes 2014 happen!</p>
 
-            <p>We invite you to sponsor the conference and help make this event brilliant.<br>
-                Our financial backers make a huge difference to the event and help make sure it's affordable for our
-                attendees.</p>
+            <p>We invite you to sponsor the conference and help make this event brilliant. Our financial backers make a
+                huge difference to the event and help make sure it's affordable for our attendees.</p>
 
+            <div class="well">
+                <h3>About the event</h3>
+
+                <p>The fourth annual Software Craftsmanship and Testing Conference will take place from 7th to 10th
+                    August 2014 in Soltau near Hamburg, Germany.</p>
+
+                <p>This year, up to 200 people can participate - we scale up after two years of being fully booked.</p>
+
+                <p>The event will be community-driven and low-price. A two-day OpenSpace will be followed by a Code
+                    Retreat and other workshops. SoCraTes is an international non-profit conference for craftsmen by
+                    craftsmen.</p>
+            </div>
         </div>
         <div class="col-xs-4">
-            <h4>What you will get</h4>
+            <h3>What you will get</h3>
 
             <p>For sponsorings of 750 &euro; or more we offer the following:</p>
             <ul style="list-style: square outside;">
@@ -45,7 +85,7 @@
             </ul>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4>The Packages</h4>
+                    <h3>The Packages</h3>
                 </div>
                 <table class="table table-condensed">
                     <tr>
@@ -92,45 +132,26 @@
                     </tr>
                 </table>
 
-                <h4>P.S.</h4>
-                <p>
-                    In addition to the above packages, you can also sponsor a dedicated 
-                    workshop or Coderetreat that will take place on Sunday, 10th August 2014,
-                    right after the main conference.<br>
-                    <a href="mailto:sponsoring@socrates-conference.de?subject=I am interested in sponsoring a SoCraTes sunday workshop">contact us</a>, 
-                    if you're interested in sponsoring a dedicated session on Sunday.
-                </p>
-
-                <p>
-                    If you're interested in sponsoring SoCraTes 2014, but are not interested
-                    in one of the above packages, please 
-                    <a href="mailto:sponsoring@socrates-conference.de">contact us</a>, and we'll
-                    try our best to work something out with you.
-                </p>
             </div>
-        </div>
-    </div>
-    <div class="span5">
-        <div class="well">
-            <h4>About the event</h4>
+            <h4>P.S.</h4>
 
             <p>
-                The fourth annual Software Craftsmanship and Testing Conference
-                will take place from 7th to 10th August 2014 in Soltau near
-                Hamburg, Germany.
+                In addition to the above packages, you can also sponsor a dedicated
+                workshop or Coderetreat that will take place on Sunday, 10th August 2014,
+                right after the main conference.<br>
+                <a href="mailto:sponsoring@socrates-conference.de?subject=I am interested in sponsoring a SoCraTes sunday workshop">Contact
+                    us</a>, if you're interested in sponsoring a dedicated session on Sunday.
             </p>
 
             <p>
-                This year, up to 200 people can participate - we scale up after
-                two years of being fully booked.
-            </p>
-
-            <p>
-                SoCraTes is an international, non-profit conference, that's
-                community-driven and low-price. A two-day OpenSpace will be
-                followed by a Coderetreat and other workshops. 
+                If you're interested in sponsoring SoCraTes 2014, but are not interested
+                in one of the above packages, please
+                <a href="mailto:sponsoring@socrates-conference.de">contact us</a>, and we'll
+                try our best to work something out with you.
             </p>
         </div>
     </div>
 </div>
-{% endblock %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
