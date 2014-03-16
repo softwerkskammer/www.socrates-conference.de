@@ -72,14 +72,26 @@
     <!-- /row -->
     {% endblock %}
 
+    {% block footer %}
     <footer>
         <hr/>
-        <p>
-            {% block footer %}
-            <a href="{% url 'impressum' %}">Impressum</a>
-            {% endblock %}
-        </p>
+        <div class="row-fluid">
+            <div class="span6">
+                <h5>This event is brought to you by:</h5>
+
+                <p style="margin-top:10px;"><a href="http://softwerkskammer.de" target="_blank"><img
+                        src="{{ STATIC_URL }}img/SoftwerkskammerWappenLinks.png" alt="Softwerkskammer"></a></p>
+            </div>
+            <div class="span6">
+                <p class="pull-right">
+
+                    <a href="{% url 'impressum' %}">Impressum</a>
+
+                </p>
+            </div>
+        </div>
     </footer>
+    {% endblock %}
 </div>
 <!-- /container -->
 
