@@ -7,3 +7,10 @@ settings/local_keys.py
 LOCAL.DB
 
 test.html
+
+# FD only
+.Python
+bin/
+include/
+lib/
+src/

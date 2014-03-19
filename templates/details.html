@@ -1,15 +1,19 @@
 {% extends "base.html" %}
 
-{% block container %}
-<div class="row-fluid" id="header">
-    {% include "include_wide_header.html" %}
+{% block title %}Details{% endblock %}
+
+{% block content %}
+
+<div class="page-header">
+    <h1>Details</h1>
 </div>
 
-<div class="row-fluid">
-    <div class="span9">
-        <h3>Format</h3>
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-lg-8">
 
-        <p>
+        <h2>Format</h2>
+
+        <p class="lead">
             The event will be run as a two day
             <a href="http://agilecoachcamp.org/tiki-index.php?page=OpenSpace">Open Space</a>, facilitated by
             <a href="http://blog.connexxo.com/" target="_blank">Pierluigi Pugliese</a>, a highly skilled
@@ -17,10 +21,13 @@
         </p>
 
         <dl>
-            <dt>Thursday evening</dt><dd>Opening: What do you want to do here? Probably in
-            <a href="https://en.wikipedia.org/wiki/The_World_Cafe">World Café</a> format.
-            <dt>Friday</dt><dd>Open Space day 1</dd>
-            <dt>Saturday</dt><dd>Open Space day 2</dd>
+            <dt>Thursday evening</dt>
+            <dd>Opening: What do you want to do here? Probably in
+                <a href="https://en.wikipedia.org/wiki/The_World_Cafe">World Café</a> format.
+            <dt>Friday</dt>
+            <dd>Open Space day 1</dd>
+            <dt>Saturday</dt>
+            <dd>Open Space day 2</dd>
             <dt>Sunday (optional, additional registration required)</dt>
             <dd>Workshops, e.g. <a href="http://coderetreat.org/">Code Retreat</a> (details to be announced).</dd>
         </dl>
@@ -29,11 +36,13 @@
             To get an impression of what you can expect, have a look at last year's schedule for
             <a href="/static/socrates_2013_collection/large-12.html">Friday</a> and
             <a href="/static/socrates_2013_collection/large-13.html">Saturday</a>.
-            You can see that the range of topics is quite diverse, as is the kind of session (discussion, hands-on coding, ...).<br/>
+            You can see that the range of topics is quite diverse, as is the kind of session (discussion, hands-on
+            coding, ...).<br/>
         </p>
 
         <p>
-            Open Space means there is no agenda, or rather: <strong>you</strong> set the agenda. This is your time, make the best of it!
+            Open Space means there is no agenda, or rather: <strong>you</strong> set the agenda. This is your time, make
+            the best of it!
             For ideas about what you an do in advance have a look at <a
                 href="http://www.unconference.net/unconferencing-how-to-prepare-to-attend-an-unconference/"
                 target="_blank">unconference.net</a>.
@@ -49,7 +58,7 @@
             Facilitation will be in English. However, it will be possible to run sessions in other languages.
         </p>
 
-        <h4>Evening activities</h4>
+        <h2>Evening activities</h2>
 
         <p>
             In the previous years there were a multitude of things going on in
@@ -60,24 +69,8 @@
             And of course there's always plenty of people to just talk to, or continue discussions from the day.
         </p>
 
-    </div>
-    <div class="span3">
-        <blockquote>
-            <p>
-                <strong>Open Space Technology (OST)</strong> is an approach for hosting meetings,
-                conferences, corporate-style retreats and community summit events, focused on a specific
-                and important purpose or task—but beginning without any formal agenda, beyond the overall
-                purpose or theme.
-            </p>
-            <cite><a href="http://en.wikipedia.org/wiki/Open_Space_Technology" target="_blank">Wikipedia</a></cite>
-        </blockquote>
-    </div>
-</div>
-
-<div class="row">
-    <div class="span12">
-        <h3>Housekeeping</h3>
-        <h4>Rooms</h4>
+        <h2>Housekeeping</h2>
+        <h3>Rooms</h3>
 
         <p>
             Some of the facility's rooms are twin rooms. An important aspect of
@@ -91,24 +84,18 @@
             After registration there will also be a wiki for participants to get to know each other and
             arrange things.
         </p>
+    </div>
 
-        <h4>Location</h4>
-
-        <p>
-            Out in the country, at the lovely Hotelpark Soltau
-            (<a href="http://www.hotel-park-soltau.de/">German only website</a>),
-            approximately one hour from Hamburg.
-        </p>
-
-        <p>
-            <a href="http://goo.gl/maps/mpcC0">Winsener Straße 111, 29614 Soltau, Germany </a>
-        </p>
-
-        <p>
-            It offers great facilities for community-centered events with included accommodation. We
-            have rented the whole facility, so we can concentrate on what we like to do most.
-        </p>
-
+    <div class="col-xs-6 col-lg-4">
+        <blockquote class="blockquote-reverse">
+            <p>
+                <strong>Open Space Technology (OST)</strong> is an approach for hosting meetings,
+                conferences, corporate-style retreats and community summit events, focused on a specific
+                and important purpose or task—but beginning without any formal agenda, beyond the overall
+                purpose or theme.
+            </p>
+            <cite><a href="http://en.wikipedia.org/wiki/Open_Space_Technology" target="_blank">Wikipedia</a></cite>
+        </blockquote>
     </div>
 </div>
 {% endblock %}
