@@ -132,25 +132,11 @@ INSTALLED_APPS = (
     'django.contrib.markup',
     'django.contrib.admin',
     'south',
-    'wakawaka',
-    'bootstrapform',
     'gunicorn',
-    
-    'wikiglue',
-    'gatekeeper',
 )
 
 FIXTURE_DIRS = (
     'fixtures', 
 )
 
-GATEKEEPER_MODERATOR_GROUP = 'socrate_admins'
-AUTH_PROFILE_MODULE = 'gatekeeper.UserProfile'
 
-AUTHENTICATION_BACKENDS = (
-    'gatekeeper.auth_backend.EmailModelBackend',
-    'django.contrib.auth.backends.ModelBackend',
-)
-
-### WakaWaka Wiki
-WAKAWAKA_SLUG_REGEX = r'((([A-Z]+[a-z0-9]+){2,})(/([A-Z]+[a-z0-9]+){2,})*)'
