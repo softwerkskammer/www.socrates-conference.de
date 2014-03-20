@@ -8,8 +8,7 @@
 </div>
 
 <p class="lead">
-    Out in the country, at the lovely Hotelpark Soltau
-    (<a href="http://www.hotel-park-soltau.de/">German only website</a>),
+    Out in the country, at the lovely Hotelpark Soltau,
     approximately one hour from Hamburg.
 </p>
 
@@ -19,6 +18,43 @@
 </p>
 
 <p>
-    <a href="http://goo.gl/maps/mpcC0">Check on Google Maps: Winsener Straße 111, 29614 Soltau, Germany </a>
+    <a href="http://www.hotel-park-soltau.de/">Website (German only)</a>
 </p>
+
+<hr class="featurette-divider">
+
+<div class="row google-map">
+    <div id="map-canvas" style="width: 100%; height: 600px;"></div>
+    <small>Show <a href="https://goo.gl/maps/xpaf3" rel=nofollow target=_blank>Location</a> on a larger map</small>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading">A relaxing atmosphere <span class="text-muted">to get you focused.</span>
+        </h2>
+
+        <p class="lead">You will definitely not only hang around in the meeting rooms. Since we have rented the whole facility there will be many places to meet and discuss in a relaxed way.</p>
+    </div>
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive" src="{{ STATIC_URL }}img/location/soltau-inner-yard.jpg" alt="Soltau inner yard">
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHet1NLP9NBFGt-q-x42TE00L4EDTJnXU&sensor=false">
+</script>
+<script type="text/javascript">
+    function initialize() {
+        var mapOptions = {
+            center: new google.maps.LatLng(53.00172, 9.85902),
+            zoom: 17,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
 {% endblock %}
