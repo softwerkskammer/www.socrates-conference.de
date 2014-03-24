@@ -50,8 +50,6 @@ Now the development server is running and reachable at localhost:8000
 #### Heroku style
 
     $> heroku config:add ENV_PROD=1
-    $> heroku config:add TWITTER_CONSUMER_KEY=xxxx
-    $> heroku config:add TWITTER_CONSUMER_SECRET=xxxx
     $> heroku config:add SECRET_KEY=xxxx
     $> heroku config:add EMAIL_HOST_PASSWORD=xxxx
     

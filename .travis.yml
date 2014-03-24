@@ -1,7 +1,10 @@
 language: python
 python:
-  - "2.7"
-# command to install dependencies
-install: pip install -r app/requirements.txt --use-mirrors
-# command to run tests
-script: cd app && python manage.py gatekeeper wikiglue
+  - '2.7'
+script: python manage.py collectstatic
+deploy:
+  provider: heroku
+  app: socrates-conf-stage
+  strategy: git
+  api_key:
+    secure: zo2B3kTafqduYNxTfKhHESZUvKpn4a7py8/b5l6w5SuSTemVk6MO/6OOf/kRDvciZwJ05M0bo6x8FF0y874SwZd146PY80oEK9aDHLMYQYhI708d5NVOsJf7WPLO20mYHTNdQJphPW1J52cOCQA+/g/I4O9nXse6sG8Qer1p3Iw=
