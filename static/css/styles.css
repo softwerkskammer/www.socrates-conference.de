@@ -259,3 +259,9 @@ footer .twitter {
 .sponsorlogo {
     margin-bottom: 40px;
 }
+
+.jumbotron {
+    background: url('../img/stage.jpg') transparent no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
