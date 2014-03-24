@@ -265,3 +265,8 @@ footer .twitter {
     background-size: cover;
     background-position: top center;
 }
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
