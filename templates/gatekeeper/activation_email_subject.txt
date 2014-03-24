@@ -1,1 +1,0 @@
-Account approval for {{ site.name }}
