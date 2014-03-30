@@ -1,6 +1,6 @@
 ## SoCraTes Conference 
 Site for [www.socrates-conference.de](http://www.socrates-conference.de) based on 
-[Django](https://www.djangoproject.com/) and [Bootstrap](http://twitter.github.com/bootstrap/index.html).
+[Django](https://www.djangoproject.com/) and [Bootstrap](http://getbootstrap.com/).
 
 ## License
 

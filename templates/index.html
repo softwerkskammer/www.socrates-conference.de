@@ -1,40 +1,45 @@
 {% extends "base.html" %}
 
-{% block container %}
-<div class="row-fluid" id="header">
-    {% include "include_wide_header.html" %}
-</div>
+{% block activepage_home %} class="active"{% endblock %}
 
-<div class="row-fluid" id="content-container">
-    <div class="span9">
-        <h3>What is it about?</h3>
+{% block title %}SoCraTes 2014 - 4th International Software Craftsmanship and Testing Conference, August 7-10 2014, Soltau, Germany{% endblock %}
 
-        <p>
+{% block content %}
+
+{% include "include_wide_header.html" %}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+        <div class="page-header">
+            <h1>What is it about? <span class="text-muted">Some key facts.</span></h1>
+        </div>
+        <p class="lead">
             This event is about the sustainable creation of useful software in a responsible way. </p>
-        <h4>
-            People </h4>
 
-        <p>
+        <h2>It's about People</h2>
+
+        <p class="lead">
             Everyone who is concerned with coding, testing, code quality, software craftsmanship, and/or
             if &hellip;
         </p>
         <ul class="square">
             <li>you are passionate about software development and testing.</li>
             <li>you have already heard of Software Craftsmanship or even already
-                are part of the growing community.</li>
+                are part of the growing community.
+            </li>
             <li>you want to share your knowlege, experience and expertise.</li>
         </ul>
 
-        <h4> Action </h4>
+        <h2>It's about Action</h2>
 
-        <p> The event will be run as a non-profit, low-cost
+        <p class="lead"> The event will be run as a non-profit, low-cost
             event. It is a joint-effort of all
-            <a href="http://softwerkskammer.org" target="_blank">Softwerkskammer</a>
-            groups, the community of all German-speaking Software Craftsmanship groups.
+            <a href="http://www.softwerkskammer.org" target="_blank">Softwerkskammer</a>
+            groups, the community of all German Software Craftsmanship groups.
             It will be much like a retreat. We will be there for 48 hours to
             collaborate and share ideas. There will be:
         </p>
-        <ul class="square">
+        <ul>
             <li>Highly collaborative interactions</li>
             <li>A self-organized Open Space, with &hellip;
                 <ul class="square">
@@ -46,33 +51,11 @@
             </li>
         </ul>
         <p>
-            <strong>&rarr; <a href="details.html">More Details</a></strong>
-        </p>
-
-        <h4>Registration</h4>
-
-        <p>The registration will be done via the Softwerkskammer website. In order to be able to register to SoCraTes,
-            you need to enrol in Softwerkskammer first. Once you are enrolled, you can join a group that we set up for
-            everybody who is interested in participating in SoCraTes:
-
-        <p><a href="http://www.softwerkskammer.org/groups/socrates2014">http://www.softwerkskammer.org/groups/socrates2014</a>
-        </p>
-
-        <p> The group members will be notified first about the opening of the registration and anything else that might
-            be of importance.</p>
-        </p>
-
-        <h4>Contact </h4>
-
-        <p>Follow <a href="http://twitter.com/socrates_2014" target="_blank">@socrates_2014</a> on Twitter to stay
-            up-to-date. </p>
-
-        <p>
-            <strong>Email:</strong> <a href="mailto:info@socrates-conference.de">info@socrates-conference.de</a>
+            <a href="{% url 'schedule' %}" class="btn btn-primary" role="button"><span
+                    class="glyphicon glyphicon-time"></span> Checkout the full schedule</a>
         </p>
     </div>
-
-    <div class="span3">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 col-md-offset-1 col-lg-offset-1">
         {% include "include_sponsor_logos.html" %}
     </div>
 </div>

@@ -121,6 +121,7 @@ TEMPLATE_DIRS = (
     PROJECT_DIR.child('templates'),
 )
 
+# TODO: Clean up: wakawaka, bootstrapform, south
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',

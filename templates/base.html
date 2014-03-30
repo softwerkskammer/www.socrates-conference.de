@@ -7,8 +7,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif+Caption" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet'
+          type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- Individual styles -->
     <link href="{{ STATIC_URL }}css/styles.css" rel="stylesheet">
+
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,68 +28,76 @@
     {% block extrahead %}{% endblock %}
 </head>
 
-<body>
+<body role="document">
 
 {% block navigation %}
-<nav id="nav">
-    <ul>
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'sponsoring' %}">Sponsoring</a></li>
-    </ul>
-</nav>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'home' %}">SoCraTes 2014</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li{% block activepage_home %}{% endblock %}><a href="{% url 'home' %}">Home</a></li>
+                <li{% block activepage_registration %}{% endblock %}><a href="{% url 'registration' %}">Registration</a></li>
+                <li{% block activepage_schedule %}{% endblock %}><a href="{% url 'schedule' %}">Schedule</a></li>
+                <li{% block activepage_location %}{% endblock %}><a href="{% url 'location' %}">Location</a></li>
+                <li{% block activepage_history %}{% endblock %}><a href="{% url 'history' %}">History</a></li>
+                <li{% block activepage_sponsoring %}{% endblock %}><a href="{% url 'sponsoring' %}">Sponsoring</a></li>
+                <li{% block activepage_contact %}{% endblock %}><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
 {% endblock %}
 
-<div class="container-fluid">
-    {% block container %}
-    <div class="row-fluid" id="header">
-        <div class="span2 site-logo">
-            <a href="{% url 'home' %}">
-                <img src="{{ STATIC_URL }}img/socrates2014_logo_40perc.png"
-                     alt="SoCraTes Conference 2014 - Software Craftsmanship and Testing"/>
-            </a>
-        </div>
-        <!-- /span2 -->
-        <div class="span10">
-            {% if messages %}
-            <div class="alert">
-                {% for message in messages %}
-                {{ message }}
-                {% endfor %}
-            </div>
-            {% endif %}
-
-            {% block content %}
-            {% endblock %}
-        </div>
-        <!-- /span10 -->
-    </div>
-    <!-- /row -->
+<div class="container" role="main">
+    <!--{% block container %}-->
+    <!--<div class="content">-->
+    {% block content %}
+    ### This content should be replaced ###
     {% endblock %}
+    <!--</div>-->
+    <!--{% endblock %}-->
 
-    {% block footer %}
     <footer>
-        <hr/>
-        <div class="row-fluid">
-            <div class="span6">
-                <h5>This event is brought to you by:</h5>
+        <p class="pull-right">
+            <a href="{% url 'impressum' %}">Impressum</a><br><br>
+            <span class="twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="socrates_2014" data-size="large"
+               data-hashtags="socrates14">Tweet</a>
+            <a href="https://twitter.com/socrates_2014" class="twitter-follow-button" data-show-count="false"
+               data-size="large">Follow @socrates_2014</a>
+            <script>!function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + '://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'twitter-wjs');</script>
+            </span>
+        </p>
 
-                <p style="margin-top:10px;"><a href="http://softwerkskammer.org" target="_blank"><img
-                        src="{{ STATIC_URL }}img/SoftwerkskammerWappenLinks.png" alt="Softwerkskammer"></a></p>
-            </div>
-            <div class="span6">
-                <p class="pull-right">
+        <div>
+            <p class="text-muted">This event is brought to you by:</p>
 
-                    <a href="{% url 'impressum' %}">Impressum</a>
-
-                </p>
-            </div>
+            <p style="margin-top:10px;"><a href="http://softwerkskammer.org" target="_blank"><img
+                    src="{{ STATIC_URL }}img/SoftwerkskammerWappenLinks.png" alt="Softwerkskammer"></a></p>
         </div>
     </footer>
-    {% endblock %}
 </div>
 <!-- /container -->
 
-<script src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
-<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
 </html>
