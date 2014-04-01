@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     url(r'^history.html$', TemplateView.as_view(template_name='history.html'), name='history'),
     url(r'^sponsoring.html$', TemplateView.as_view(template_name='sponsoring.html'), name='sponsoring'),
     url(r'^contact.html$', TemplateView.as_view(template_name='contact.html'), name='contact'),
+    url(r'^code-of-conduct.html$', TemplateView.as_view(template_name='code-of-conduct.html'), name='codeofconduct'),
 
     url(r'robots.txt', TemplateView.as_view(template_name="robots.txt")),
 
