@@ -1,203 +1,80 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Serif+Caption);
+/* #custom socrates styles              */
+/*======================================*/
+/*                                      */
+/* SoCraTes colorscheme:                */
+/*                                      */
+/* red -> #B65353                       */
+/* red darkened 10% -> #9D3A3A          */
+/* blue -> #3161B9                      */
+/* blue darkened 10% -> #1848A0         */
+/* grey -> #E8E8E8                      */
+
 
 body {
-  padding-bottom: 40px;
+    padding-top: 70px;
+    padding-bottom: 30px;
 }
 
-
-/* #Basic Styles
-================================================== */
-  body {
-    background: #fff;
-    font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #444;
-    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-    -webkit-text-size-adjust: 100%;
- }
- 
-/* #Typography
-================================================== */
-  h1, h2, h3, h4, h5, h6 {
-    color: #181818;
-    font-family:  'PT Serif Caption', serif;
-    font-weight: normal; }
-  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-  h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
-  h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
-  h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
-  h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
-  h5 { font-size: 17px; line-height: 24px; }
-  h6 { font-size: 14px; line-height: 21px; }
-  .subheader { color: #777; }
-
-  p { margin: 0 0 20px 0; }
-  p img { margin: 0; }
-  p.lead { font-size: 21px; line-height: 27px; color: #777;  }
-
-  em { font-style: italic; }
-  strong { font-weight: bold; color: #333; }
-  small { font-size: 80%; }
-
-/*  Blockquotes  */
-  blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
-  blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
-  blockquote cite { display: block; font-size: 12px; color: #555; }
-  blockquote cite:before { content: "\2014 \0020"; }
-  blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
-
-  hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
-
-
-/* #Links
-================================================== */
-  a, a:visited { color: #333; text-decoration: underline; outline: 0; }
-  a:hover, a:focus { color: #000; }
-  p a, p a:visited { line-height: inherit; }
-
-
-/* #Lists
-================================================== */
-  ul, ol { margin-bottom: 20px; }
-  ul { list-style: none outside; }
-  ol { list-style: decimal; }
-  ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
-  ul.square { list-style: square outside; }
-  ul.circle { list-style: circle outside; }
-  ul.disc { list-style: disc outside; }
-  ul ul, ul ol,
-  ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
-  ul ul li, ul ol li,
-  ol ol li, ol ul li { margin-bottom: 6px; }
-  li { line-height: 18px; margin-bottom: 12px; }
-  ul.large li { line-height: 21px; }
-  li p { line-height: 21px; }
-
-/* #Images
-================================================== */
-
-  img.scale-with-grid {
-    max-width: 100%;
-    height: auto; }
-    
-/* #Misc
-================================================== */
-  .remove-bottom { margin-bottom: 0 !important; }
-  .half-bottom { margin-bottom: 10px !important; }
-  .add-bottom { margin-bottom: 20px !important; }
-
-
-
-
-
-/* #custom socrates styles
-================================================== */
-/*
-SoCraTes colorscheme:
-  red -> #B65353
-  blue -> #3161B9
-  grey -> #E8E8E8
-*/
-
-.site-logo{
-  text-align:center;
-}
-
-.sidebar-nav {
-  padding: 9px 0;
-}
-
-a {
-  color: #B65353;
-}
-
-h1,h2  {
-  color: #B65353;
-}
-
-.wiki-page ul {
-  list-style-type:disc;
-}
-
-.wiki-page ol {
-  list-style-type:default;
-}
-
-h1.wiki-head-slug a {
-  text-decoration:none;
-  color: #B65353;
-}
-
-.wiki-page p {
-  line-height:1.3em;
-  margin-bottom:10px;
-}
-
-.wiki-page-info {
-  font-size: 11px;
-}
-
-div.alert ul {
-  list-style-type:none;
-}
-
-.form-horizontal textarea {
-  width:740px;
-  height:370px;
-}
-
-em {
-  font-style:italic !important;
-}
-
-strong {
-  font-weight:bold !important;
-}
-
-nav {
-    position: fixed;
-    top: 0px;
-    padding: 0.8em 0 0.8em 0;
-    background-color: #0E0E0E;
-    opacity: 0.8;
-    width: 100%;
-    z-index: 77;
-    color:#fff;
-}
-
-nav ul {
-    position: relative;
-    left: 0;
+.dropdown-menu {
+    position: static;
     display: block;
-    float: left;
-    margin: 0 0.5em 0 1em;
-    padding:0;
+    margin-bottom: 20px;
 }
 
-nav li {
-    list-style-type:none;
-    display:inline;
-    padding:0 0.5em 0 0;
+
+.navbar-brand {
+    /*font-family: 'Libre Baskerville', serif;*/
+    font-family: 'PT Serif Caption', serif;
+    background: url('../img/socrates2014_logo_40perc.png') 0 6px no-repeat;
+    background-size: 20%;
+    padding-left: 45px;
 }
 
-nav p.pull-right {
-  margin:0 0.8em 0 0;
+h1 {
+    /*font-family: 'Libre Baskerville', serif;*/
+    font-family: 'PT Serif Caption', serif;
 }
 
-nav a, nav a:visited { 
-  color: #B65353; 
-}
-nav a:hover, nav a:focus { 
-  color: #E8E8E8; 
+.container .jumbotron {
+    text-align: center;
 }
 
-#header {
-    margin-top: 60px;
+.btn-success {
+    background-image: linear-gradient(to bottom, #B65353 0, #9D3A3A 100%);
+    border-color: #B65353;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    background-color: #9D3A3A;
+    border-color: #9D3A3A;
+    background-position: 0 -15px;
 }
 
-#content-container {
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
     margin-top: 40px;
+    border-top: 1px solid #eee;
 }
 
-p {
-  font-size: 14px;
+footer .pull-right {
+    text-align: right;
+}
+
+.sponsorlogo {
+    margin-bottom: 40px;
+}
+
+.jumbotron {
+    background: url('../img/stage.jpg') transparent no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.extraspace {
+    margin-bottom: 50px;
 }

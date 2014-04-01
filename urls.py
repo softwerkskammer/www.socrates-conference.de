@@ -7,16 +7,17 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name='index.html'), name='home'),
-    url(r'^details.html$', TemplateView.as_view(template_name='details.html'), name='details'),
     url(r'^impressum.html$', TemplateView.as_view(template_name='impressum.html'), name='impressum'),
+    url(r'^registration.html$', TemplateView.as_view(template_name='registration.html'), name='registration'),
+    url(r'^schedule.html$', TemplateView.as_view(template_name='schedule.html'), name='schedule'),
+    url(r'^location.html$', TemplateView.as_view(template_name='location.html'), name='location'),
+    url(r'^history.html$', TemplateView.as_view(template_name='history.html'), name='history'),
     url(r'^sponsoring.html$', TemplateView.as_view(template_name='sponsoring.html'), name='sponsoring'),
-
-    url(r'^wiki/', include('wakawaka.urls.authenticated')),
-    url(r'^admin/', include(admin.site.urls)),
-    
-    url(r'^accounts/', include('gatekeeper.urls')),
+    url(r'^contact.html$', TemplateView.as_view(template_name='contact.html'), name='contact'),
 
     url(r'robots.txt', TemplateView.as_view(template_name="robots.txt")),
+
+    url(r'^admin/', include(admin.site.urls)),
     
     # use gunicorn to serve static files ... might be changed in later releases
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),

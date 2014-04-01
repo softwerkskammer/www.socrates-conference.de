@@ -1,6 +1,6 @@
 ## SoCraTes Conference 
 Site for [www.socrates-conference.de](http://www.socrates-conference.de) based on 
-[Django](https://www.djangoproject.com/) and [Bootstrap](http://twitter.github.com/bootstrap/index.html).
+[Django](https://www.djangoproject.com/) and [Bootstrap](http://getbootstrap.com/).
 
 ## License
 
@@ -31,11 +31,7 @@ TL;DR rename the directory of your local clone to socrates-conference
     # create a virtualenv & activate it ... sth like `virtualenv socratesconf && . socratesconf/bin/activate`
     
     $> pip install -r requirements.txt
-    
-    # say no, when asked to create a superuser
     $> ./manage.py syncdb --migrate
-    $> ./manage.py createsuperuser
-    
     $> ./manage.py runserver
     
 Now the development server is running and reachable at localhost:8000 
@@ -50,13 +46,6 @@ Now the development server is running and reachable at localhost:8000
 #### Heroku style
 
     $> heroku config:add ENV_PROD=1
-    $> heroku config:add TWITTER_CONSUMER_KEY=xxxx
-    $> heroku config:add TWITTER_CONSUMER_SECRET=xxxx
     $> heroku config:add SECRET_KEY=xxxx
-    $> heroku config:add EMAIL_HOST_PASSWORD=xxxx
-    
-    # say no, when asked to create a superuser
     $> heroku run python manage.py syncdb --migrate
-    $> heroku run python manage.py createsuperuser
-
     $> heroku ps:scale web=1  
