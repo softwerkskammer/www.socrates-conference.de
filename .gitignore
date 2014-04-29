@@ -1,4 +1,5 @@
 .IDEA
+.env
 *.PYC
 .DS_Store
 static-deploy

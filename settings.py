@@ -1,12 +1,13 @@
 from unipath import FSPath as Path
 import os
 
-PROJECT_DIR = Path(__file__).absolute().ancestor(2)
+PROJECT_DIR = Path(__file__).absolute().ancestor(1)
 
 """Operation Settings"""
 
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', False)
 TEMPLATE_DEBUG = DEBUG
+SECRET_KEY = os.environ['SECRET_KEY']
 
 ADMINS = (
     ('SoCraTes Webmaster', 'webmaster@socrates-conference.de'),
@@ -22,18 +23,24 @@ ALLOWED_HOSTS = ['*']
 
 LOGGING = {
     'version': 1,
-    'disable_existing_loggers': False,
+    'disable_existing_loggers': True,
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
+        },
+    },
     'handlers': {
-        'mail_admins': {
-            'level': 'ERROR',
-            'class': 'django.utils.log.AdminEmailHandler'
-        }
+        'console':{
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose'
+        },
     },
     'loggers': {
-        'django.request': {
-            'handlers': ['mail_admins'],
-            'level': 'ERROR',
+        'django': {
+            'handlers': ['console'],
             'propagate': True,
+            'level': 'INFO',
         },
     }
 }
@@ -82,7 +89,7 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_DIR, 'static'),
+    PROJECT_DIR.child('static'),
 )
 
 STATICFILES_FINDERS = (
@@ -121,7 +128,6 @@ TEMPLATE_DIRS = (
     PROJECT_DIR.child('templates'),
 )
 
-# TODO: Clean up: wakawaka, bootstrapform, south
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -129,10 +135,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    'django.contrib.markup',
-    'django.contrib.admin',
-    'south',
     'gunicorn',
 )
 
