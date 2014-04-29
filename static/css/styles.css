@@ -64,6 +64,10 @@ footer .pull-right {
     margin-bottom: 40px;
 }
 
+.sponsor-sidebar {
+    text-align:center;
+}
+
 .jumbotron {
     background: url('../img/stage.jpg') transparent no-repeat;
     background-size: cover;
