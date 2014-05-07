@@ -64,7 +64,8 @@ footer .pull-right {
     margin-bottom: 40px;
 }
 
-.sponsor-sidebar {
+.sponsor-sidebar,
+.conference-sidebar {
     text-align:center;
 }
 
