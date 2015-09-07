@@ -1,35 +1,8 @@
-## SoCraTes Conference 
-Site for [www.socrates-conference.de](http://www.socrates-conference.de) based on 
-[Django](https://www.djangoproject.com/) and [Bootstrap](http://getbootstrap.com/).
+# *DEPRECATED*
 
-## Installation
+This repo's code is not in use anymore. 
 
-### Requirements
-
-* Python, >=v2.6 ... not v3.x 
-* Under Linux: run "apt-get install libpq-dev python-dev" beforehand to install the requirements
-* [pip](http://www.pip-installer.org/) ... easiest to install via [get-pip.py](http://www.pip-installer.org/en/latest/installing.html#install-or-upgrade-pip)
-* [virtualenv](http://www.virtualenv.org/) ... easiest to install [globally via pip](http://www.virtualenv.org/en/latest/#installation)
-* Optional: Consider using [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/) to make handling virtualenvs easier. 
-
-### Prepare for development
-
-**NOTE:** Due to unfortunate naming of this repo and the way Django/Python works you should rename the directory your clone resides in to something without dots.  
-TL;DR rename the directory of your local clone to socrates-conference
-
-    # create a virtualenv & activate it ... sth like `virtualenv socratesconf && . socratesconf/bin/activate`
-    
-    $> pip install -r requirements.txt
-    $> export SECRET_KEY=somesecret
-    $> export DEBUG=True
-    $> ./manage.py runserver
-    
-Now the development server is running and reachable at localhost:8000 
-
-### Initial Deploy to Heroku
-
-    $> heroku config:add SECRET_KEY=somereallylongsecretrandomstring
-    $> heroku ps:scale web=1  
+The current [socrates-conference.de](http://socrates-conference.de) site is powered by the [Agora platform](https://github.com/softwerkskammer/Agora).
 
 ## License
 
