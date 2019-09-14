@@ -2,7 +2,7 @@
 
 This repo's code is not in use anymore. 
 
-The current [socrates-conference.de](http://socrates-conference.de) site is powered by the [Agora platform](https://github.com/softwerkskammer/Agora).
+The current [socrates-conference.de](http://socrates-conference.de) site is developed on GitLab at (https://gitlab.com/socrates-conference).
 
 ## License
 
