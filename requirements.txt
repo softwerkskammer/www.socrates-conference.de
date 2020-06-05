@@ -1,5 +1,5 @@
 unipath
-Django==1.5.5
+Django==1.11.29
 South==0.8
 markdown==2.1.1
 psycopg2==2.4.5
